@@ -1,7 +1,6 @@
 /Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/bin/Debug/netcoreapp3.1/appsettings.Development.json
 /Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/bin/Debug/netcoreapp3.1/appsettings.json
 /Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
-/Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/bin/Debug/netcoreapp3.1/ianmtz
 /Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/bin/Debug/netcoreapp3.1/ianmtz.deps.json
 /Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/bin/Debug/netcoreapp3.1/ianmtz.runtimeconfig.json
 /Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/bin/Debug/netcoreapp3.1/ianmtz.runtimeconfig.dev.json
