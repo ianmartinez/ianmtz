@@ -1,18 +1,19 @@
-﻿html { 
+﻿html {
     background-color: black;
 }
 
 body {
     color: #fff;
-    background: url('/img/background.jpg') no-repeat center center scroll; 
+    background-color: #1b1b1b;
+    background: linear-gradient(45deg, rgb(38, 38, 38), rgb(69, 69, 69));
     padding: 1rem 0;
-    background-size: cover;    
-    height: 100vh;
-    width: 100vw;
+    background-size: cover;
+    min-height: 100vh;
+    max-width: 100vw;
     font-family: 'Catamaran', sans-serif;
 }
 
-::selection {    
+::selection {
     background-color: rgba(130, 186, 26, 0.75);
 }
 
@@ -45,16 +46,19 @@ body {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.6);
+    border-radius: 0.25rem;
 }
 
 .windowInner {
     background: rgba(235, 235, 235, 1);
     border: 1px solid white;
     border-radius: 0.25rem;
+    padding: 1rem;
 }
 
 .windowInner {
     font-weight: normal;
+    color: #000;
 }
 
 .jumbotron {
@@ -63,16 +67,16 @@ body {
     border: 1px solid white;
 }
 
-.jumbotron .windowInner {
-    padding: 1.5rem 2rem;
-}
+    .jumbotron .windowInner {
+        padding: 1.5rem 2rem;
+    }
 
 main {
     margin: 1rem 0;
 }
 
 .text-muted {
-    color: rgba(255, 255, 255, 0.7)!important;
+    color: rgba(24, 24, 24, 0.7) !important;
 }
 
 footer {
@@ -92,43 +96,43 @@ footer {
     border-color: #5b8213;
 }
 
-.btn-primary:hover {
-    color: #fff;
-    background-color: #7dad24;
-    background: linear-gradient(0deg, #6d981d,#7daf22);
-    border-color: #648c19;
-}
+    .btn-primary:hover {
+        color: #fff;
+        background-color: #7dad24;
+        background: linear-gradient(0deg, #6d981d,#7daf22);
+        border-color: #648c19;
+    }
 
-.btn-primary:focus, 
-.btn-primary.focus {
-    color: #fff;
-    background-color: #608a15;
-    border-color: #527513;
-    box-shadow: 0 0 0 0.2rem rgba(110, 156, 22, 0.5);
-}
+    .btn-primary:focus,
+    .btn-primary.focus {
+        color: #fff;
+        background-color: #608a15;
+        border-color: #527513;
+        box-shadow: 0 0 0 0.2rem rgba(110, 156, 22, 0.5);
+    }
 
-.btn-primary.disabled, 
-.btn-primary:disabled {
-    color: #fff;
-    background: linear-gradient(0deg, #757575,#757575);
-    background-color: #757575;
-    border-color: #757575;
-}
+    .btn-primary.disabled,
+    .btn-primary:disabled {
+        color: #fff;
+        background: linear-gradient(0deg, #757575,#757575);
+        background-color: #757575;
+        border-color: #757575;
+    }
 
-.btn-primary:not(:disabled):not(.disabled):active, 
-.btn-primary:not(:disabled):not(.disabled).active,
-.show > .btn-primary.dropdown-toggle {
-    color: #fff;
-    background-color: #4e6d15;
-    background: linear-gradient(0deg, #4e6d15, #486513);
-    border-color: #3c560c;
-}
+    .btn-primary:not(:disabled):not(.disabled):active,
+    .btn-primary:not(:disabled):not(.disabled).active,
+    .show > .btn-primary.dropdown-toggle {
+        color: #fff;
+        background-color: #4e6d15;
+        background: linear-gradient(0deg, #4e6d15, #486513);
+        border-color: #3c560c;
+    }
 
-.btn-primary:not(:disabled):not(.disabled):active:focus, 
-.btn-primary:not(:disabled):not(.disabled).active:focus,
-.show > .btn-primary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.2rem rgb(123, 173, 35);
-}
+        .btn-primary:not(:disabled):not(.disabled):active:focus,
+        .btn-primary:not(:disabled):not(.disabled).active:focus,
+        .show > .btn-primary.dropdown-toggle:focus {
+            box-shadow: 0 0 0 0.2rem rgb(123, 173, 35);
+        }
 
 
 .dropdown-menu {
@@ -147,9 +151,82 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.25);
 }
-  
+
 .dropdown-item:focus, .dropdown-item:hover {
     color: #ffffff;
     text-decoration: none;
     background-color: #689811;
+}
+
+.appJumbo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+    .appJumbo .appIcon img {
+        width: 128px;
+        margin: 0.5rem;
+    }
+
+    .appJumbo .appDescription {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+.appFeatures {
+    margin: 1rem 0;
+}
+
+    .appFeatures img {
+        border-radius: 0.25rem;
+        border: 6px solid white;
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+        max-height: 33vh;
+        max-width: 100%;
+    }
+
+    .appFeatures .col-md-7 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .appFeatures .col-md-5 {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .appFeatures .orderFlip {
+        flex-direction: row-reverse;
+    }
+
+    .appFeatures .extendedDescription {
+        font-style: italic;
+    }
+
+    @media (max-width: 767px) {
+        .appJumbo {
+        text-align: center;
+    }
+
+    .appFeatures .col-md-5 {
+        justify-content: center;
+    }
+
+    .appFeatures img {
+        max-height: 100vh;
+    }
+}
+
+@media (min-width: 768px) {
+    .appJumbo {
+        justify-content: flex-start;
+    }
+
+        .appJumbo .appIcon img {
+            width: 128px;
+            margin-right: 2rem;
+        }
 }
