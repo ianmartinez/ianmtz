@@ -124,4 +124,28 @@ footer {
 .btn-primary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
     box-shadow: 0 0 0 0.2rem rgb(123, 173, 35);
-  }
+}
+
+
+.dropdown-menu {
+    background-color: rgba(23, 23, 23, 0.95) !important;
+    border: 1px solid rgba(66, 66, 66, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-item {
+    color: rgb(224, 224, 224);
+}
+
+.dropdown-divider {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.25);
+}
+  
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #689811;
+}
