@@ -12,6 +12,10 @@ body {
     font-family: 'Catamaran', sans-serif;
 }
 
+::selection {    
+    background-color: rgba(130, 186, 26, 0.75);
+}
+
 .navbar {
     margin: 0;
     z-index: 99;
