@@ -9,6 +9,7 @@ body {
     background-size: cover;    
     height: 100vh;
     width: 100vw;
+    font-family: 'Baloo Bhaina 2', cursive;
 }
 
 .navbar {
@@ -25,18 +26,36 @@ body {
 }
 
 .bg-dark {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.45)) !important;
-    border: 1px solid rgba(78, 78, 78, 0.7);
+    background-color: rgba(23, 23, 23, 0.85) !important;
+    border: 1px solid rgba(66, 66, 66, 0.9);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.windowOuter {
+    padding: 0.35rem;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.65);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.6);
+}
+
+.windowInner {
+    background: rgba(235, 235, 235, 1);
+    border: 1px solid white;
+    border-radius: 0.25rem;
 }
 
 .jumbotron {
     color: black;
     box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.6);
     border: 1px solid white;
-    padding: 4rem 3rem;
+}
+
+.jumbotron .windowInner {
+    padding: 1.5rem 2rem;
 }
 
 main {
