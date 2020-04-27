@@ -310,6 +310,20 @@ footer {
         justify-content: center;
     }
 
+    .appJumbo .appDescriptionExtended {
+        font-style: italic;
+        color: gray;
+        margin: 0.5rem 0;
+    }
+
+    .appJumbo .appDescriptionExtended p {
+        margin: 0.5rem 0;
+    }
+
+    .appJumbo .appDescriptionText {
+        margin: 0;
+    }
+
 .appFeatures {
     margin: 1rem 0;
 }
