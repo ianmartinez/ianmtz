@@ -68,7 +68,7 @@ body {
 }
 
 .windowTitle {
-    padding: 0.5rem;
+    padding: 0.75rem;
     margin: 0;
     margin-bottom: 0.25rem;
     font-size: 1.5rem;
@@ -78,6 +78,20 @@ body {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.15);
+}
+
+.glassWindow .windowInner {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.glassWindow .windowTitle {
+    background: linear-gradient(0, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.6));
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.glassWindow .btn-secondary {
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(162, 162, 162, 0.7);
 }
 
 .jumbotron {
@@ -173,7 +187,7 @@ footer {
 .btn-secondary {
     color: #262626;
     background: rgb(255, 255, 255);
-    border-color: rgb(217, 217, 217);
+    border-color: rgb(198, 198, 198);
     text-shadow: 0 0 transparent;
 }
 
@@ -316,9 +330,9 @@ footer {
         margin: 0.5rem 0;
     }
 
-    .appJumbo .appDescriptionExtended p {
-        margin: 0.5rem 0;
-    }
+        .appJumbo .appDescriptionExtended p {
+            margin: 0.5rem 0;
+        }
 
     .appJumbo .appDescriptionText {
         margin: 0;
