@@ -87,8 +87,18 @@ body {
 }
 
     .jumbotron .windowInner {
-        padding: 1.5rem 2rem;
+        display: flex;
+        flex-direction: row;
     }
+
+    .jumbotron .portraitContainer {
+        margin-right: 1rem;
+    }
+
+.portraitContainer img {
+    max-width: 100px;
+    border-radius: 100%;
+}
 
 main {
     margin: 1rem 0;
