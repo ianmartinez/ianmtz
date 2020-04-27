@@ -13,6 +13,11 @@ body {
     font-family: 'Catamaran', sans-serif;
 }
 
+body > main > h1 {
+    color: white;
+    text-shadow: 0 0 3px black;
+}
+
 ::selection {
     background-color: rgba(130, 186, 26, 0.75);
 }
@@ -172,6 +177,56 @@ footer {
     background-color: #689811;
 }
 
+/* App List */
+.appList {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background: rgba(239, 239, 239, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+.appTile {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 0.25rem;
+    height: 100px;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    color: #262626;
+    width: calc(50% - 0.5rem);
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+    .appTile:hover {
+        border: 1px solid rgba(255, 255, 255, 0.9);
+        background: rgba(255, 255, 255, 0.45);
+        box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.3);
+        color: black;
+        text-decoration: none;
+    }
+
+    .appTile .appIcon {
+        width: 64px;
+    }
+
+    .appTile .appInfo p {
+        margin: 0.25rem 0.5rem;
+    }
+
+    .appTile .appInfo .appTitle {
+        font-weight: bold;
+    }
+
+    .appTile .appInfo .appDescription {
+        font-weight: normal;
+    }
+
+/* App Pages */
 .appJumbo {
     display: flex;
     flex-wrap: wrap;
@@ -314,6 +369,10 @@ footer {
 
     .appFeatures img {
         max-height: 100vh;
+    }
+
+    .appTile {
+        width: 100%;
     }
 }
 
