@@ -15,4 +15,15 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.2" />
   </ItemGroup>
+
+
+
+  <ItemGroup>
+    <Folder Include="Views\Apps\" />
+    <Folder Include="Views\AsciiStudio\" />
+    <Folder Include="Views\Chameleon\" />
+    <Folder Include="Views\CardinalQemu\" />
+    <Folder Include="Views\Resources\" />
+    <Folder Include="Views\Tamarack\" />
+  </ItemGroup>
 </Project>
