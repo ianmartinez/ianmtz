@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ianmtz.Controllers
 {
-    public class LanguagePadController : Controller
+    public class LangPadController : Controller
     {
         public IActionResult Index()
         {
