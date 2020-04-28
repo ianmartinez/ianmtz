@@ -90,8 +90,8 @@ body {
 }
 
 .glassWindow .windowTitle {
-    background: linear-gradient(0, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.6));
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background: linear-gradient(0, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9));
+    border-bottom: 1px solid rgba(160, 160, 160, 0.9);
 }
 
 .glassWindow .btn-secondary {
