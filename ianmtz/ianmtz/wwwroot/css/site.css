@@ -560,6 +560,10 @@ footer {
         align-items: center;
         text-align: center;
     }
+
+    .appJumbo .appIcon img {
+        width: 80px;
+    }
 }
 
 /* Non-phones */
