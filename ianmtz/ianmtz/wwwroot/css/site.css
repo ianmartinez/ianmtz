@@ -529,6 +529,10 @@ footer {
         max-width: 100%;
         max-height: 275px;
     }
+
+    .appTile {
+        width: 100%;
+    }
 }
 
 /* Phones */
@@ -545,9 +549,6 @@ footer {
         max-height: 100vh;
     }
 
-    .appTile {
-        width: 100%;
-    }
 
     .windowTitle {
         text-align: center;
