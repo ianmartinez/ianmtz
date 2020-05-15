@@ -391,6 +391,7 @@ footer {
 
     .appJumbo .appScreenshot {
         max-width: 300px;
+        max-height: 220px;
         align-self: center;
     }
 
@@ -524,6 +525,11 @@ footer {
         max-width: 100%;
         flex: auto;
         justify-content: center;
+    }
+
+    .appJumbo .appScreenshot {
+        max-width: 100%;
+        max-height: 275px;
     }
 }
 
