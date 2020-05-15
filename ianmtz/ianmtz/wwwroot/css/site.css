@@ -107,7 +107,9 @@ body {
     border: 1px solid white;
 }
 
-    .jumbotron .windowInner {
+    .jumbotron .windowInner,
+    .jumbotron .windowInner .col-md-5,
+    .jumbotron .windowInner .col-md-7 {
         display: flex;
         flex-direction: row;
     }
@@ -349,8 +351,12 @@ footer {
 .appJumbo {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
 }
+
+    .appJumbo .col-md-5 {
+        justify-content: flex-end;
+    }
 
     .appJumbo .appIcon {
         display: flex;
@@ -506,6 +512,20 @@ footer {
         background: rgba(0, 0, 0, 0.5);
     }
 
+
+
+/* Tablets/Medium screens */
+@media (max-width: 992px) {
+    .jumbotron .col-md-5,
+    .jumbotron .col-md-7 {
+        text-align: left;
+        width: 100%;
+        max-width: 100%;
+        flex: auto;
+        justify-content: center;
+    }
+}
+
 /* Phones */
 @media (max-width: 767px) {
     .appJumbo {
@@ -528,8 +548,10 @@ footer {
         text-align: center;
     }
 
-    .jumbotron .windowInner {
-        flex-direction: column;
+    .jumbotron .windowInner,
+    .jumbotron .col-md-5,
+    .jumbotron .col-md-7 {
+        flex-direction: column !important;
         align-items: center;
         text-align: center;
     }

@@ -4,18 +4,22 @@
 
 <div class="jumbotron windowOuter">
     <div class="windowInner appJumbo">
-        <div class="appIcon">
-            @RenderSection("icon")
+        <div class="col-md-7">
+            <div class="appIcon">
+                @RenderSection("icon")
+            </div>
+
+            <div class="appDescription">
+                <h1>@ViewData["Title"]</h1>
+
+                @RenderSection("description")
+            </div>
         </div>
 
-        <div class="appDescription">
-            <h1>@ViewData["Title"]</h1>
-
-            @RenderSection("description")            
-        </div>
-
-        <div class="appScreenshotContainer">
-            @RenderSection("screenshot")
+        <div class="col-md-5">
+            <div class="appScreenshotContainer">
+                @RenderSection("screenshot")
+            </div>
         </div>
     </div>
 </div>
