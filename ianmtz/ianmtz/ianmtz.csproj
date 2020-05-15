@@ -21,7 +21,6 @@
   <ItemGroup>
     <Folder Include="Views\Apps\" />
     <Folder Include="Views\AsciiStudio\" />
-    <Folder Include="Views\Chameleon\" />
     <Folder Include="Views\CardinalQemu\" />
     <Folder Include="Views\Resources\" />
     <Folder Include="Views\Tamarack\" />

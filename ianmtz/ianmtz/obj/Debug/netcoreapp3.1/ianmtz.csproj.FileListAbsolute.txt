@@ -108,3 +108,4 @@ C:\Users\ianma\Documents\GitHub\ianmtz\ianmtz\ianmtz\obj\Debug\netcoreapp3.1\sta
 C:\Users\ianma\Documents\GitHub\ianmtz\ianmtz\ianmtz\obj\Debug\netcoreapp3.1\ianmtz.dll
 C:\Users\ianma\Documents\GitHub\ianmtz\ianmtz\ianmtz\obj\Debug\netcoreapp3.1\ianmtz.pdb
 C:\Users\ianma\Documents\GitHub\ianmtz\ianmtz\ianmtz\obj\Debug\netcoreapp3.1\ianmtz.genruntimeconfig.cache
+C:\Users\ianma\Documents\GitHub\ianmtz\ianmtz\ianmtz\obj\Debug\netcoreapp3.1\Razor\Views\Chameleon\Index.cshtml.g.cs
