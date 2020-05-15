@@ -119,6 +119,8 @@ body {
 .portraitContainer img {
     max-width: 100px;
     border-radius: 100%;
+    border: 1px solid #2b2118;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.25);
 }
 
 main {
