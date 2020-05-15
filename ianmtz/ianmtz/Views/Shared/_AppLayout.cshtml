@@ -11,7 +11,11 @@
         <div class="appDescription">
             <h1>@ViewData["Title"]</h1>
 
-            @RenderSection("description")
+            @RenderSection("description")            
+        </div>
+
+        <div class="appScreenshotContainer">
+            @RenderSection("screenshot")
         </div>
     </div>
 </div>
@@ -21,3 +25,4 @@
         @RenderBody()
     </div>
 </div>
+

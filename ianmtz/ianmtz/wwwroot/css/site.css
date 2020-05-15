@@ -349,13 +349,18 @@ footer {
 .appJumbo {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
-    .appJumbo .appIcon img {
-        width: 128px;
-        margin: 0.5rem;
+    .appJumbo .appIcon {
+        display: flex;
+        align-items: flex-start;
     }
+
+        .appJumbo .appIcon img {
+            width: 128px;
+            margin: 0.5rem;
+        }
 
     .appJumbo .appDescription {
         display: flex;
@@ -377,17 +382,27 @@ footer {
         margin: 0;
     }
 
+    .appJumbo .appScreenshot {
+        max-width: 300px;
+        align-self: center;
+    }
+
+    .appJumbo .appScreenshotContainer {
+        display: inline-flex;
+        margin: 1rem;
+    }
+
+.featurette-image {
+    border-radius: 0.25rem;
+    border: 6px solid white;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+    max-height: 40vh;
+    max-width: 100%;
+}
+
 .appFeatures {
     margin: 1rem 0;
 }
-
-    .appFeatures img {
-        border-radius: 0.25rem;
-        border: 6px solid white;
-        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
-        max-height: 40vh;
-        max-width: 100%;
-    }
 
     .appFeatures .col-md-7 {
         display: flex;
@@ -522,12 +537,8 @@ footer {
 
 /* Non-phones */
 @media (min-width: 768px) {
-    .appJumbo {
-        justify-content: flex-start;
+    .appJumbo .appIcon img {
+        width: 128px;
+        margin-right: 2rem;
     }
-
-        .appJumbo .appIcon img {
-            width: 128px;
-            margin-right: 2rem;
-        }
 }
