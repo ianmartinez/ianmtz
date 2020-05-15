@@ -479,6 +479,8 @@ footer {
 #lightboxModal .modal-body {
     padding: 0rem;
     display: inline-flex;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 0.25rem;
 }
 
 #lightboxModal img {
@@ -486,6 +488,7 @@ footer {
     max-height: 90vh;
     border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 0.25rem;
+    object-fit: contain;
 }
 
 #lightboxModal .modal-dialog {
