@@ -297,7 +297,8 @@ footer {
 
     .appTile .appIcon {
         width: 64px;
-        margin-right: 1rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
     }
 
     .appTile .appInfo {
