@@ -514,8 +514,6 @@ footer {
         background: rgba(0, 0, 0, 0.5);
     }
 
-
-
 /* Tablets/Medium screens */
 @media (max-width: 992px) {
     .jumbotron .col-md-5,
