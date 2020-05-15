@@ -6071,24 +6071,31 @@
     ]
   },
   "packageFolders": {
-    "/Users/ianmartinez/.nuget/packages/": {}
+    "C:\\Users\\ianma\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/ianmtz.csproj",
+      "projectUniqueName": "C:\\Users\\ianma\\Documents\\GitHub\\ianmtz\\ianmtz\\ianmtz\\ianmtz.csproj",
       "projectName": "ianmtz",
-      "projectPath": "/Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/ianmtz.csproj",
-      "packagesPath": "/Users/ianmartinez/.nuget/packages/",
-      "outputPath": "/Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/obj/",
+      "projectPath": "C:\\Users\\ianma\\Documents\\GitHub\\ianmtz\\ianmtz\\ianmtz\\ianmtz.csproj",
+      "packagesPath": "C:\\Users\\ianma\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ianma\\Documents\\GitHub\\ianmtz\\ianmtz\\ianmtz\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "/Users/ianmartinez/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\ianma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -6128,7 +6135,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.102/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
