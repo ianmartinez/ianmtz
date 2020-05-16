@@ -408,6 +408,10 @@ footer {
             margin: 0.5rem 0;
         }
 
+        .appButtons {
+            margin-top: 0.5rem;
+        }
+
         .appButtons .imageButton {
             margin: 0.25rem 0.1rem;
         }
@@ -440,8 +444,8 @@ footer {
     }
 
     .appJumbo .appScreenshot {
-        max-width: 300px;
-        max-height: 220px;
+        max-width: 360px;
+        max-height: 250px;
         align-self: center;
     }
 
