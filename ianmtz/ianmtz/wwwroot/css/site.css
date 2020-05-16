@@ -398,13 +398,18 @@ footer {
             margin: 0.5rem 0;
         }
 
+        .appButtons .imageButton {
+            margin: 0.25rem 0.1rem;
+        }
+
         .appJumbo .obsoleteWarning {
             font-weight: 600;
             font-style: italic;
             color: firebrick;
             display: flex;
             align-content: center;
-            align-items: center;
+            align-items: center;    
+            margin-bottom: 1rem;
         }
 
         .appJumbo .obsoleteWarning ion-icon {
@@ -595,6 +600,11 @@ footer {
 
     .appJumbo .appIcon img {
         width: 80px;
+    }
+
+    .jumbotron .obsoleteWarning  {
+        text-align: center;
+        justify-content: center;
     }
 }
 
