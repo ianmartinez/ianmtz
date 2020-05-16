@@ -83,6 +83,11 @@ body {
     font-weight: bold;
 }
 
+.navbar-toggler:focus,
+.navbar-brand:focus {
+    outline-color: rgba(192, 255, 0, 0.7);
+}
+
 .bg-dark {
     background-color: rgba(23, 23, 23, 0.85) !important;
     border: 1px solid rgba(66, 66, 66, 0.9);
@@ -230,6 +235,7 @@ footer {
         .btn-primary:not(:disabled):not(.disabled).active:focus,
         .show > .btn-primary.dropdown-toggle:focus {
             box-shadow: 0 0 0 0.2rem rgb(123, 173, 35);
+            outline-color: rgba(192, 255, 0, 0.7);
         }
 
 .btn-secondary {
@@ -621,7 +627,6 @@ footer {
         max-height: 100vh;
     }
 
-
     .windowTitle {
         text-align: center;
     }
@@ -635,7 +640,7 @@ footer {
     }
 
     .appJumbo .appIcon img {
-        width: 80px;
+        width: 100px;
     }
 
     .jumbotron .obsoleteWarning  {
