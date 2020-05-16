@@ -3,6 +3,10 @@
     ViewData["Title"] = "Chameleon Classic";
 }
 
+@section icon {
+    <img src="~/img/Old/ChameleonIcon.png" />
+}
+
 @section description {
     <div class="obsoleteWarning">
         <ion-icon name="alert-circle"></ion-icon>
@@ -10,11 +14,13 @@
         <span>No longer maintained</span>
     </div>
 
-    <p class="appDescriptionText">
+    <p class="appDescriptionText warningText">
+        The weather portion no longer works because Yahoo removed the weather API that it depended on.
+    </p>
+
+    <p class="appDescriptionText padAbove">
         The old version of Chameleon for Windows Vista & Windows 7 that changes Aero glass colors based on
         the weather and other factors, instead of the desktop wallpaper, like the current version does. 
-
-        The weather portion of it no longer works because Yahoo removed the weather API that it used.
     </p>
 
     <div class="appDescriptionExtended">
@@ -38,4 +44,51 @@
 }
 
 <div class="container appFeatures">
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Multiple modes</h2>
+
+            <div class="featuretteDescription">
+                <p class="lead">
+                    Your Aero glass settings can be adjusted with up to 13 different modes.
+                </p>
+
+                <p class="extendedDescription">
+                    The modes include: current wallpaper, screen, random, webcam, battery, time, weather conditions, temperature,
+                    humidity, wind speed, cursor x position, and cursor y position.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-5">
+            <div class="imgContainer">
+                <img class="featurette-image" src="~/img/Old/ChameleonExtraModes.jpg" lightbox />
+            </div>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette orderFlip">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Adjustable color</h2>
+
+            <div class="featuretteDescription">
+                <p class="lead">
+                    Colors can be adjusted for each range within a mode.
+                </p>
+
+                <p class="extendedDescription">
+                    For example if your mode is <em>temperature</em>, you can set a custom color for 
+                    10°F to 19°F, 20°F to 29°F, and so on...
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-5">
+            <div class="imgContainer">
+                <img class="featurette-image" src="~/img/Old/ChameleonColor.jpg" lightbox />
+            </div>
+        </div>
+    </div>
 </div>

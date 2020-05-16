@@ -46,6 +46,16 @@ body {
     padding: 0 !important;
 }
 
+.padAbove {
+    margin-top: 0.5rem !important;
+}
+
+.warningText {
+    color: black;
+    font-weight: 600;
+    font-style: italic;
+}
+
 .navbar {
     margin: 0;
     z-index: 99;
@@ -448,9 +458,10 @@ footer {
     }
 
     .appJumbo .appScreenshot {
-        max-width: 360px;
+        width: 360px;
         max-height: 250px;
         align-self: center;
+        max-width: 100%;
     }
 
     .appJumbo .appScreenshotContainer {
