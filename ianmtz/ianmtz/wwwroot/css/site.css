@@ -459,6 +459,7 @@ footer {
 
     .appFeatures strong {
         color: #63920b;
+        font-weight: 600;
     }
 
     .appFeatures .newFeature {
