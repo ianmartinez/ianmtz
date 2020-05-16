@@ -412,6 +412,14 @@ footer {
             margin: 0.25rem 0.1rem;
         }
 
+        .appButtons .imageButton:first-child {
+            margin-left: 0;
+        }
+
+        .appButtons .imageButton:last-child {
+            margin-right: 0;
+        }
+
         .appJumbo .obsoleteWarning {
             font-weight: 600;
             font-style: italic;
