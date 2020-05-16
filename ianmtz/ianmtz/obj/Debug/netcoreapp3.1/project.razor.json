@@ -20541,6 +20541,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/Views/Resources/AeroLib.cshtml",
+      "TargetPath": "Views\\Resources\\AeroLib.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/Views/Old/Screensavers.cshtml",
       "TargetPath": "Views\\Old\\Screensavers.cshtml",
       "FileKind": "mvc"
