@@ -304,7 +304,7 @@ footer {
 .appList {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: stretch;
     padding: 1rem;
 }
 
