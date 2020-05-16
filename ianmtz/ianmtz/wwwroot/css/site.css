@@ -398,6 +398,20 @@ footer {
             margin: 0.5rem 0;
         }
 
+        .appJumbo .obsoleteWarning {
+            font-weight: 600;
+            font-style: italic;
+            color: firebrick;
+            display: flex;
+            align-content: center;
+            align-items: center;
+        }
+
+        .appJumbo .obsoleteWarning ion-icon {
+            font-size: 1.5rem;
+            margin-right: 0.25rem;
+        }
+
     .appJumbo .appDescriptionText {
         margin: 0;
     }
