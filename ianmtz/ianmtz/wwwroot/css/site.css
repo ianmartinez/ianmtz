@@ -24,6 +24,16 @@ body {
         padding-bottom: 1rem;
     }
 
+    a {
+        color: #63920b;
+        font-weight: 600;
+    }
+
+    a:hover {
+        color: #7dac26;
+        text-decoration: underline;
+    }
+
 ::selection {
     background-color: rgba(130, 186, 26, 0.75);
 }
