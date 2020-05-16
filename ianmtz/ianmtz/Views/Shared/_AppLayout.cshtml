@@ -1,13 +1,17 @@
 ﻿@{
     Layout = "_Layout";
+    var leftCol = IsSectionDefined("screenshot") ? "col-md-7" : "";
 }
 
 <div class="jumbotron windowOuter">
     <div class="windowInner appJumbo">
-        <div class="col-md-7">
-            <div class="appIcon">
-                @RenderSection("icon")
-            </div>
+        <div class="@leftCol">
+            @if(IsSectionDefined("icon")) 
+            {
+                <div class="appIcon">
+                    @RenderSection("icon", false)
+                </div>
+            }
 
             <div class="appDescription">
                 <h1>@ViewData["Title"]</h1>
@@ -16,11 +20,14 @@
             </div>
         </div>
 
-        <div class="col-md-5">
-            <div class="appScreenshotContainer">
-                @RenderSection("screenshot")
+        @if(IsSectionDefined("screenshot")) 
+        {
+            <div class="col-md-5">
+                <div class="appScreenshotContainer">
+                    @RenderSection("screenshot", false)
+                </div>
             </div>
-        </div>
+        }
     </div>
 </div>
 
@@ -29,4 +36,3 @@
         @RenderBody()
     </div>
 </div>
-

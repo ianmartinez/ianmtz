@@ -219,3 +219,5 @@ C:/Users/ianma/Documents/GitHub/ianmtz/ianmtz/ianmtz/obj/Debug/netcoreapp3.1/Raz
 /Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/obj/Debug/netcoreapp3.1/ianmtz.dll
 /Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/obj/Debug/netcoreapp3.1/ianmtz.pdb
 /Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/obj/Debug/netcoreapp3.1/ianmtz.genruntimeconfig.cache
+/Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/obj/Debug/netcoreapp3.1/Razor/Views/Old/ChameleonClassic.cshtml.g.cs
+/Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/obj/Debug/netcoreapp3.1/Razor/Views/Old/Screensavers.cshtml.g.cs

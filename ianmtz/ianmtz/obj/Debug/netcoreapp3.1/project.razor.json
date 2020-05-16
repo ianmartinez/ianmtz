@@ -20536,8 +20536,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/Views/Old/Screensavers.cshtml",
+      "TargetPath": "Views\\Old\\Screensavers.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/Views/_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/Views/Old/ChameleonClassic.cshtml",
+      "TargetPath": "Views\\Old\\ChameleonClassic.cshtml",
       "FileKind": "mvc"
     },
     {
