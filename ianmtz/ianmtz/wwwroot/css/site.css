@@ -592,6 +592,12 @@ footer {
         background: rgba(0, 0, 0, 0.5);
     }
 
+    code {
+        border: 1px solid black;
+        border-radius: 0.25rem;
+        padding: 1rem 0;
+    }
+
 /* Tablets/Medium screens */
 @media (max-width: 992px) {
     .jumbotron .col-md-5,
