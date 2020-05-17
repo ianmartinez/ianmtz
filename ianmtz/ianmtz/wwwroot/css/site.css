@@ -621,7 +621,7 @@ footer {
     code {
         border: 1px solid #000;
         border-radius: 0.25rem;
-        padding: 0.5rem 1rem !important;
+        padding: 0.5rem 1.5rem !important;
         line-height: 1.5rem;
         background: black;
         color: white;
@@ -655,6 +655,10 @@ footer {
     .appTile {
         width: 100%;
     }
+
+    code {
+        padding: 0.5rem 0.75rem !important;
+    }
 }
 
 /* Phones */
@@ -665,6 +669,14 @@ footer {
 
     .appFeatures .col-md-5 {
         justify-content: center;
+    }
+
+    .appFeatures .col-md-3,
+    .appFeatures .col-md-5,
+    .appFeatures .col-md-7,
+    .appFeatures .col-md-9 {
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
     }
 
     .appFeatures img {
