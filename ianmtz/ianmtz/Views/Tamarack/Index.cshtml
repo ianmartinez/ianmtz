@@ -1,0 +1,129 @@
+@{
+    Layout = "_AppLayout";
+    ViewData["Title"] = "Tamarack";
+}
+
+@section icon {
+    <img src="~/img/Tamarack/Icon.png" />
+}
+
+@section description {
+    <p class="appDescriptionText">
+        A collection of modern, easy to use classes for designing rich UIs in pure JavaScript. 
+    </p>
+
+    <div class="appButtons">
+        <a class="btn btn-primary imageButton" href="https://github.com/ianmartinez/tamarack" role="button">
+            <ion-icon name="logo-github"></ion-icon><span>GitHub</span>
+        </a>
+    </div>
+}
+
+@await Html.PartialAsync("~/Views/Shared/_SyntaxHighlighter.cshtml")
+
+<div class="container appFeatures">
+    <div class="row featurette">
+        <div class="col-md-9">
+            <h2 class="featurette-heading">Hello World</h2>
+
+            <div class="featuretteDescription">
+                <p class="lead">
+                    A simple hello world demo in Tamarack.
+                </p>
+
+                <pre class="codeContainer">
+                    <code class="js">
+                        new TkText("h1", { parent: "body", text: "Hello World!" });
+                    </code>
+                </pre>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="imgContainer">
+                <img class="featurette-image" src="~/img/Tamarack/HelloWorld.jpg" lightbox />
+            </div>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette orderFlip">
+        <div class="col-md-9">
+            <h2 class="featurette-heading">Stacks</h2>
+
+            <div class="featuretteDescription">
+                <p class="lead">
+                    Layout widgets in a stack.
+                </p>
+
+                <p>
+                    Now for a more in-depth demo. A fundamental widget in Tamarack is 
+                    the <strong>Stack</strong> widget, which is a flexbox container 
+                    that exposes useful functionality for laying out child widgets.
+                </p>
+
+                <p>
+                    This demo also shows the functionality of the <strong>TkButton</strong>
+                    widget and the <strong>TkColor</strong> class. 
+                </p>
+
+                <p>
+                    It creates to stacks, <em>buttonStack</em> and <em>colorStack</em>, adds a button
+                    to <em>buttonStack</em> for each <strong>TkStackDirection</strong> to 
+                    change the stack direction of <em>colorStack</em>, and then loops through each 
+                    hue (0-360) and adds a <strong>TkText</strong> widget representing it to the color stack.
+                </p>
+
+                <pre class="codeContainer">
+                    <code class="js">
+                        // Declare the layout button stack and
+                        // add it to the body
+                        let buttonStack = new TkStack({
+                            parent: &quot;body&quot;,
+                            direction: TkStackDirection.FLOW
+                        });
+
+                        // Declare the color stack and add it to
+                        // the body
+                        let colorStack = new TkStack({
+                            parent: &quot;body&quot;,
+                            direction: TkStackDirection.VERTICAL
+                        });
+
+                        // Add a button for each stack direction
+                        for (let direction in TkStackDirection) {
+                            let button = new TkButton({
+                                parent: buttonStack,
+                                text: direction,
+                                style: &quot;margin: 0.25rem;&quot;
+                            });
+
+                            button.on(&quot;click&quot;, () =&gt; colorStack.direction = TkStackDirection[direction]);
+                        }
+
+                        // Loop through hues and add text for
+                        // each one to the colorStack
+                        for (let i = 0; i &lt;= 360; i++) {
+                            let itemColor = new TkColor(`hsl(${i}, 100%, 50%)`);
+                            let stackItem = new TkText(&quot;span&quot;, {
+                                parent: colorStack,
+                                style: &quot;font-weight: bold; padding: 0.25rem;&quot;
+                            });
+
+                            stackItem.style.backgroundColor = itemColor.asHex();
+                            stackItem.style.color = itemColor.isLight() ? &quot;black&quot; : &quot;white&quot;;
+                            stackItem.text = itemColor.asHex();
+                        }
+                    </code>
+                </pre>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="imgContainer">
+                <img class="featurette-image" src="~/img/Tamarack/Stacks.gif" lightbox />
+            </div>
+        </div>
+    </div>
+</div>

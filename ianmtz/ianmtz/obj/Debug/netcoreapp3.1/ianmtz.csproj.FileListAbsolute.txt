@@ -226,3 +226,4 @@ C:/Users/ianma/Documents/GitHub/ianmtz/ianmtz/ianmtz/obj/Debug/netcoreapp3.1/Raz
 /Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_SyntaxHighlighter.cshtml.g.cs
 /Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/obj/Debug/netcoreapp3.1/Razor/Views/LaikaWM/Index.cshtml.g.cs
 /Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs
+/Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/obj/Debug/netcoreapp3.1/Razor/Views/Tamarack/Index.cshtml.g.cs
