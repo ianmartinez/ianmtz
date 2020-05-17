@@ -2,9 +2,9 @@
 
 namespace ianmtz.Controllers
 {
-    public class ChameleonController : Controller
+    public class ResourcesController : Controller
     {
-        public IActionResult Index()
+        public IActionResult AeroLib()
         {
             return View();
         }
