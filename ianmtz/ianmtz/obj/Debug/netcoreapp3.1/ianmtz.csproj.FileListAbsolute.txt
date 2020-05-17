@@ -205,7 +205,6 @@ C:/Users/ianma/Documents/GitHub/ianmtz/ianmtz/ianmtz/obj/Debug/netcoreapp3.1/Raz
 /Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/obj/Debug/netcoreapp3.1/Razor/Views/Chameleon/Index.cshtml.g.cs
 /Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs
 /Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/obj/Debug/netcoreapp3.1/Razor/Views/LangPad/Index.cshtml.g.cs
-/Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs
 /Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_AppLayout.cshtml.g.cs
 /Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs
 /Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs
@@ -226,3 +225,4 @@ C:/Users/ianma/Documents/GitHub/ianmtz/ianmtz/ianmtz/obj/Debug/netcoreapp3.1/Raz
 /Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/obj/Debug/netcoreapp3.1/Razor/Views/Resources/AeroLib.cshtml.g.cs
 /Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_SyntaxHighlighter.cshtml.g.cs
 /Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/obj/Debug/netcoreapp3.1/Razor/Views/LaikaWM/Index.cshtml.g.cs
+/Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs

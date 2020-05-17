@@ -20521,11 +20521,6 @@
   "RootNamespace": "ianmtz",
   "Documents": [
     {
-      "FilePath": "/Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/Views/LaikaWM.cshtml/Index.cshtml",
-      "TargetPath": "Views\\LaikaWM.cshtml\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "/Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/Views/Shared/Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
@@ -20538,6 +20533,11 @@
     {
       "FilePath": "/Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/Views/LaikaWM/Index.cshtml",
+      "TargetPath": "Views\\LaikaWM\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -20563,6 +20563,11 @@
     {
       "FilePath": "/Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/Views/Old/ChameleonClassic.cshtml",
       "TargetPath": "Views\\Old\\ChameleonClassic.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/Views/Error/404.cshtml",
+      "TargetPath": "Views\\Error\\404.cshtml",
       "FileKind": "mvc"
     },
     {
