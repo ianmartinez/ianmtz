@@ -224,3 +224,4 @@ C:/Users/ianma/Documents/GitHub/ianmtz/ianmtz/ianmtz/obj/Debug/netcoreapp3.1/Raz
 /Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/obj/Debug/netcoreapp3.1/Razor/Views/Icons/Tlell.cshtml.g.cs
 /Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/obj/Debug/netcoreapp3.1/Razor/Views/Icons/Taiga.cshtml.g.cs
 /Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/obj/Debug/netcoreapp3.1/Razor/Views/Resources/AeroLib.cshtml.g.cs
+/Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_SyntaxHighlighter.cshtml.g.cs

@@ -20566,6 +20566,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/Views/Shared/_SyntaxHighlighter.cshtml",
+      "TargetPath": "Views\\Shared\\_SyntaxHighlighter.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/Views/LangPad/Index.cshtml",
       "TargetPath": "Views\\LangPad\\Index.cshtml",
       "FileKind": "mvc"
