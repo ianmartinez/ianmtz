@@ -29,6 +29,10 @@ body {
         font-weight: 600;
     }
 
+    p a {
+        text-decoration: underline;
+    }
+
     a:hover {
         color: #7dac26;
         text-decoration: underline;
@@ -196,6 +200,7 @@ footer {
     background-color: #67901b;
     background: linear-gradient(0deg, #577b13,#67980d);
     border-color: #5b8213;
+    text-decoration: none;
 }
 
     .btn-primary:hover {
