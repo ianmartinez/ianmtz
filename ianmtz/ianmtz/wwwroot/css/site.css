@@ -468,6 +468,10 @@ footer {
             margin-right: 0.25rem;
         }
 
+        .appJumbo .appWarning span {
+            margin-top: 0.25rem;
+        }
+
     .appJumbo .appDescriptionText {
         margin: 0;
     }
