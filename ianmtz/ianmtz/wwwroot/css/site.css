@@ -397,6 +397,11 @@ footer {
     justify-content: center;
 }
 
+.appJumbo .noScreenshot {
+    display: flex;
+    flex-direction: row;
+}
+
 .appJumbo .centeredDescription {
     align-items: center;
 }
@@ -448,7 +453,7 @@ footer {
             margin-right: 0;
         }
 
-        .appJumbo .obsoleteWarning {
+        .appJumbo .appWarning {
             font-weight: 600;
             font-style: italic;
             color: firebrick;
@@ -458,7 +463,7 @@ footer {
             margin-bottom: 1rem;
         }
 
-        .appJumbo .obsoleteWarning ion-icon {
+        .appJumbo .appWarning ion-icon {
             font-size: 1.5rem;
             margin-right: 0.25rem;
         }
@@ -678,7 +683,7 @@ footer {
         width: 100px;
     }
 
-    .jumbotron .obsoleteWarning  {
+    .jumbotron .appWarning  {
         text-align: center;
         justify-content: center;
     }

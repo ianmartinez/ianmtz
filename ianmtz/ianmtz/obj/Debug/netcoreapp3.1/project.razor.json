@@ -20521,6 +20521,11 @@
   "RootNamespace": "ianmtz",
   "Documents": [
     {
+      "FilePath": "/Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/Views/LaikaWM.cshtml/Index.cshtml",
+      "TargetPath": "Views\\LaikaWM.cshtml\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/Views/Shared/Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
