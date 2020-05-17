@@ -397,6 +397,10 @@ footer {
     justify-content: center;
 }
 
+.appJumbo .centeredDescription {
+    align-items: center;
+}
+
     .appJumbo .col-md-5 {
         justify-content: flex-end;
     }
