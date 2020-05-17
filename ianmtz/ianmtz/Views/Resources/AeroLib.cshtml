@@ -98,7 +98,8 @@
                 <pre class="codeContainer">
                     <code class="csharp">
                         BackColor = SystemColors.Control;
-                        Window.AeroSurroundControl(this, SurroundedPanel);
+                        SurroundedPanel.BackColor = Color.Transparent;
+                        Window.AeroRetract(this);
                     </code>
                 </pre>
             </div>
@@ -124,7 +125,7 @@
 
                 <pre class="codeContainer">
                     <code class="csharp">
-                        // Get the aero color of the desktop
+                        // Get the Aero Glass color
                         var aeroColor = Desktop.AeroColor;
 
                         // Check if the color exists, which might
@@ -164,7 +165,7 @@
 
                 <pre class="codeContainer">
                     <code class="csharp">
-                        // Get the aero color of the desktop
+                        // Get the Aero Glass color
                         var aeroColor = Desktop.AeroColor;
 
                         // Check if the color exists, which might
