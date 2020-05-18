@@ -171,7 +171,7 @@ body {
     }
 
     .jumbotron .portraitContainer {
-        margin-right: 1.5rem;
+        margin-right: 0.5rem;
     }
 
 .portraitContainer img {
@@ -309,15 +309,14 @@ footer {
 }
 
 .dropdown-menu {
-    background-color: rgba(23, 23, 23, 0.95) !important;
-    border: 1px solid rgba(66, 66, 66, 0.9);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    background-color: rgba(23, 23, 23, 1) !important;
+    border: 1px solid rgba(66, 66, 66, 1);
     box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
 }
 
 .dropdown-item {
     color: rgb(224, 224, 224);
+    border: 1px solid transparent;
 }
 
 .dropdown-divider {
@@ -325,10 +324,21 @@ footer {
     box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.25);
 }
 
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #47690c;
+    border: 1px solid #5e8618;
+}
+
 .dropdown-item:focus, .dropdown-item:hover {
-    color: #ffffff;
+    color: white;
     text-decoration: none;
     background-color: #689811;
+    background: linear-gradient(0deg, #496b0c, #5e8617);
+    border: 1px solid #628a1a;
+    box-shadow: 0 0 2px 1px #243503;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
 /* App List */
@@ -729,6 +739,10 @@ footer {
 
 /* Phones */
 @media (max-width: 767px) {
+    .jumbotron .portraitContainer {
+        margin-right: 0;
+    }
+
     .appJumbo {
         text-align: center;
     }
