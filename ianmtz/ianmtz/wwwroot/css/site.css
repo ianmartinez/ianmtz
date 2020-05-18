@@ -408,15 +408,21 @@ footer {
     display: flex;
     align-items: center;
     align-self: flex-start;
-    font-weight: bold;
     font-size: 0.75rem;
     margin: 0 0.5rem;
     opacity: 0.75;
+    font-weight: bold;
 }
 
     .wipBadge span {
+        display: flex;
+        flex-direction: column;
         margin-left: 0.25rem;
-        margin-top: 0.25rem;
+        margin-top: 0.2rem;
+    }
+
+    .wipBadge ion-icon {    
+        font-size: 1rem;
     }
 
 /* App Pages */
@@ -483,13 +489,18 @@ footer {
         }
 
         .appJumbo .appWarning {
-            font-weight: 600;
+            display: flex;
+            font-weight: normal;
             font-style: italic;
             color: firebrick;
-            display: flex;
             align-content: center;
             align-items: center;    
             margin-bottom: 1rem;
+        }
+
+        .appJumbo .appWarningWip {
+            color: gray;
+            font-size: 0.8rem;
         }
 
         .appJumbo .appWarning ion-icon {
@@ -497,8 +508,28 @@ footer {
             margin-right: 0.25rem;
         }
 
+        .appJumbo .appWarningWip ion-icon {
+            font-size: 1.75rem;
+            margin-right: 1rem;
+        }
+
+        .appJumbo .appWarningWip strong {    
+            line-height: 1rem;
+            margin-top: 0.25rem;
+            font-weight: 600;
+        }
+
         .appJumbo .appWarning span {
             margin-top: 0.25rem;
+        }
+
+        .appJumbo .appWarningWip span {
+            margin: 0;
+        }
+
+        .appJumbo .appWarningWip div {
+            display: flex;
+            flex-direction: column;
         }
 
     .appJumbo .appDescriptionText {
@@ -826,13 +857,24 @@ footer {
         text-align: center;
     }
 
+    .jumbotron .appWarning {
+        text-align: center;
+        justify-content: center;
+    }
+
     .appJumbo .appIcon img {
         width: 100px;
     }
+}
 
+/* Small phones */
+@media (max-width: 600px) {
     .jumbotron .appWarning  {
-        text-align: center;
-        justify-content: center;
+        flex-direction: column;
+    }
+
+    .appJumbo .appWarning ion-icon {   
+        font-size: 3rem;
     }
 }
 
