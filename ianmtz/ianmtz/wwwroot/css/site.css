@@ -774,6 +774,10 @@ footer {
     code {
         padding: 0.5rem 0.75rem !important;
     }
+
+    .col-md-3 .featurette-image {
+        max-height: 80vh;
+    }
 }
 
 /* Phones */
