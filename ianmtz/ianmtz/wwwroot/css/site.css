@@ -5,13 +5,14 @@
 body {
     color: #fff;
     background-color: rgb(32, 67, 77);
-    background: linear-gradient(45deg, rgb(38, 38, 38), rgb(32, 67, 77));
-    background: radial-gradient(ellipse at top, rgb(13, 56, 62), rgba(3, 11, 36, 0.34)), radial-gradient(ellipse at bottom, rgb(13, 21, 32), rgb(0, 2, 4));
+    background: linear-gradient(45deg, rgb(38, 38, 38), rgb(0, 0, 0));
+    background: radial-gradient(ellipse at top, rgb(63, 63, 63), rgba(0, 0, 0, 0.43)), radial-gradient(ellipse at bottom, rgb(81, 81, 81), rgb(0, 0, 0));
     padding: 0;
     background-size: cover;
     min-height: 100vh;
     max-width: 100vw;
     font-family: 'Catamaran', sans-serif;
+    outline-color: transparent;
 }
 
     body > main > h1 {
@@ -40,10 +41,6 @@ body {
 
 ::selection {
     background-color: rgba(130, 186, 26, 0.5);
-}
-
-body {
-    outline-color: transparent;
 }
 
 .noPad {
@@ -668,30 +665,57 @@ footer {
         justify-content: center;
     }
     
-    .errorWindow .errorMessage {
+    .errorWindow .errorMessage {    
         display: flex;
         justify-content: center;
         align-items: center;
         padding-bottom: 1rem;
         flex-wrap: wrap;
+        flex-direction: column;
     }
 
-    .errorWindow .errorText {
-        margin: 1rem 0;
+    .errorWindow .errorTop {    
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-bottom: 0;
+        padding: 1rem 0;
+    }
+
+    .errorWindow .errorHeader {   
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .errorWindow .errorText {    
+        margin: 0;
+        margin-bottom: 0px;
+        text-align: center;
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
     }
     
-    .errorWindow .errorMessage img {
-        max-width: 100px;
+    .errorWindow img {    
+        max-width: 4.5rem;
         margin: 0 0.5rem;
     }
 
-    .errorWindow .errorMessage h1 {
-        font-size: 2.5rem;
+    .errorWindow .errorHeader h1 {    
+        font-size: 2.35rem;
         font-weight: 600;
+        line-height: 1rem;
+        margin-top: 0.5rem;
+        color: #220e03;
+        margin-bottom: 1rem;
     }
     
-    .errorWindow .errorMessage p {    
-        font-size: 1.5rem;
+    .errorWindow .errorMessage {       
+        font-size: 1.15rem;
         color: #333;
         margin-bottom: 0;
     }
@@ -700,6 +724,14 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: center;
+    }
+
+    .errorWindow .errorCode {    
+        color: #441c08 !important;
+        font-style: italic;
+        line-height: 1.15rem;
+        font-size: 1rem !important;
+        margin-bottom: 0;
     }
 
 /* Tablets/Medium screens */
@@ -769,7 +801,8 @@ footer {
 
     .jumbotron .windowInner,
     .jumbotron .col-md-5,
-    .jumbotron .col-md-7 {
+    .jumbotron .col-md-7,
+    .jumbotron .appJumbo>div {
         flex-direction: column !important;
         align-items: center;
         text-align: center;
