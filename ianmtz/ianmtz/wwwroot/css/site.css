@@ -664,6 +664,7 @@ footer {
         box-shadow: 0 0 6px 1px rgba(49, 51, 43, 0.5);
         overflow: hidden;
         border-radius: 0.25rem;
+        margin: 1.5rem 0;
     }
 
     /* Error page */
