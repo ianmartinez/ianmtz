@@ -6,7 +6,7 @@ body {
     color: #fff;
     background-color: rgb(32, 67, 77);
     background: linear-gradient(45deg, rgb(38, 38, 38), rgb(32, 67, 77));
-    background: radial-gradient(ellipse at top, rgb(32, 67, 77), rgb(8, 14, 9)), radial-gradient(ellipse at bottom, rgb(0, 0, 0), rgb(0, 0, 0));
+    background: radial-gradient(ellipse at top, rgb(13, 56, 62), rgba(3, 11, 36, 0.34)), radial-gradient(ellipse at bottom, rgb(13, 21, 32), rgb(0, 2, 4));
     padding: 0;
     background-size: cover;
     min-height: 100vh;
@@ -93,13 +93,13 @@ body {
 }
 
 .navbar-dark .navbar-toggler {
-    border: 1px solid rgba(98, 98, 98, 0.9);
+    border: 1px solid rgba(74, 74, 74, 0.9);
 }
 
 .navbarContainer {
     box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
     border-radius: 0.25rem;
-    border: 1px solid rgba(98, 98, 98, 0.9);
+    border: 1px solid rgba(74, 74, 74, 0.9);
 }
 
 .bg-dark {
