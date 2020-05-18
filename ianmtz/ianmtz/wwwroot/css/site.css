@@ -869,6 +869,7 @@ footer {
 
     .appJumbo .appWarning ion-icon {   
         font-size: 2.25rem;
+        margin: 0;
     }
 }
 
