@@ -857,25 +857,23 @@ footer {
         text-align: center;
     }
 
-    .jumbotron .appWarning {
+    .appJumbo .appIcon img {
+        width: 100px;
+    }
+
+    .jumbotron .appWarning  {
+        flex-direction: column;
         text-align: center;
         justify-content: center;
     }
 
-    .appJumbo .appIcon img {
-        width: 100px;
+    .appJumbo .appWarning ion-icon {   
+        font-size: 2.25rem;
     }
 }
 
 /* Small phones */
 @media (max-width: 600px) {
-    .jumbotron .appWarning  {
-        flex-direction: column;
-    }
-
-    .appJumbo .appWarning ion-icon {   
-        font-size: 3rem;
-    }
 }
 
 /* Non-phones */
