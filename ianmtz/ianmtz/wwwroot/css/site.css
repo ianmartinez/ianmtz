@@ -564,6 +564,11 @@ footer {
         font-style: italic;
     }
 
+    .appFeatures .extendedDescription em {    
+        color: #63920b;
+        font-weight: 600;
+    }
+
     .appFeatures .orderFlip .imgContainer {
         justify-content: flex-start;
         flex-direction: column;
