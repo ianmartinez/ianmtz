@@ -30,6 +30,25 @@
 @await Html.PartialAsync("~/Views/Shared/_SyntaxHighlighter.cshtml")
 
 <div class="container appFeatures">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Structure</h2>
+            <p class="lead">Tamarack is made up of 4 scripts:</p>
+            <p class="extendedDescription">
+                <ul>
+                    <li><strong>core.js</strong>: Functionality used by all of the other scripts.</li>
+                    <li><strong>color.js</strong>: A class to make it simple to manage nearly every type of CSS color and easily convert between them: hex, hex w/ alpha, 
+                    named CSS, HSL, HSLA, RGB, RGBA colors. Useful for building color pickers or other things that involve manipulating color.</li>
+                    <li><strong>font.js</strong>: A class to simplify manage fonts.</li>
+                    <li><strong>widget.js</strong>: Contains a collection of widgets, or class wrappers for HTML elements that inherit from a class called 'TkWidget' 
+                    that can be entirely manipulated through JavaScript, requiring no HTML boilerplate.</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+    
+    <h1>Demos</h2>
+
     <div class="row featurette">
         <div class="col-md-9">
             <h2 class="featurette-heading">Hello world</h2>
@@ -222,14 +241,9 @@
                 </p>
 
                 <p>
-                    Now for a more in-depth demo. A fundamental widget in Tamarack is 
-                    the <strong>Stack</strong> widget, which is a flexbox container 
-                    that exposes useful functionality for laying out child widgets.
-                </p>
-
-                <p>
-                    This demo also shows the functionality of the <strong>TkButton</strong>
-                    widget and the <strong>TkColor</strong> class. 
+                    A fundamental widget in Tamarack is the <strong>Stack</strong> widget, 
+                    which is a flexbox container that exposes useful functionality for laying 
+                    out child widgets.
                 </p>
 
                 <p>

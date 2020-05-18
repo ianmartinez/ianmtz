@@ -625,6 +625,17 @@ footer {
         padding: 0.25rem 0.5rem;
     }
 
+    .appFeatures h1 {
+        background-color: rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        padding: 0.75rem;
+        border-radius: 0.25rem;
+        line-height: 2.5rem;
+        box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.08);
+        margin: 1.5rem -15px;
+        color: #383838;
+    }
+
 .imgContainer {
     display: flex;
     justify-content: center;
