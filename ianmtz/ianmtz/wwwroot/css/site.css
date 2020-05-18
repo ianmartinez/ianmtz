@@ -402,6 +402,7 @@ footer {
 
     .appTile .appInfo .appDescription {
         font-weight: normal;
+        margin-bottom: 0;
     }
 
 .wipBadge {
@@ -634,7 +635,7 @@ footer {
         line-height: 2.5rem;
         box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.25);
         margin: 1.5rem -15px;
-        color: #656565;
+        color: #555555;
         font-weight: 600;
         font-size: 2rem;
     }
