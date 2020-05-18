@@ -168,7 +168,8 @@ body {
     }
 
     .jumbotron .portraitContainer {
-        margin-right: 0.5rem;
+        margin-right: 1.5rem;
+        margin-left: 0.5rem;
     }
 
 .portraitContainer img {
@@ -299,10 +300,16 @@ footer {
 .imageButton > span {
 }
 
-.imageButton ion-icon {
-    margin-right: 0.25rem;
-    margin-bottom: 0.25rem;
+.imageButton ion-icon {   
+    margin: 0.1rem 0.25rem;
+    margin-left: 0.25rem;
+    margin-left: 0;
     font-size: 1.25rem;
+}
+
+.imageButton span {
+    margin: 0.1rem;
+    margin-top: 0.2rem;
 }
 
 .dropdown-menu {
@@ -773,6 +780,7 @@ footer {
 @media (max-width: 767px) {
     .jumbotron .portraitContainer {
         margin-right: 0;
+        margin-left: 0;
     }
 
     .appJumbo {

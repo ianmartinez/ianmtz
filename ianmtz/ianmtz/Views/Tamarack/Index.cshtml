@@ -50,6 +50,54 @@
 
     <div class="row featurette orderFlip">
         <div class="col-md-9">
+            <h2 class="featurette-heading">Detect dark mode</h2>
+
+            <div class="featuretteDescription">
+                <p class="lead">
+                    Easily add event handlers to watch for switches between light
+                    and dark mode.
+                </p>
+
+                <pre class="codeContainer">
+                    <code class="js">
+                        // Insert a text element into &lt;body&gt;
+                        let modeText = new TkText(&quot;h1&quot;, { parent: &quot;body&quot; });
+
+                        // Update the text and document colors when the system is 
+                        // switched between dark and light mode
+                        function updateMode() {
+                            if (TkDocument.isInDarkMode()) {
+                                document.body.style.backgroundColor = &quot;black&quot;;
+                                document.body.style.color = &quot;white&quot;;
+                                modeText.text = &quot;Dark Mode&quot;;
+                            } else {
+                                document.body.style.backgroundColor = &quot;white&quot;;
+                                document.body.style.color = &quot;black&quot;;
+                                modeText.text = &quot;Light Mode&quot;;
+                            }
+                        }
+
+                        // Attach the handler to watch for the change
+                        TkDocument.onChangeDarkMode(updateMode);
+
+                        // Call to update for the current mode
+                        updateMode();
+                    </code>
+                </pre>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="imgContainer">
+                <img class="featurette-image" src="~/img/Tamarack/DarkMode.gif" lightbox />
+            </div>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-9">
             <h2 class="featurette-heading">Stacks</h2>
 
             <div class="featuretteDescription">
@@ -77,15 +125,13 @@
 
                 <pre class="codeContainer">
                     <code class="js">
-                        // Declare the layout button stack and
-                        // add it to the body
+                        // Declare the layout button stack and add it to the body
                         let buttonStack = new TkStack({
                             parent: &quot;body&quot;,
                             direction: TkStackDirection.FLOW
                         });
 
-                        // Declare the color stack and add it to
-                        // the body
+                        // Declare the color stack and add it to the body
                         let colorStack = new TkStack({
                             parent: &quot;body&quot;,
                             direction: TkStackDirection.VERTICAL
@@ -102,8 +148,7 @@
                             button.on(&quot;click&quot;, () =&gt; colorStack.direction = TkStackDirection[direction]);
                         }
 
-                        // Loop through hues and add text for
-                        // each one to the colorStack
+                        // Loop through hues and add text for each one to the colorStack
                         for (let i = 0; i &lt;= 360; i++) {
                             let itemColor = new TkColor(`hsl(${i}, 100%, 50%)`);
                             let stackItem = new TkText(&quot;span&quot;, {
