@@ -494,17 +494,19 @@ footer {
 
         .appJumbo .appWarning {
             display: flex;
-            font-weight: normal;
+            font-weight: 600;
             font-style: italic;
             color: firebrick;
+            font-size: 1rem;
             align-content: center;
-            align-items: center;    
+            align-items: center;
             margin-bottom: 1rem;
         }
 
         .appJumbo .appWarningWip {
             color: gray;
             font-size: 0.8rem;
+            font-weight: normal;
         }
 
         .appJumbo .appWarning ion-icon {
@@ -520,7 +522,6 @@ footer {
         .appJumbo .appWarningWip strong {    
             line-height: 1rem;
             margin-top: 0.25rem;
-            font-weight: 600;
         }
 
         .appJumbo .appWarning span {
