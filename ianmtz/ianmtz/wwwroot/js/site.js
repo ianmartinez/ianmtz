@@ -1,4 +1,8 @@
-﻿/**
+﻿// For some reason, Edge has the string trim functions named incorrectly
+if (String.prototype.trimLeft)
+    String.prototype.trimStart = String.prototype.trimLeft;
+
+/**
  * Show a lightbox for each image with the attribute lightbox
  * when the image is clicked
  */
