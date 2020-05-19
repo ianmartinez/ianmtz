@@ -11,13 +11,13 @@
     <div class="appWarning appWarningWip">
         <ion-icon name="construct"></ion-icon>
         <div>
-            <strong>Under Development</strong> 
+            <strong>Under Development</strong>
             <span>Some features may be incomplete or contain bugs</span>
         </div>
     </div>
 
     <p class="appDescriptionText">
-        A collection of modern, easy to use classes for designing a UI in pure JavaScript. 
+        A collection of modern, easy to use classes for designing a UI in pure JavaScript.
     </p>
 
     <div class="appButtons">
@@ -33,21 +33,29 @@
     <div class="row">
         <div class="col-md-12">
             <h2>Structure</h2>
-            <p class="lead">Tamarack is made up of 4 scripts:</p>
-            <p class="extendedDescription">
+            <p class="lead">Tamarack has no external dependencies and is made up of 4 scripts:</p>
+            <div class="componentList">
                 <ul>
-                    <li><strong>core.js</strong>: Functionality used by all of the other scripts.</li>
-                    <li><strong>color.js</strong>: A class to manage nearly every type of CSS color and easily convert between them.</li>
-                    <li><strong>font.js</strong>: A class to simplify manage fonts.</li>
-                    <li><strong>widget.js</strong>: Contains a collection of widgets which are wrappers around HTML elements that inherit from 
-                    a class called <strong><em>TKWidget</em></strong> and can be manipulated entirely through JavaScript, with
-                    no HTML boilerplate.</li>
+                    <li>
+                        <a class="textLink" href="https://github.com/ianmartinez/tamarack/blob/master/src/core.js">core.js</a>: Functionality used by all of the other scripts.
+                    </li>
+                    <li>
+                        <a class="textLink" href="https://github.com/ianmartinez/tamarack/blob/master/src/color.js">color.js</a>: A class to manage nearly every type of CSS color and easily convert between them.
+                    </li>
+                    <li>
+                        <a class="textLink" href="https://github.com/ianmartinez/tamarack/blob/master/src/font.js">font.js</a>: A class to simplify manage fonts.
+                    </li>
+                    <li>
+                        <a class="textLink" href="https://github.com/ianmartinez/tamarack/blob/master/src/widgets.js">widget.js</a>: Contains a collection of widgets which are wrappers around HTML elements that inherit from
+                        a class called <strong><em>TkWidget</em></strong> and can be manipulated entirely through JavaScript, with
+                        no HTML boilerplate.
+                    </li>
                 </ul>
-            </p>
+            </div>
         </div>
     </div>
-    
-    <h1>Demos</h2>
+
+    <h1>Demos</h1>
 
     <div class="row featurette">
         <div class="col-md-9">
@@ -119,7 +127,7 @@
             <div class="featuretteDescription">
                 <p class="lead">
                     Managing a notebook with tabs is a fairly common task when developing an application, but it can
-                    quickly become a hassle using only plain HTML and JavaScript. With Tamarack, it can be done 
+                    quickly become a hassle using only plain HTML and JavaScript. With Tamarack, it can be done
                     entirely in JavaScript, without any boilerplate.
                 </p>
 
@@ -128,10 +136,10 @@
                     for managing pages. It also includes events such as <em>changepage</em>, <em>addpage</em>,
                     and <em>removepage</em> that you can add event handlers to in order to deal with changes in the notebook.
                 </p>
-                
+
                 <p class="extendedDescription">
-                   Each page in a notebook is represented by a <strong>TkNotebookPage</strong>, which includes a tab 
-                   button and a content panel.
+                    Each page in a notebook is represented by a <strong>TkNotebookPage</strong>, which includes a tab
+                    button and a content panel.
                 </p>
 
                 <pre class="codeContainer">
@@ -238,15 +246,15 @@
                 </p>
 
                 <p>
-                    A fundamental widget in Tamarack is the <strong>Stack</strong> widget, 
-                    which is a flexbox container that exposes useful functionality for laying 
+                    A fundamental widget in Tamarack is the <strong>Stack</strong> widget,
+                    which is a flexbox container that exposes useful functionality for laying
                     out child widgets.
                 </p>
 
                 <p>
                     It creates two stacks, <em>buttonStack</em> and <em>colorStack</em>, adds a button
-                    to <em>buttonStack</em> for each <strong>TkStackDirection</strong> to 
-                    change the stack direction of <em>colorStack</em>, then loops through each 
+                    to <em>buttonStack</em> for each <strong>TkStackDirection</strong> to
+                    change the stack direction of <em>colorStack</em>, then loops through each
                     hue (0-360), and adds a <strong>TkText</strong> widget representing it to the color stack.
                 </p>
 

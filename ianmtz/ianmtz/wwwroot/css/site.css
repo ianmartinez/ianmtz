@@ -34,6 +34,10 @@ p a {
     text-decoration: underline;
 }
 
+.textLink {
+    text-decoration: underline;
+}
+
 a:hover {
     color: #7dac26;
     text-decoration: underline;
@@ -484,8 +488,8 @@ footer {
             margin: 0.5rem 0;
         }
 
-        .noScreenshot {
-        }
+.noScreenshot {
+}
 
 .appButtons {
     margin-top: 0.5rem;

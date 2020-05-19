@@ -35,7 +35,7 @@ function initCodeBlocks() {
         let leadingWhitespace = code.length - code.trimStart().length;
         let codeLines = code.split("\n");
 
-        // Loop through each line and remove its excess trailing
+        // Loop through each line and remove its excess leading
         // whitespace
         for (let i = 0; i < codeLines.length; i++) {
             let line = codeLines[i];
