@@ -318,7 +318,6 @@ footer {
 
 .imageButton ion-icon {
     margin: 0.1rem 0.25rem;
-    margin-left: 0.25rem;
     margin-left: 0;
     font-size: 1.25rem;
 }
@@ -909,14 +908,14 @@ code {
         margin: 1.5rem 0;
     }
 
-    .jumbotron .windowInner,
-    .jumbotron .col-md-5,
-    .jumbotron .col-md-7,
-    .jumbotron .appJumbo > div {
-        flex-direction: column !important;
-        align-items: center;
-        text-align: center;
-    }
+        .jumbotron .windowInner,
+        .jumbotron .col-md-5,
+        .jumbotron .col-md-7,
+        .jumbotron .appJumbo > div {
+            flex-direction: column !important;
+            align-items: center;
+            text-align: center;
+        }
 
     .appJumbo .appIcon img {
         width: 100px;
@@ -953,6 +952,23 @@ code {
         display: flex;
         flex-direction: column;
     }
+
+    .appButtons {
+        margin-top: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+        .appButtons .imageButton {
+            flex-grow: 1;
+            text-align: center;
+            justify-content: center;
+            margin: 0.25rem !important;
+        }
 }
 
 /* Ultra-small phones (iPhone SE size) */
