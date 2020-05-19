@@ -444,7 +444,7 @@ footer {
     justify-content: center;
 }
 
-    .appJumbo .noScreenshot {
+    .appJumbo .noScreenshotLeft {
         display: flex;
         flex-direction: row;
     }
@@ -482,6 +482,9 @@ footer {
 
         .appJumbo .appDescriptionExtended p {
             margin: 0.5rem 0;
+        }
+
+        .noScreenshot {
         }
 
 .appButtons {

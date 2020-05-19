@@ -1,11 +1,12 @@
 ﻿@{
     Layout = "_Layout";
-    var leftCol = IsSectionDefined("screenshot") ? "col-md-7" : "noScreenshot";
+    var appJumboType = IsSectionDefined("screenshot") ? "" : "noScreenshot";
+    var leftCol = IsSectionDefined("screenshot") ? "col-md-7" : "noScreenshotLeft";
     var descriptionAlignment = IsSectionDefined("icon") ? "" : "centeredDescription";
 }
 
 <div class="jumbotron windowOuter">
-    <div class="windowInner appJumbo">
+    <div class="windowInner appJumbo @appJumboType">
         <div class="@leftCol @descriptionAlignment">
             @if(IsSectionDefined("icon")) 
             {
