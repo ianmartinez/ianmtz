@@ -700,12 +700,17 @@ footer {
 }
 
 #lightboxModal .modal-content {
+    display: block;
     padding: 0.5rem;
     border-radius: 0.25rem;
     background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.75);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
+}
+
+#lightboxModal .modal-body {
+    display: block;
 }
 
 .modal-backdrop {
@@ -938,26 +943,6 @@ code {
     .appJumbo .appDescriptionExtended p {
         display: flex;
         flex-direction: column;
-    }
-
-    #lightboxModal .modal-dialog {
-        padding: 0 0.5rem;
-    }
-
-    #lightboxModal .modal-content {
-        padding: 0;
-        border: 0px solid transparent;
-        background: transparent;
-    }
-
-    #lightboxModal img {
-        border-radius: 0.25rem;
-        box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
-    }
-
-    #lightboxModal .modal-body {
-        padding: 0rem;
-        background: transparent;
     }
 }
 
