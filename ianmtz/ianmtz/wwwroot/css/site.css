@@ -64,6 +64,7 @@ a:hover {
 .navbar {
     margin: 0;
     z-index: 99;
+    padding: 0.75rem;
 }
 
 .navbar-brand {
@@ -95,8 +96,8 @@ a:hover {
 
 
 .navbar-toggler {
-    padding: .35rem .55rem;
-    margin: -0.25rem -0.5rem;
+    padding: 0.45rem 0.55rem;
+    margin: -0.25rem;
 }
 
 .navbar-dark .navbar-toggler {
@@ -825,6 +826,10 @@ code {
         max-width: 900px;
     }
 
+    .nav-link, .dropdown-item {
+        padding: 0.55rem 1rem;
+    }
+
     .appFeatures .col-md-9,
     .appFeatures .col-md-3 {
         max-width: 100%;
@@ -900,6 +905,10 @@ code {
         text-align: center;
     }
 
+    .jumbotron {
+        margin: 1.5rem 0;
+    }
+
     .jumbotron .windowInner,
     .jumbotron .col-md-5,
     .jumbotron .col-md-7,
@@ -949,12 +958,6 @@ code {
 /* Ultra-small phones (iPhone SE size) */
 @media (max-width: 360px) {
     .navbar {
-        padding: 0.4rem 0.8rem;
-    }
-
-    .navbar-toggler {
-        padding: 0.3rem 0.4rem;
-        margin: -0.2rem -0.4rem;
     }
 
     .appTile {
