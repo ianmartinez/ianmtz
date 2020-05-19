@@ -64,7 +64,6 @@ a:hover {
 .navbar {
     margin: 0;
     z-index: 99;
-    padding: 0.75rem;
 }
 
 .navbar-brand {
@@ -732,6 +731,7 @@ code {
     background: black;
     color: white;
     box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,0.2);
+    word-wrap: normal;
 }
 
 .codeContainer {
@@ -820,7 +820,7 @@ code {
 }
 
 /* Tablets/Medium screens */
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     body .container {
         max-width: 900px;
     }
@@ -859,6 +859,10 @@ code {
 
     .col-md-3 .featurette-image {
         max-height: 80vh;
+    }
+
+    .navbar {
+        padding: 0.75rem;
     }
 }
 
@@ -973,9 +977,6 @@ code {
 
 /* Ultra-small phones (iPhone SE size) */
 @media (max-width: 360px) {
-    .navbar {
-    }
-
     .appTile {
         flex-direction: column;
         justify-content: center;
