@@ -25,19 +25,19 @@ body {
         padding-bottom: 1rem;
     }
 
-    a {
-        color: #63920b;
-        font-weight: 600;
-    }
+a {
+    color: #63920b;
+    font-weight: 600;
+}
 
-    p a {
-        text-decoration: underline;
-    }
+p a {
+    text-decoration: underline;
+}
 
-    a:hover {
-        color: #7dac26;
-        text-decoration: underline;
-    }
+a:hover {
+    color: #7dac26;
+    text-decoration: underline;
+}
 
 ::selection {
     background-color: rgba(130, 186, 26, 0.5);
@@ -67,12 +67,12 @@ body {
     font-weight: lighter;
 }
 
-.navbar-nav .nav-link:focus, 
+.navbar-nav .nav-link:focus,
 .navbar-nav .nav-link:hover {
     outline: none;
 }
 
-.show > .nav-link {    
+.show > .nav-link {
     text-shadow: 0 0 7px rgba(255, 255, 255, 0.4);
 }
 
@@ -184,6 +184,7 @@ body {
 
 main {
     margin: 2rem 0;
+    margin-bottom: 0;
 }
 
 .text-muted {
@@ -240,7 +241,7 @@ footer {
 
     .btn-primary:not(:disabled):not(.disabled):active,
     .btn-primary:not(:disabled):not(.disabled).active,
-    .show > .btn-primary.dropdown-toggle {  
+    .show > .btn-primary.dropdown-toggle {
         color: #d5d5d5;
         background-color: #4e6d15;
         background: linear-gradient(0deg, #4e6d15, #486513);
@@ -303,7 +304,7 @@ footer {
 .imageButton > span {
 }
 
-.imageButton ion-icon {   
+.imageButton ion-icon {
     margin: 0.1rem 0.25rem;
     margin-left: 0.25rem;
     margin-left: 0;
@@ -425,7 +426,7 @@ footer {
         margin-top: 0.2rem;
     }
 
-    .wipBadge ion-icon {    
+    .wipBadge ion-icon {
         font-size: 1rem;
     }
 
@@ -436,14 +437,14 @@ footer {
     justify-content: center;
 }
 
-.appJumbo .noScreenshot {
-    display: flex;
-    flex-direction: row;
-}
+    .appJumbo .noScreenshot {
+        display: flex;
+        flex-direction: row;
+    }
 
-.appJumbo .centeredDescription {
-    align-items: center;
-}
+    .appJumbo .centeredDescription {
+        align-items: center;
+    }
 
     .appJumbo .col-md-5 {
         justify-content: flex-end;
@@ -476,13 +477,13 @@ footer {
             margin: 0.5rem 0;
         }
 
-        .appButtons {
-            margin-top: 0.5rem;
-        }
+.appButtons {
+    margin-top: 0.5rem;
+}
 
-        .appButtons .imageButton {
-            margin: 0.25rem 0.1rem;
-        }
+    .appButtons .imageButton {
+        margin: 0.25rem 0.1rem;
+    }
 
         .appButtons .imageButton:first-child {
             margin-left: 0;
@@ -492,65 +493,65 @@ footer {
             margin-right: 0;
         }
 
-        .appJumbo .appWarning {
-            display: flex;
-            font-weight: 600;
-            font-style: italic;
-            color: firebrick;
-            font-size: 1rem;
-            align-content: center;
-            align-items: center;
-            margin-bottom: 1rem;
-        }
+.appJumbo .appWarning {
+    display: flex;
+    font-weight: 600;
+    font-style: italic;
+    color: firebrick;
+    font-size: 1rem;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
 
-        .appJumbo .appWarningWip {
-            color: gray;
-            font-size: 0.8rem;
-            font-weight: normal;
-        }
+.appJumbo .appWarningWip {
+    color: gray;
+    font-size: 0.8rem;
+    font-weight: normal;
+}
 
-        .appJumbo .appWarning ion-icon {
-            font-size: 1.5rem;
-            margin-right: 0.25rem;
-        }
+.appJumbo .appWarning ion-icon {
+    font-size: 1.5rem;
+    margin-right: 0.25rem;
+}
 
-        .appJumbo .appWarningWip ion-icon {
-            font-size: 1.75rem;
-            margin-right: 1rem;
-        }
+.appJumbo .appWarningWip ion-icon {
+    font-size: 1.75rem;
+    margin-right: 1rem;
+}
 
-        .appJumbo .appWarningWip strong {    
-            line-height: 1rem;
-            margin-top: 0.25rem;
-        }
+.appJumbo .appWarningWip strong {
+    line-height: 1rem;
+    margin-top: 0.25rem;
+}
 
-        .appJumbo .appWarning span {
-            margin-top: 0.25rem;
-        }
+.appJumbo .appWarning span {
+    margin-top: 0.25rem;
+}
 
-        .appJumbo .appWarningWip span {
-            margin: 0;
-        }
+.appJumbo .appWarningWip span {
+    margin: 0;
+}
 
-        .appJumbo .appWarningWip div {
-            display: flex;
-            flex-direction: column;
-        }
+.appJumbo .appWarningWip div {
+    display: flex;
+    flex-direction: column;
+}
 
-    .appJumbo .appDescriptionText {
-        margin: 0;
-    }
+.appJumbo .appDescriptionText {
+    margin: 0;
+}
 
-    .appJumbo .appScreenshot {
-        max-height: 250px;
-        align-self: center;
-        max-width: 100%;
-    }
+.appJumbo .appScreenshot {
+    max-height: 250px;
+    align-self: center;
+    max-width: 100%;
+}
 
-    .appJumbo .appScreenshotContainer {
-        display: inline-flex;
-        margin: 1rem;
-    }
+.appJumbo .appScreenshotContainer {
+    display: inline-flex;
+    margin: 1rem;
+}
 
 .featurette-image {
     border-radius: 0.25rem;
@@ -561,13 +562,13 @@ footer {
     margin: 0.5rem 0;
 }
 
-.featurette-image:first-child {
-    margin-top: 0;
-}
+    .featurette-image:first-child {
+        margin-top: 0;
+    }
 
-.featurette-image:last-child {
-    margin-bottom: 0;
-}
+    .featurette-image:last-child {
+        margin-bottom: 0;
+    }
 
 .appFeatures {
     margin: 1rem 0;
@@ -600,10 +601,10 @@ footer {
         font-style: italic;
     }
 
-    .appFeatures .extendedDescription em {    
-        color: #63920b;
-        font-weight: 600;
-    }
+        .appFeatures .extendedDescription em {
+            color: #63920b;
+            font-weight: 600;
+        }
 
     .appFeatures .orderFlip .imgContainer {
         justify-content: flex-start;
@@ -638,7 +639,8 @@ footer {
         border-radius: 0.25rem;
         line-height: 2.5rem;
         box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.25);
-        margin: 1.5rem -15px;
+        margin: 1.75rem -15px;
+        margin-top: 0.25rem;
         color: #555555;
         font-weight: 600;
         font-size: 2rem;
@@ -703,99 +705,99 @@ footer {
         background: rgba(0, 0, 0, 0.5);
     }
 
-    code {
-        border: 1px solid #000;
-        border-radius: 0.25rem;
-        padding: 0.5rem 1.5rem !important;
-        line-height: 1.5rem;
-        background: black;
-        color: white;
-        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
-    }
+code {
+    border: 1px solid #000;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1.5rem !important;
+    line-height: 1.5rem;
+    background: black;
+    color: white;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+}
 
-    .codeContainer {
-        padding: 0;
-        line-height: 0rem;
-        box-shadow: 0 0 6px 1px rgba(49, 51, 43, 0.5);
-        overflow: hidden;
-        border-radius: 0.25rem;
-        margin: 1.5rem 0;
-    }
+.codeContainer {
+    padding: 0;
+    line-height: 0rem;
+    box-shadow: 0 0 6px 1px rgba(49, 51, 43, 0.5);
+    overflow: hidden;
+    border-radius: 0.25rem;
+    margin: 1.5rem 0;
+}
 
-    /* Error page */
-    .errorWindow .windowInner {
-        padding: 1rem;
-        justify-content: center;
-    }
-    
-    .errorWindow .errorMessage {    
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 1rem;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
+/* Error page */
+.errorWindow .windowInner {
+    padding: 1rem;
+    justify-content: center;
+}
 
-    .errorWindow .errorTop {    
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        margin-bottom: 0;
-        padding: 1rem 0;
-    }
+.errorWindow .errorMessage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
 
-    .errorWindow .errorHeader {   
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        align-items: flex-start;
-        justify-content: center;
-    }
+.errorWindow .errorTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 0;
+    padding: 1rem 0;
+}
 
-    .errorWindow .errorText {    
-        margin: 0;
-        margin-bottom: 0px;
-        text-align: center;
-        font-size: 1.25rem;
-        margin-bottom: 0.5rem;
-    }
-    
-    .errorWindow img {    
-        max-width: 4.5rem;
-        margin: 0 0.5rem;
-    }
+.errorWindow .errorHeader {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start;
+    justify-content: center;
+}
 
-    .errorWindow .errorHeader h1 {    
-        font-size: 2.35rem;
-        font-weight: 600;
-        line-height: 1rem;
-        margin-top: 0.5rem;
-        color: #220e03;
-        margin-bottom: 1rem;
-    }
-    
-    .errorWindow .errorMessage {       
-        font-size: 1.15rem;
-        color: #333;
-        margin-bottom: 0;
-    }
+.errorWindow .errorText {
+    margin: 0;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
 
-    .errorWindow .buttonPanel {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
+.errorWindow img {
+    max-width: 4.5rem;
+    margin: 0 0.5rem;
+}
 
-    .errorWindow .errorCode {    
-        color: #441c08 !important;
-        font-style: italic;
-        line-height: 1.15rem;
-        font-size: 1rem !important;
-        margin-bottom: 0;
-    }
+.errorWindow .errorHeader h1 {
+    font-size: 2.35rem;
+    font-weight: 600;
+    line-height: 1rem;
+    margin-top: 0.5rem;
+    color: #220e03;
+    margin-bottom: 1rem;
+}
+
+.errorWindow .errorMessage {
+    font-size: 1.15rem;
+    color: #333;
+    margin-bottom: 0;
+}
+
+.errorWindow .buttonPanel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.errorWindow .errorCode {
+    color: #441c08 !important;
+    font-style: italic;
+    line-height: 1.15rem;
+    font-size: 1rem !important;
+    margin-bottom: 0;
+}
 
 /* Tablets/Medium screens */
 @media (max-width: 992px) {
@@ -803,7 +805,7 @@ footer {
         max-width: 900px;
     }
 
-    .appFeatures .col-md-9 ,
+    .appFeatures .col-md-9,
     .appFeatures .col-md-3 {
         max-width: 100%;
         flex: 0 0 100%;
@@ -838,6 +840,16 @@ footer {
 
 /* Phones */
 @media (max-width: 767px) {
+    body > .container {
+        padding-left: 7px;
+        padding-right: 7px;
+        padding-top: 0.5rem;
+    }
+
+    main {
+        margin-top: 1rem;
+    }
+
     .jumbotron .portraitContainer {
         margin-right: 0;
         margin-left: 0;
@@ -854,7 +866,8 @@ footer {
     .appFeatures .col-md-3,
     .appFeatures .col-md-5,
     .appFeatures .col-md-7,
-    .appFeatures .col-md-9 {
+    .appFeatures .col-md-9,
+    .appFeatures .col-md-12 {
         padding-left: 0.25rem;
         padding-right: 0.25rem;
     }
@@ -870,7 +883,7 @@ footer {
     .jumbotron .windowInner,
     .jumbotron .col-md-5,
     .jumbotron .col-md-7,
-    .jumbotron .appJumbo>div {
+    .jumbotron .appJumbo > div {
         flex-direction: column !important;
         align-items: center;
         text-align: center;
@@ -880,20 +893,87 @@ footer {
         width: 100px;
     }
 
-    .jumbotron .appWarning  {
+    .jumbotron .appWarning {
         flex-direction: column;
         text-align: center;
         justify-content: center;
     }
 
-    .appJumbo .appWarning ion-icon {   
+    .appJumbo .appWarning ion-icon {
         font-size: 2.25rem;
         margin: 0;
     }
-}
 
-/* Small phones */
-@media (max-width: 600px) {
+    code {
+        padding: 0.25rem 0.5rem !important;
+    }
+
+    .codeContainer {
+        margin-left: -0.25rem;
+        margin-right: -0.25rem
+    }
+
+    #lightboxModal .modal-content {
+        padding: 0.2rem;
+    }
+
+    /* Ultra-small phones (iPhone SE size) */
+    @media (max-width: 360px) {
+        .navbar {
+            padding: 0.4rem 0.8rem;
+        }
+
+        .navbar-toggler {
+            padding: 0.3rem 0.4rem;
+            margin: -0.2rem -0.4rem;
+        }
+
+        .appTile {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+            .appTile .appHeader {
+                flex-direction: column;
+                align-content: center;
+                align-items: center;
+                justify-content: center;
+            }
+
+        .wipBadge {
+            align-items: center;
+            align-self: center;
+        }
+
+        .windowOuter {
+            padding: 0.2rem;
+        }
+
+        .windowInner {
+            padding: 1rem 0.5rem;
+        }
+
+        .appFeatures {
+        }
+
+            .appFeatures h1 {
+                margin-right: -15px;
+                margin-left: -15px;
+            }
+
+        #lightboxModal .modal-dialog {
+            max-width: calc(100vw) !important;
+            padding: 0;
+            max-height: calc(100vh - 2rem);
+        }
+
+        .appJumbo .appScreenshotContainer {
+            margin: 0rem;
+            margin-top: 0.25rem;
+        }
+    }
 }
 
 /* Non-phones */
