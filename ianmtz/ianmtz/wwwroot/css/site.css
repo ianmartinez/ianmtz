@@ -89,6 +89,12 @@ a:hover {
     outline-color: rgba(192, 255, 0, 0.7);
 }
 
+
+.navbar-toggler {
+    padding: .35rem .55rem;
+    margin: -0.25rem -0.5rem;
+}
+
 .navbar-dark .navbar-toggler {
     border: 1px solid rgba(74, 74, 74, 0.9);
 }
