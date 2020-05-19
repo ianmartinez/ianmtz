@@ -923,63 +923,75 @@ code {
     #lightboxModal .modal-content {
         padding: 0.2rem;
     }
+}
 
-    /* Ultra-small phones (iPhone SE size) */
-    @media (max-width: 360px) {
-        .navbar {
-            padding: 0.4rem 0.8rem;
-        }
+/* Medium phones (iPhone X size) */
+@media(max-width: 500px) {
+    .appJumbo .appDescriptionExtended p {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
-        .navbar-toggler {
-            padding: 0.3rem 0.4rem;
-            margin: -0.2rem -0.4rem;
-        }
+/* Ultra-small phones (iPhone SE size) */
+@media (max-width: 360px) {
+    .navbar {
+        padding: 0.4rem 0.8rem;
+    }
 
-        .appTile {
+    .navbar-toggler {
+        padding: 0.3rem 0.4rem;
+        margin: -0.2rem -0.4rem;
+    }
+
+    .appTile {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+        .appTile .appHeader {
             flex-direction: column;
+            align-content: center;
+            align-items: center;
             justify-content: center;
-            align-items: center;
-            text-align: center;
         }
 
-            .appTile .appHeader {
-                flex-direction: column;
-                align-content: center;
-                align-items: center;
-                justify-content: center;
-            }
+    .wipBadge {
+        align-items: center;
+        align-self: center;
+    }
 
-        .wipBadge {
-            align-items: center;
-            align-self: center;
+    .windowOuter {
+        padding: 0.2rem;
+    }
+
+    .windowInner {
+        padding: 1rem 0.5rem;
+    }
+
+    .appFeatures {
+    }
+
+        .appFeatures h1 {
+            margin-right: -15px;
+            margin-left: -15px;
         }
 
-        .windowOuter {
-            padding: 0.2rem;
-        }
+    #lightboxModal .modal-dialog {
+        max-width: calc(100vw) !important;
+        padding: 0;
+        max-height: calc(100vh - 2rem);
+    }
 
-        .windowInner {
-            padding: 1rem 0.5rem;
-        }
+    .appJumbo .appScreenshotContainer {
+        margin: 0rem;
+        margin-top: 0.25rem;
+    }
 
-        .appFeatures {
-        }
-
-            .appFeatures h1 {
-                margin-right: -15px;
-                margin-left: -15px;
-            }
-
-        #lightboxModal .modal-dialog {
-            max-width: calc(100vw) !important;
-            padding: 0;
-            max-height: calc(100vh - 2rem);
-        }
-
-        .appJumbo .appScreenshotContainer {
-            margin: 0rem;
-            margin-top: 0.25rem;
-        }
+    .appJumbo .appIcon img {
+        margin: 0;
     }
 }
 
