@@ -55,7 +55,7 @@
 
             <div class="featuretteDescription">
                 <p class="lead">
-                    Fill an entire form's client area with Aero Glass.
+                    Fill a form's entire client area with Aero Glass.
                 </p>
 
                 <p class="extendedDescription">
@@ -131,14 +131,10 @@
 
                         // Check if the color exists, which might not be the case 
                         // if on an older system or when using the Classic theme
-                        if(aeroColor != null)
-                        {                            
+                        if(aeroColor != null)            
                             MessageBox.Show("The Aero Glass color is: " + Desktop.AeroColor);
-                        }
                         else
-                        {
                             MessageBox.Show("Aero is not enabled.");
-                        }
                     </code>
                 </pre>
             </div>
@@ -177,7 +173,7 @@
                             ColorDialog.Color = aeroColor.Value;
 
                             if (ColorDialog.ShowDialog() == DialogResult.OK)
-                                Desktop.SetAllColors(ColorDialog.Color);
+                                Desktop.AeroColor = ColorDialog.Color;
                         }
                     </code>
                 </pre>
