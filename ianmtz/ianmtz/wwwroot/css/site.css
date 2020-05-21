@@ -30,7 +30,8 @@ a {
     font-weight: 600;
 }
 
-p a {
+p a, 
+.aboutSection a {
     text-decoration: underline;
 }
 
