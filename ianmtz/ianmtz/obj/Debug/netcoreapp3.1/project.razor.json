@@ -20521,13 +20521,13 @@
   "RootNamespace": "ianmtz",
   "Documents": [
     {
-      "FilePath": "/Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/Views/Shared/Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FilePath": "/Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/Views/Shared/_AppLayout.cshtml",
+      "TargetPath": "Views\\Shared\\_AppLayout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/Views/Shared/_AppLayout.cshtml",
-      "TargetPath": "Views\\Shared\\_AppLayout.cshtml",
+      "FilePath": "/Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/Views/About/Index.cshtml",
+      "TargetPath": "Views\\About\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -20543,6 +20543,11 @@
     {
       "FilePath": "/Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/Views/Icons/Taiga.cshtml",
       "TargetPath": "Views\\Icons\\Taiga.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/Views/Error/Index.cshtml",
+      "TargetPath": "Views\\Error\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -20586,6 +20591,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/Views/CardinalQemu/Index.cshtml",
+      "TargetPath": "Views\\CardinalQemu\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/Views/Chameleon/Index.cshtml",
       "TargetPath": "Views\\Chameleon\\Index.cshtml",
       "FileKind": "mvc"
@@ -20598,6 +20608,11 @@
     {
       "FilePath": "/Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/ianmartinez/GitHub/ianmtz/ianmtz/ianmtz/Views/Icons/Horizon.cshtml",
+      "TargetPath": "Views\\Icons\\Horizon.cshtml",
       "FileKind": "mvc"
     },
     {
