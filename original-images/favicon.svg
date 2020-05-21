@@ -8,6 +8,9 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:export-ydpi="8.4700003"
+   inkscape:export-xdpi="8.4700003"
+   inkscape:export-filename="C:\Users\ianma\Documents\GitHub\ianmtz\original-images\favicon\16.png"
    sodipodi:docname="favicon.svg"
    inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
    id="svg8"
@@ -18,26 +21,34 @@
   <defs
      id="defs2">
     <linearGradient
-       id="linearGradient3317"
+       id="linearGradient3426"
        inkscape:collect="always">
       <stop
-         id="stop3313"
+         id="stop3422"
          offset="0"
-         style="stop-color:#59a93e;stop-opacity:1" />
+         style="stop-color:#82d363;stop-opacity:1" />
       <stop
-         id="stop3315"
+         id="stop3424"
          offset="1"
-         style="stop-color:#cfe69b;stop-opacity:1" />
+         style="stop-color:#42b211;stop-opacity:1" />
     </linearGradient>
     <linearGradient
-       gradientTransform="matrix(0.95,0,0,0.95,1.2,1.2)"
        gradientUnits="userSpaceOnUse"
-       y2="0.84895831"
-       x2="46.919533"
-       y1="47.151043"
-       x1="46.919533"
-       id="linearGradient3319"
-       xlink:href="#linearGradient3317"
+       y2="23.140989"
+       x2="30.27059"
+       y1="7.2504406"
+       x1="30.27059"
+       id="linearGradient3428"
+       xlink:href="#linearGradient3426"
+       inkscape:collect="always" />
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
+       y2="43.150867"
+       x2="27.770361"
+       y1="27.770361"
+       x1="27.770361"
+       id="linearGradient3436"
+       xlink:href="#linearGradient3426"
        inkscape:collect="always" />
   </defs>
   <sodipodi:namedview
@@ -50,9 +61,9 @@
      inkscape:document-rotation="0"
      inkscape:current-layer="layer1"
      inkscape:document-units="mm"
-     inkscape:cy="93.119365"
+     inkscape:cy="90.007764"
      inkscape:cx="90.708661"
-     inkscape:zoom="0.13684513"
+     inkscape:zoom="4.3790442"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
@@ -75,39 +86,21 @@
      id="layer1"
      inkscape:groupmode="layer"
      inkscape:label="Layer 1">
-    <rect
-       rx="1.3579836"
-       ry="1.1510743"
-       y="2.3146222"
-       x="2.5390089"
-       height="43.370754"
-       width="42.921982"
-       id="rect3311"
-       style="opacity:1;fill:url(#linearGradient3319);fill-opacity:1;stroke:#216700;stroke-width:1.5875;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />
-    <rect
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1.5875;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.35;paint-order:stroke fill markers"
-       id="rect3311-4"
-       width="42.921982"
-       height="43.370754"
-       x="2.5390089"
-       y="2.3146222"
-       ry="1.1510743"
-       rx="1.3579836" />
     <text
        id="text3371"
-       y="21.884991"
-       x="23.520443"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.9333px;line-height:0;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1.05833;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.2;paint-order:stroke markers fill"
+       y="21.631956"
+       x="23.400553"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.1667px;line-height:0;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';letter-spacing:0px;word-spacing:0px;fill:url(#linearGradient3436);fill-opacity:1;stroke:#2a5700;stroke-width:1.05833;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill;"
        xml:space="preserve"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.9333px;line-height:0.95;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';text-align:center;text-anchor:middle;stroke:#ffffff;stroke-width:1.05833;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.2;paint-order:stroke markers fill"
-         y="21.884991"
-         x="23.520443"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24.6944px;line-height:0.95;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';text-align:center;text-anchor:middle;stroke:#2a5700;stroke-width:1.05833;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill;fill-opacity:1;fill:url(#linearGradient3436);"
+         y="21.631956"
+         x="23.400553"
          id="tspan3369"
-         sodipodi:role="line">IAN</tspan><tspan
+         sodipodi:role="line" /><tspan
          id="tspan3373"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.9333px;line-height:0.95;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.05833;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.2;paint-order:stroke markers fill"
-         y="37.971626"
-         x="23.520445"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.1667px;line-height:0.95;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';text-align:center;text-anchor:middle;fill:url(#linearGradient3436);fill-opacity:1;stroke:#2a5700;stroke-width:1.05833;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill;"
+         y="42.443199"
+         x="23.400553"
          sodipodi:role="line">MTZ</tspan></text>
     <text
        id="text3377"
@@ -120,5 +113,16 @@
          x="174.14151"
          id="tspan3375"
          sodipodi:role="line"></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24.6944px;line-height:0;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';letter-spacing:0px;word-spacing:0px;fill:url(#linearGradient3428);fill-opacity:1;stroke:#2a5700;stroke-width:1.05833;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill;"
+       x="24.012058"
+       y="22.847702"
+       id="text3371-5"><tspan
+         sodipodi:role="line"
+         x="24.012058"
+         y="22.847702"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24.6944px;line-height:0.95;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';text-align:center;text-anchor:middle;fill:url(#linearGradient3428);fill-opacity:1;stroke:#2a5700;stroke-width:1.05833;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill;"
+         id="tspan3373-3">IAN</tspan></text>
   </g>
 </svg>
