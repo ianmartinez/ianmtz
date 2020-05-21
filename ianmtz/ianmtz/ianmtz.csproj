@@ -19,7 +19,7 @@
 
 
   <ItemGroup>
-    <Folder Include="Views\Apps\" />
+    <Folder Include="Views\Support\" />
     <Folder Include="Views\AsciiStudio\" />
     <Folder Include="Views\CardinalQemu\" />
     <Folder Include="Views\Resources\" />

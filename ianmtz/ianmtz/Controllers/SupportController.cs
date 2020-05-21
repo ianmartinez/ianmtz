@@ -2,7 +2,7 @@
 
 namespace ianmtz.Controllers
 {
-    public class AboutController : Controller
+    public class SupportController : Controller
     {
         public IActionResult Index()
         {

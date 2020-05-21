@@ -636,7 +636,8 @@ footer {
         margin-bottom: 1.5rem;
     }
 
-    .appFeatures strong {
+    .appFeatures strong,
+    .dateRange {
         color: #63920b;
         font-weight: 600;
     }
@@ -703,6 +704,35 @@ footer {
     margin: 0.5rem !important;
 }
 
+.aboutSection .featurette-image {
+    border: 0px solid rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    max-width: 164px;
+}
+
+.aboutSection .col-md-5,
+.aboutSection .col-md-3 {
+    justify-content: center;
+}
+
+.aboutSection h1 {
+    margin: 1.5rem -15px;
+}
+
+.aboutSection h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.aboutSection .featurette {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.appFeatures .smallImage {
+    max-width: 100px;
+}
+
 [lightbox] {
     cursor: pointer;
 }
@@ -714,7 +744,7 @@ footer {
 #lightboxModal .modal-body {
     padding: 0rem;
     display: inline-flex;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(255, 255, 255, 0.8);
     border-radius: 0.25rem;
 }
 
@@ -894,6 +924,12 @@ code {
     .appJumbo .appScreenshot {
         max-width: 100%;
         max-height: 275px;
+    }
+
+    .aboutSection h2,
+    .aboutSection .dateRange,
+    .aboutSection .lead {
+        text-align: center;
     }
 
     .appTile {
