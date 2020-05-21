@@ -473,7 +473,7 @@ footer {
     .appJumbo .appDescription {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: space-between;
         margin: 0.5rem 0;
     }
 
@@ -486,6 +486,13 @@ footer {
         .appJumbo .appDescriptionExtended p {
             margin: 0.5rem 0;
         }
+
+
+
+    .appJumbo .col-md-5,
+    .appJumbo .col-md-7 {
+        padding: 0 7px;
+    }
 
 .noScreenshot {
 }
@@ -669,12 +676,12 @@ footer {
     margin: 0.5rem 0;
 }
 
-.appFeatures .imageBelow .col-md-7, 
+.appFeatures .imageBelow .col-md-7,
 .appFeatures .imageBelow .col-md-9,
 .appFeatures .imageBelow .col-md-5,
 .appFeatures .imageBelow .col-md-3 {
     flex-direction: column;
-    justify-content: center;    
+    justify-content: center;
     flex: auto;
     max-width: 100%;
     width: 100%;
@@ -686,11 +693,11 @@ footer {
     flex-wrap: wrap;
 }
 
-.appFeatures .imageBelow .imgContainerSplit .featurette-image {  
-     max-width: calc(50% - 1rem);
+.appFeatures .imageBelow .imgContainerSplit .featurette-image {
+    max-width: calc(50% - 1rem);
 }
 
-.appFeatures .imageBelow .featurette-image {   
+.appFeatures .imageBelow .featurette-image {
     max-height: 100vh;
     max-width: 100%;
     margin: 0.5rem !important;
@@ -944,15 +951,15 @@ code {
         max-height: 100vh;
     }
 
-    .appFeatures .imageBelow .imgContainerSplit .featurette-image {  
+    .appFeatures .imageBelow .imgContainerSplit .featurette-image {
         max-width: 100%;
-   }
-   
-   .appFeatures .imageBelow .featurette-image {
-       max-height: 100%;
-       width: 100%;
-       margin: 0.5rem 0rem !important;
-   }
+    }
+
+    .appFeatures .imageBelow .featurette-image {
+        max-height: 100%;
+        width: 100%;
+        margin: 0.5rem 0rem !important;
+    }
 
     .windowTitle {
         text-align: center;
