@@ -781,6 +781,7 @@ code {
     word-wrap: normal;
     margin: 0.1rem;
     line-height: 2rem;
+    font-style: normal !important;
 }
 
 /* Error page */
