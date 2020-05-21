@@ -1,5 +1,16 @@
 @{
     ViewData["Title"] = "About";
+
+    // Dynamically update years from the current year
+    int YearsFrom(int year)
+    {
+        var start = new DateTime(year, 1, 1);
+        var end = DateTime.Now;
+
+        return (end.Year - start.Year - 1) +
+            (((end.Month > start.Month) ||
+            ((end.Month == start.Month) && (end.Day >= start.Day))) ? 1 : 0);
+    }
 }
 
 <div class="jumbotron windowOuter windowOuterBlurred">
@@ -115,7 +126,7 @@
                     <h2 class="featurette-heading">C#</h2>
 
                     <div class="featuretteDescription">
-                        <p class="dateRange">6 Years</p>
+                        <p class="dateRange">@YearsFrom(2014) Years</p>
 
                         <p class="lead">
                             Development with C# on Windows, macOS, and Linux. Desktop applications built
@@ -146,7 +157,7 @@
                     <h2 class="featurette-heading">JavaScript</h2>
 
                     <div class="featuretteDescription">
-                        <p class="dateRange">6 Years</p>
+                        <p class="dateRange">@YearsFrom(2014) Years</p>
 
                         <p class="lead">
                             JavaScript development for standalone libraries as well as
@@ -176,16 +187,102 @@
                     <h2 class="featurette-heading">Java</h2>
 
                     <div class="featuretteDescription">
-                        <p class="dateRange">5 Years</p>
+                        <p class="dateRange">@YearsFrom(2015) Years</p>
 
                         <p class="lead">
-                            Desktop Java development with both Swing and JavaFX.
+                            Desktop Java development with both Swing and JavaFX in NetBeans.
                         </p>
 
                         <h3>Projects</h3>
                         <div class="projectList">
                             <ul>
                                 <li><a href="~/AsciiStudio">ASCII Studio</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row featurette">
+                <div class="col-md-3">
+                    <div class="imgContainer">
+                        <img class="featurette-image smallImage" src="~/img/About/FreePascal.png" lightbox />
+                    </div>
+                </div>
+
+                <div class="col-md-9">
+                    <h2 class="featurette-heading">Pascal</h2>
+
+                    <div class="featuretteDescription">
+                        <p class="dateRange">@YearsFrom(2018) Years</p>
+
+                        <p class="lead">
+                            Desktop development in <a href="https://www.freepascal.org/">Free Pascal</a> with the
+                            <a href="https://www.lazarus-ide.org/">Lazarus IDE</a>.
+                        </p>
+
+                        <h3>Projects</h3>
+                        <div class="projectList">
+                            <ul>
+                                <li><a href="~/Chameleon">Chameleon</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row featurette">
+                <div class="col-md-3">
+                    <div class="imgContainer">
+                        <img class="featurette-image smallImage" src="~/img/About/VB.png" lightbox />
+                    </div>
+                </div>
+
+                <div class="col-md-9">
+                    <h2 class="featurette-heading">VB.NET</h2>
+
+                    <div class="featuretteDescription">
+                        <p class="dateRange">@YearsFrom(2008) Years</p>
+
+                        <p class="lead">
+                            My first programming language that I have built multiple projects with over the years.
+                        </p>
+
+                        <h3>Projects</h3>
+                        <div class="projectList">
+                            <ul>
+                                <li><a href="~/Old/ChameleonClassic">Chameleon Classic</a></li>
+                                <li><a href="~/Old/Screensavers">Colors Screensaver</a></li>
+                                <li><a href="~/Old/Screensavers">Graystyle Screensaver</a></li>
+                                <li><a href="~/Old/Screensavers">LangPad (WinForms UI portion)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row featurette">
+                <div class="col-md-3">
+                    <div class="imgContainer">
+                        <img class="featurette-image smallImage" src="~/img/About/CPlusPlus.png" lightbox />
+                    </div>
+                </div>
+
+                <div class="col-md-9">
+                    <h2 class="featurette-heading">C++</h2>
+
+                    <div class="featuretteDescription">
+                        <p class="dateRange">@YearsFrom(2019) Year</p>
+
+                        <p class="lead">
+                            Desktop development in <a href="https://www.freepascal.org/">Free Pascal</a> with the
+                            <a href="https://www.lazarus-ide.org/">Lazarus IDE</a>.
+                        </p>
+
+                        <h3>Projects</h3>
+                        <div class="projectList">
+                            <ul>
+                                <li><a href="~/Chameleon">Chameleon</a></li>
                             </ul>
                         </div>
                     </div>
