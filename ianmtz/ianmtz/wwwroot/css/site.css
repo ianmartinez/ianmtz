@@ -730,6 +730,15 @@ footer {
     margin-bottom: 1rem;
 }
 
+.contactInfo {
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.contactInfo strong {
+    font-weight: 600;
+}
+
 .appFeatures .smallImage {
     max-width: 100px;
 }
