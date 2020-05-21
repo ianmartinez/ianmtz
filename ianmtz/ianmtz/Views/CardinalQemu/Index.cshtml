@@ -1,0 +1,41 @@
+@{
+    Layout = "_AppLayout";
+    ViewData["Title"] = "Cardinal QEMU";
+}
+
+@section icon {
+    <img src="~/img/CardinalQemu/Icon.png" />
+}
+
+@section description {
+    <div class="appWarning appWarningWip">
+        <ion-icon name="construct"></ion-icon>
+        <div>
+            <strong>Under Development</strong>
+            <span>Some features may be incomplete or contain bugs</span>
+        </div>
+    </div>
+
+    <p class="appDescriptionText">
+        An easy-to-use, cross-platform frontend for QEMU.
+    </p>
+
+    <div class="appDescriptionExtended">
+        <p><strong>Requirements:</strong> .NET Core 3.0 or higher</p>
+        <p><strong>Written In:</strong> C#</p>
+    </div>
+
+    <div class="appButtons">
+        <a class="btn btn-primary imageButton" href="https://github.com/ianmartinez/cardinal-qemu" role="button">
+            <ion-icon name="logo-github"></ion-icon><span>GitHub</span>
+        </a>
+    </div>
+}
+
+@section screenshot {
+    <img class="featurette-image appScreenshot" src="~/img/CardinalQemu/Screenshot.jpg" lightbox />
+}
+
+<div class="container appFeatures">
+
+</div>
