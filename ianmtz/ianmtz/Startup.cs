@@ -24,7 +24,7 @@ namespace ianmtz
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            app.UseStatusCodePagesWithReExecute("/Home/Error");
+            app.UseStatusCodePagesWithReExecute("/Error");
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseRouting();
