@@ -1031,6 +1031,7 @@ code {
 
         .jumbotron .appJumbo {
             padding: 0.75rem 0.25rem;
+            padding-bottom: 0rem;
         }
 
     .appJumbo .appIcon img {
@@ -1091,6 +1092,12 @@ code {
             justify-content: center;
             margin: 0.25rem !important;
         }
+
+
+    .appJumbo .appScreenshotContainer {
+        margin: 0.5rem 0rem;
+        margin-bottom: 1rem;
+    }
 }
 
 /* Ultra-small phones (iPhone SE size) */
@@ -1129,11 +1136,6 @@ code {
             margin-right: -15px;
             margin-left: -15px;
         }
-
-    .appJumbo .appScreenshotContainer {
-        margin: 0rem;
-        margin-top: 0.25rem;
-    }
 
     .appJumbo .appIcon img {
         margin: 0;
