@@ -1,2 +1,2 @@
 # ianmtz
-My personal website, ianmtz.com
+My personal website, https://ianmtz.com/
