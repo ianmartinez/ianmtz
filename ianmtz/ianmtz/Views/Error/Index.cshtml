@@ -5,12 +5,12 @@
     var errorIcon = Model == 404 ? "warning.png" : "error.png";
 }
 
-<div class="jumbotron windowOuter errorWindow">
+<div class="jumbotron windowOuter windowOuterBlurred errorWindow">
     <div class="windowInner">
         <div class="jumboDescription">
             <div class="errorMessage">
                 <div class="errorTop">
-                    <img src="~/img/SiteIcons/@errorIcon"/>
+                    <img src="~/img/SiteIcons/@errorIcon" />
 
                     <div class="errorHeader">
                         <h1>Error</h1>
@@ -18,17 +18,21 @@
                     </div>
                 </div>
 
-                <div class="errorText">                    
-                    @if(Model == 404) 
-                    {                        
+                <div class="errorText">
+                    @if (Model == 404)
+                    {
                         <span>
                             This page does not exist
                         </span>
-                    } else if(Model == 500) {                        
+                    }
+                    else if (Model == 500)
+                    {
                         <span>
                             Server error
                         </span>
-                    } else {
+                    }
+                    else
+                    {
                         <span>
                             Unknown error
                         </span>
@@ -36,7 +40,7 @@
                 </div>
             </div>
 
-            <div class="buttonPanel">                
+            <div class="buttonPanel">
                 <a class="btn btn-primary imageButton" href="~/" role="button">
                     <ion-icon name="home"></ion-icon><span>Return Home</span>
                 </a>
@@ -44,3 +48,5 @@
         </div>
     </div>
 </div>
+
+@await Html.PartialAsync("~/Views/Shared/_Projects.cshtml")

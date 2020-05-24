@@ -121,3 +121,4 @@ C:\Users\ianma\Documents\GitHub\ianmtz\ianmtz\ianmtz\obj\Release\netcoreapp3.1\s
 C:\Users\ianma\Documents\GitHub\ianmtz\ianmtz\ianmtz\obj\Release\netcoreapp3.1\ianmtz.dll
 C:\Users\ianma\Documents\GitHub\ianmtz\ianmtz\ianmtz\obj\Release\netcoreapp3.1\ianmtz.pdb
 C:\Users\ianma\Documents\GitHub\ianmtz\ianmtz\ianmtz\obj\Release\netcoreapp3.1\ianmtz.genruntimeconfig.cache
+C:\Users\ianma\Documents\GitHub\ianmtz\ianmtz\ianmtz\obj\Release\netcoreapp3.1\Razor\Views\Shared\_Projects.cshtml.g.cs

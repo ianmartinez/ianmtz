@@ -243,3 +243,4 @@ C:\Users\ianma\Documents\GitHub\ianmtz\ianmtz\ianmtz\obj\Debug\netcoreapp3.1\ian
 C:\Users\ianma\Documents\GitHub\ianmtz\ianmtz\ianmtz\obj\Debug\netcoreapp3.1\ianmtz.pdb
 C:\Users\ianma\Documents\GitHub\ianmtz\ianmtz\ianmtz\obj\Debug\netcoreapp3.1\ianmtz.genruntimeconfig.cache
 C:\Users\ianma\Documents\GitHub\ianmtz\ianmtz\ianmtz\obj\Debug\netcoreapp3.1\ianmtz.csprojAssemblyReference.cache
+C:\Users\ianma\Documents\GitHub\ianmtz\ianmtz\ianmtz\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Projects.cshtml.g.cs
