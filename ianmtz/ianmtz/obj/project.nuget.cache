@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "GdGVN9wOaHVRSzT/milY4ynVwKptXvXNMmK2ZnrsBUflZT1hlAgBSPlZHp7ISX7+bNYLZgrbjiqGPjeJJcD8VQ==",
+  "dgSpecHash": "UsXj81QOZ/04pLqLa21nFyl4QAobTEz4Nf1+3UzWPa34Sbdgcl9E5ZyC9Mjmo7GkpHplpfUTghg2/4CGXnZMZA==",
   "success": true,
   "projectFilePath": "C:\\Users\\ianma\\Documents\\GitHub\\ianmtz\\ianmtz\\ianmtz\\ianmtz.csproj",
   "expectedPackageFiles": [
@@ -110,7 +110,8 @@
     "C:\\Users\\ianma\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.3\\system.threading.tasks.extensions.4.5.3.nupkg.sha512",
     "C:\\Users\\ianma\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\ianma\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\ianma\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\ianma\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\ianma\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
   ],
   "logs": []
 }
