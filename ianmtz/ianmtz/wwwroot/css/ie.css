@@ -1,0 +1,25 @@
+﻿.appFeatures .imageBelow .imgContainerSplit .featurette-image {
+    width: 512px;
+    height: auto;
+}
+
+.featurette-image {
+    height: 200px;
+    width: auto;
+}
+
+.aboutSection .featurette-image {
+    height: auto;
+}
+
+.appJumbo .appDescription {
+    display:block;
+}
+
+.appJumbo .appIcon {
+    display: block;
+}
+
+.appJumbo .appWarning ion-icon {
+    2rem;
+}
