@@ -533,7 +533,7 @@ footer {
 }
 
 .appJumbo .appWarning ion-icon {
-    font-size: 1.5rem;
+    font-size: 4rem;
     margin-right: 0.25rem;
 }
 
@@ -649,7 +649,7 @@ footer {
         border-radius: 0.25rem;
         font-size: 1.25rem;
         border: 2px solid #63920b;
-        align-self: self-start;
+        align-self: flex-start;
         margin-bottom: 0.5rem;
         padding: 0.25rem 0.5rem;
     }

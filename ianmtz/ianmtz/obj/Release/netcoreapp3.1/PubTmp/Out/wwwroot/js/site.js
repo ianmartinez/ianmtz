@@ -9,7 +9,8 @@ if (String.prototype.trimLeft)
 function createLightboxes() {
     let lightboxElements = document.querySelectorAll("[lightbox]");
 
-    for (let lightboxElement of lightboxElements) {
+    for (let i = 0; i < lightboxElements.length; i++) {
+        let lightboxElement = lightboxElements[i];
         let lightboxImage = document.createElement("img");
         lightboxImage.src = lightboxElement.src;
 
@@ -33,7 +34,9 @@ function initCodeBlocks() {
     let codeElements = document.querySelectorAll("code");
 
     // Remove leading whitespace, while preserving indentation
-    for (let codeElement of codeElements) {
+    for (let i = 0; i < codeElements.length; i++) {
+        let codeElement = codeElements[i];
+
         // Dirty hack I know, but it works
         let code = codeElement.innerHTML;
         let leadingWhitespace = code.length - code.trimStart().length;
