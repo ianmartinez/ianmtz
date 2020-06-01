@@ -33,3 +33,16 @@ code {
     box-shadow: none;
     border-color: transparent;
 }
+
+.appJumbo .appWarning {
+    display: table;
+}
+
+.appJumbo .appWarningWip div {
+    display: inline-flex;
+}
+
+.appJumbo .appWarningWip > div,
+.appJumbo .appWarningWip > ion-icon {
+    vertical-align: middle;
+}
