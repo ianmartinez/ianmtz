@@ -46,3 +46,8 @@ code {
 .appJumbo .appWarningWip > ion-icon {
     vertical-align: middle;
 }
+
+.appTile .appIcon {
+    width: auto;
+    height: 64px;
+}
