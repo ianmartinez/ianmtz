@@ -1024,6 +1024,19 @@ code {
         margin: 0.5rem 0rem !important;
     }
 
+    .iconFeaturette {
+        flex-direction: column-reverse !important;
+    }
+
+        .iconFeaturette .imgContainer {
+            margin: 1rem 0;
+            margin-top: 0;
+        }
+
+        .iconFeaturette .featurette-heading {
+            text-align: center;
+        }
+
     .windowTitle {
         text-align: center;
     }
