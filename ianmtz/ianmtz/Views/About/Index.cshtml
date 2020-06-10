@@ -11,6 +11,12 @@
             (((end.Month > start.Month) ||
             ((end.Month == start.Month) && (end.Day >= start.Day))) ? 1 : 0);
     }
+
+    string YearsFromFormatted(int year) 
+    {
+        var yearsFrom = YearsFrom(year);
+        return yearsFrom + ((yearsFrom > 1) ?  " years" : " year"); 
+    }
 }
 
 <div class="jumbotron windowOuter">
@@ -142,7 +148,7 @@
                     <h2 class="featurette-heading">C#</h2>
 
                     <div class="featuretteDescription">
-                        <p class="dateRange">@YearsFrom(2014) Years</p>
+                        <p class="dateRange">@YearsFromFormatted(2014)</p>
 
                         <p class="lead">
                             Development with C# on Windows, macOS, and Linux. Desktop applications built
@@ -175,7 +181,7 @@
                     <h2 class="featurette-heading">JavaScript</h2>
 
                     <div class="featuretteDescription">
-                        <p class="dateRange">@YearsFrom(2014) Years</p>
+                        <p class="dateRange">@YearsFromFormatted(2014)</p>
 
                         <p class="lead">
                             JavaScript development for standalone libraries as well as
@@ -205,7 +211,7 @@
                     <h2 class="featurette-heading">Java</h2>
 
                     <div class="featuretteDescription">
-                        <p class="dateRange">@YearsFrom(2015) Years</p>
+                        <p class="dateRange">@YearsFromFormatted(2015)</p>
 
                         <p class="lead">
                             Desktop Java development using both Swing and JavaFX.
@@ -234,7 +240,7 @@
                     <h2 class="featurette-heading">Pascal</h2>
 
                     <div class="featuretteDescription">
-                        <p class="dateRange">@YearsFrom(2018) Years</p>
+                        <p class="dateRange">@YearsFromFormatted(2018)</p>
 
                         <p class="lead">
                             Desktop development in <a href="https://www.freepascal.org/">Free Pascal</a> with the
@@ -264,7 +270,7 @@
                     <h2 class="featurette-heading">VB.NET</h2>
 
                     <div class="featuretteDescription">
-                        <p class="dateRange">@YearsFrom(2008) Years</p>
+                        <p class="dateRange">@YearsFromFormatted(2008)</p>
 
                         <p class="lead">
                             My first programming language that I have built multiple projects with over the years.
@@ -296,7 +302,7 @@
                     <h2 class="featurette-heading">C++/C</h2>
 
                     <div class="featuretteDescription">
-                        <p class="dateRange">@YearsFrom(2019) Years</p>
+                        <p class="dateRange">@YearsFromFormatted(2019)</p>
 
                         <p class="lead">
                             Linux development for projects at college and while developing LaikaWM.
