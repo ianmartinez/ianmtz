@@ -46,8 +46,8 @@
                         <a class="textLink" href="https://github.com/ianmartinez/tamarack/blob/master/src/font.js">font.js</a>: A class to simplify the management and manipulation of fonts.
                     </li>
                     <li>
-                        <a class="textLink" href="https://github.com/ianmartinez/tamarack/blob/master/src/widgets.js">widget.js</a>: Contains a collection of widgets, which are wrappers around HTML elements inheriting from
-                        a class called <strong><em>TkWidget</em></strong> and can be manipulated entirely through JavaScript, with
+                        <a class="textLink" href="https://github.com/ianmartinez/tamarack/blob/master/src/views.js">views.js</a>: Contains a collection of views, which are wrappers around HTML elements inheriting from
+                        a class called <strong><em>TkView</em></strong> and can be manipulated entirely through JavaScript, with
                         no HTML boilerplate.
                     </li>
                 </ul>
@@ -132,7 +132,7 @@
                 </p>
 
                 <p class="extendedDescription">
-                    A <strong>TkNotebook</strong> is a widget containing pages that contains useful functions and properties
+                    A <strong>TkNotebook</strong> is a view containing pages that contains useful functions and properties
                     for managing pages. It also includes events such as <em>activechanged</em>, <em>addpage</em>,
                     and <em>removepage</em> that you can add event handlers to in order to deal with changes in the notebook.
                 </p>
@@ -144,7 +144,7 @@
 
                 <pre class="codeContainer">
                     <code class="js">
-                        // Declare widgets
+                        // Declare views
                         let buttonStack = new TkStack({ parent: &quot;body&quot;, direction: TkStackDirection.FLOW });
                         let previousPageButton = new TkButton({ parent: buttonStack, text: &quot;&lt;&quot; });
                         let nextPageButton = new TkButton({ parent: buttonStack, text: &quot;&gt;&quot; });
@@ -242,20 +242,20 @@
 
             <div class="featuretteDescription">
                 <p class="lead">
-                    Layout widgets in a stack.
+                    Layout views in a stack.
                 </p>
 
                 <p>
-                    A fundamental widget in Tamarack is the <strong>TkStack</strong> widget,
+                    A fundamental view in Tamarack is the <strong>TkStack</strong> view,
                     which is a flexbox container that exposes useful functionality for laying
-                    out child widgets.
+                    out child views.
                 </p>
 
                 <p>
                     It creates two stacks, <em>buttonStack</em> and <em>colorStack</em>, adds a button
                     to <em>buttonStack</em> for each <strong>TkStackDirection</strong> to
                     change the stack direction of <em>colorStack</em>, then loops through each
-                    hue (0-360), and adds a <strong>TkText</strong> widget representing it to the color stack.
+                    hue (0-360), and adds a <strong>TkText</strong> view representing it to the color stack.
                 </p>
 
                 <pre class="codeContainer">
