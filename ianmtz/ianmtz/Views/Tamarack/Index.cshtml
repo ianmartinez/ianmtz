@@ -17,7 +17,7 @@
     </div>
 
     <p class="appDescriptionText">
-        A collection of modern, easy to use classes for designing a UI in pure JavaScript.
+        A framework for building rich, cross-platform apps in pure JavaScript.
     </p>
 
     <div class="appButtons">
@@ -27,13 +27,81 @@
     </div>
 }
 
+@section screenshot {
+    <img class="featurette-image appScreenshot" src="~/img/Tamarack/Screenshot.jpg" lightbox />
+}
+
+
 @await Html.PartialAsync("~/Views/Shared/_SyntaxHighlighter.cshtml")
 
 <div class="container appFeatures">
     <div class="row">
         <div class="col-md-12">
+            <h2>One codebase, multiple platforms</h2>
+            <p class="lead">
+                Tamarack provides a solid base that adapts to the platform it's running on and provides out of the box support for:
+            </p>
+
+            <div class="flexList">
+                <div>
+                    <span>
+                        <strong>Responsive design:</strong> All tamarack views have been tested and display correctly on every screen,
+                        from large desktop monitors all the way down to the smallest of mobile displays.
+                    </span>
+                </div>
+
+                <div>
+                    <span>
+                        <strong>Dark mode:</strong> All tamarack views have styling that automatically reflects the user's preferred color scheme.
+                        No extra code required.
+                    </span>
+                </div>
+
+                <div>
+                    <span>
+                        <strong>Integrating with existing code:</strong> Though you can write your application entirely with tamarack,
+                        it is designed to be easily added into any codebase. Any <strong><em>TkView</em></strong> can be placed inside
+                        an existing HTML element like this:
+                    </span>
+
+
+                    <pre class="codeContainer">
+                    <code class="js">
+                            let colorChooser = new TkColorChooser({ parent: "#someExistingElement", color: "blue" });
+                        </code>
+                    </pre>
+                </div>
+
+                <div>
+                    <span>
+                        <strong>Writing platform specific CSS:</strong> For parts of your app where you want to style an element differently
+                        depending on the platform, tamarack makes it easy to write platform-specific CSS styles. 
+                        It also provides a few built-in styles to better match the UI design of each platform, such as 
+                        moving toolbars to the bottom of the screen on iOS. For example, here's platform-specific
+                        CSS styles that change the text color of an <strong><em>&lt;h1&gt;</em></strong> element:
+                    </span>
+
+                    <pre class="codeContainer">
+                    <code class="css">
+                            /* The default setting */
+                            h1 { color: orange; }
+                            /* For iPhones, either in Cordova or in the browser */
+                            [iphone] h1 { color: red; }                        
+                            /* For Androids, only in Cordova */
+                            [cordova][android] h1 { color: blue; }                         
+                            /* For Electron apps, running on macOS */
+                            [electron][macos] h1 { color: green; }
+                        </code>
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
             <h2>Structure</h2>
-            <p class="lead">Tamarack has no external dependencies and is made up of 4 scripts:</p>
+            <p class="lead">Tamarack has no external dependencies and is made up of these scripts:</p>
             <div class="componentList">
                 <ul>
                     <li>
@@ -46,9 +114,16 @@
                         <a class="textLink" href="https://github.com/ianmartinez/tamarack/blob/master/src/font.js">font.js</a>: A class to simplify the management and manipulation of fonts.
                     </li>
                     <li>
-                        <a class="textLink" href="https://github.com/ianmartinez/tamarack/blob/master/src/views.js">views.js</a>: Contains a collection of views, which are wrappers around HTML elements inheriting from
+                        <a class="textLink" href="https://github.com/ianmartinez/tamarack/blob/master/src/view.js">view.js</a>: Contains a collection of views, which are wrappers around HTML elements inheriting from
                         a class called <strong><em>TkView</em></strong> and can be manipulated entirely through JavaScript, with
                         no HTML boilerplate.
+                    </li>
+                    <li>
+                        <a class="textLink" href="https://github.com/ianmartinez/tamarack/blob/master/src/app.js">app.js</a>: Sets up the environment for building cross-platform
+                        apps.
+                    </li>
+                    <li>
+                        <a class="textLink" href="https://github.com/ianmartinez/tamarack/blob/master/src/">And many more...</a>
                     </li>
                 </ul>
             </div>
@@ -67,9 +142,9 @@
                 </p>
 
                 <pre class="codeContainer">
-                    <code class="js">
+                <code class="js">
                         new TkText("h1", { parent: "body", text: "Hello World!" });
-                    </code>
+                </code>
                 </pre>
             </div>
         </div>
@@ -93,7 +168,7 @@
                 </p>
 
                 <pre class="codeContainer">
-                    <code class="js">
+                <code class="js">
                         let tossCoinButton = new TkButton({ parent: &quot;body&quot;, text: &quot;Toss Coin&quot; });
                         let results = new TkStack({ parent: &quot;body&quot;, direction: TkStackDirection.VERTICAL });
 
@@ -106,7 +181,7 @@
                                 style: `color: ${resultColor};`
                             });
                         });
-                    </code>
+                </code>
                 </pre>
             </div>
         </div>
@@ -143,7 +218,7 @@
                 </p>
 
                 <pre class="codeContainer">
-                    <code class="js">
+                <code class="js">
                         // Declare views
                         let buttonStack = new TkStack({ parent: &quot;body&quot;, direction: TkStackDirection.FLOW });
                         let previousPageButton = new TkButton({ parent: buttonStack, text: &quot;&lt;&quot; });
@@ -199,7 +274,7 @@
                 </p>
 
                 <pre class="codeContainer">
-                    <code class="js">
+                <code class="js">
                         // Insert a text element into &lt;body&gt;
                         let modeText = new TkText(&quot;h1&quot;, { parent: &quot;body&quot; });
 
@@ -259,7 +334,7 @@
                 </p>
 
                 <pre class="codeContainer">
-                    <code class="js">
+                <code class="js">
                         // Declare the layout button stack and add it to the body
                         let buttonStack = new TkStack({
                             parent: &quot;body&quot;,

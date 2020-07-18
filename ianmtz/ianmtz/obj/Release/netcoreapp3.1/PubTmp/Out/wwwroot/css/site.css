@@ -921,6 +921,15 @@ code {
     margin-bottom: 0;
 }
 
+.flexList {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexList > * {
+    margin-bottom: 0.5rem;
+}
+
 /* Tablets/Medium screens */
 @media (max-width: 991px) {
     body .container {
