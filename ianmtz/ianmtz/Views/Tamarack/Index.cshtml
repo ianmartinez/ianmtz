@@ -213,7 +213,7 @@
                 </p>
 
                 <p class="extendedDescription">
-                    Each page in a notebook is represented by a <strong>TkNotebookPage</strong>, which includes a tab
+                    Each page in a notebook is represented by a <strong>TkPage</strong>, which includes a tab
                     button and a content panel.
                 </p>
 
@@ -235,7 +235,7 @@
                         previousPageButton.on(&quot;click&quot;, () =&gt; notebook.goToPrevious());
                         nextPageButton.on(&quot;click&quot;, () =&gt; notebook.goToNext());
                         addPageButton.on(&quot;click&quot;, () =&gt; {
-                            notebook.add(new TkNotebookPage({
+                            notebook.add(new TkPage({
                                 title: `Tab ${++pageCount}`,
                                 content: [new TkText(&quot;h2&quot;, { text: `Content ${pageCount}` })]
                             }));
