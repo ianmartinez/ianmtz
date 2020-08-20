@@ -1,4 +1,8 @@
-﻿html {
+﻿:root {
+    --border-radius: 0.5rem;
+}
+
+html {
     background-color: black;
 }
 
@@ -105,9 +109,8 @@ a:hover {
 }
 
 .navbarContainer {
-    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
-    border-radius: 0.25rem;
-    border: 1px solid rgba(74, 74, 74, 0.9);
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.3);
+    border-radius: var(--border-radius);
 }
 
 .bg-dark {
@@ -115,15 +118,16 @@ a:hover {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     box-shadow: none;
-    border: 0px solid transparent;
+    border: 1px solid rgba(84, 84, 84, 0.9);
+    border-radius: var(--border-radius);
 }
 
 .windowOuter {
-    padding: 0.35rem;
+    padding: 0.25rem;
     background: rgba(255, 255, 255, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.5);
     box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.6);
-    border-radius: 0.25rem;
+    border-radius: var(--border-radius);
 }
 
 .windowOuterBlurred {
@@ -134,7 +138,7 @@ a:hover {
 .windowInner {
     background: rgba(235, 235, 235, 1);
     border: 1px solid rgba(95, 95, 95, 0.9);
-    border-radius: 0.25rem;
+    border-radius: var(--border-radius);
     padding: 1rem;
     font-weight: normal;
     color: #000;
@@ -144,13 +148,15 @@ a:hover {
     padding: 0.75rem;
     margin: 0;
     margin-bottom: 0.25rem;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
     border-bottom: 1px solid #b9b9b9;
     background: linear-gradient(0deg, #d1d1d1, rgb(223, 223, 223));
-    border-radius: 0.25rem;
+    border-radius: var(--border-radius);
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.15);
+    color: #464646;
 }
 
 .glassWindow .windowInner {
@@ -158,39 +164,37 @@ a:hover {
 }
 
 .glassWindow .windowTitle {
-    background: linear-gradient(0, rgba(181, 181, 181, 0.5), rgba(226, 226, 226, 0.9));
-    border-bottom: 1px solid rgba(146, 146, 146, 0.9);
+    background: rgba(255, 255, 255, 0.45);
+    border-bottom: 1px solid rgba(174, 174, 174, 0.9);
 }
 
 .glassWindow .btn-secondary {
-    background: rgba(171, 171, 171, 0.25);
-    border: 1px solid rgba(112, 112, 112, 0.3);
-    box-shadow: 0 0 3px 1px rgba(138, 138, 138, 0.15);
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.1);
 }
 
-.jumbotron {
-    color: black;
-    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.6);
-    border: 1px solid white;
+.jumbotron .windowInner,
+.jumbotron .windowInner .col-md-5,
+.jumbotron .windowInner .col-md-7 {
+    display: flex;
+    flex-direction: row;
 }
 
-    .jumbotron .windowInner,
-    .jumbotron .windowInner .col-md-5,
-    .jumbotron .windowInner .col-md-7 {
-        display: flex;
-        flex-direction: row;
-    }
+.jumbotron .portraitContainer {
+    margin-right: 1.5rem;
+    margin-left: 0;
+}
 
-    .jumbotron .portraitContainer {
-        margin-right: 1.5rem;
-        margin-left: 0.5rem;
-    }
+.jumboDescription h1 {
+    font-weight: 600;
+}
 
 .portraitContainer img {
-    max-width: 100px;
-    border-radius: 100%;
-    border: 1px solid #2f2f2f;
-    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.25);
+    max-width: 90px;
+    border-radius: var(--border-radius);
+    border: 1px solid #2b2b2b;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.35);
 }
 
 main {
@@ -212,7 +216,7 @@ footer {
 .btn {
     line-height: 1rem;
     padding: 0.5rem 0.75rem;
-    text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     display: inline-flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -223,24 +227,25 @@ footer {
 .btn-primary {
     color: #fff;
     background-color: #67901b;
-    background: linear-gradient(0deg, #577b13,#67980d);
-    border-color: #5b8213;
+    background: linear-gradient(0deg, #669b14,#7eaa26);
+    border-color: #4d6c15;
     text-decoration: none;
+    border-radius: var(--border-radius);
 }
 
     .btn-primary:hover {
         color: #fff;
         background-color: #7dad24;
-        background: linear-gradient(0deg, #6d981d,#7daf22);
-        border-color: #648c19;
+        background: linear-gradient(0deg, #78b11f,#90b742);
+        border-color: #6c902a;
     }
 
     .btn-primary:focus,
     .btn-primary.focus {
         color: #fff;
-        background-color: #608a15;
-        background: linear-gradient(0deg, #6d981d,#7daf22);
-        border-color: #527513;
+        background-color: #7dad24;
+        background: linear-gradient(0deg, #78b11f,#90b742);
+        border-color: #6c902a;
         box-shadow: 0 0 0 0.2rem rgba(110, 156, 22, 0.5);
     }
 
@@ -276,9 +281,9 @@ footer {
 }
 
     .btn-secondary:hover {
-        border-color: rgba(150, 203, 56, 0.85);
+        border-color: rgba(159, 200, 88, 0.85);
         background-color: rgb(226, 247, 186);
-        background: linear-gradient(0deg, rgba(219, 255, 147, 0.6), rgba(233, 255, 190, 0.8));
+        background: linear-gradient(0deg, rgba(234, 254, 192, 0.6), rgba(244, 255, 222, 0.8));
         color: #1a2703;
     }
 
@@ -318,9 +323,9 @@ footer {
 }
 
 .imageButton ion-icon {
-    margin: 0.1rem 0.25rem;
+    margin: 0 0.25rem;
     margin-left: 0;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 
 .imageButton span {
@@ -330,13 +335,16 @@ footer {
 
 .dropdown-menu {
     background-color: rgba(23, 23, 23, 1) !important;
-    border: 1px solid rgba(66, 66, 66, 1);
+    border: 1px solid rgba(78, 78, 78, 1);
     box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+    padding: 0.25rem;
+    border-radius: var(--border-radius);
 }
 
 .dropdown-item {
     color: rgb(224, 224, 224);
     border: 1px solid transparent;
+    border-radius: var(--border-radius);
 }
 
 .dropdown-divider {
@@ -347,18 +355,18 @@ footer {
 .dropdown-item.active, .dropdown-item:active {
     color: #fff;
     text-decoration: none;
-    background-color: #47690c;
-    border: 1px solid #5e8618;
+    background-color: #6a9423;
+    border: 1px solid #7da438;
 }
 
 .dropdown-item:focus, .dropdown-item:hover {
     color: white;
     text-decoration: none;
     background-color: #689811;
-    background: linear-gradient(0deg, #496b0c, #5e8617);
-    border: 1px solid #628a1a;
+    background: linear-gradient(0deg, #669b14, #7eaa26);
+    border: 1px solid #81ae30;
     box-shadow: 0 0 2px 1px #243503;
-    text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
 }
 
 /* App List */
@@ -366,7 +374,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .appTile {
@@ -377,7 +385,7 @@ footer {
     padding: 0.5rem;
     margin: 0.5rem;
     min-height: 100px;
-    border-radius: 0.25rem;
+    border-radius: var(--border-radius);
     text-decoration: none;
     width: calc(50% - 1rem);
     text-align: left;
@@ -577,9 +585,9 @@ footer {
 }
 
 .featurette-image {
-    border-radius: 0.25rem;
-    border: 6px solid white;
-    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+    border-radius: var(--border-radius);
+    border: 5px solid white;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.35);
     max-height: 40vh;
     max-width: 100%;
     margin: 0.5rem 0;
@@ -649,7 +657,7 @@ footer {
 
     .appFeatures .newFeature {
         color: #63920b;
-        border-radius: 0.25rem;
+        border-radius: var(--border-radius);
         font-size: 1.25rem;
         border: 2px solid #63920b;
         align-self: flex-start;
@@ -660,11 +668,11 @@ footer {
     .appFeatures h1 {
         background-color: rgba(0, 0, 0, 0.1);
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05));
-        border: 1px solid rgba(0, 0, 0, 0.2);
+        border: 1px solid rgba(0, 0, 0, 0.3);
         padding: 0.75rem;
-        border-radius: 0.25rem;
+        border-radius: var(--border-radius);
         line-height: 2.5rem;
-        box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.25);
+        box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(255, 255, 255, 0.25);
         margin: 1.75rem -15px;
         margin-top: 0.25rem;
         color: #555555;
@@ -770,14 +778,14 @@ footer {
     padding: 0rem;
     display: inline-flex;
     background: rgba(255, 255, 255, 0.8);
-    border-radius: 0.25rem;
+    border-radius: var(--border-radius);
 }
 
 #lightboxModal img {
     max-width: 100%;
     max-height: 90vh;
     border: 1px solid rgba(0, 0, 0, 0.5);
-    border-radius: 0.25rem;
+    border-radius: var(--border-radius);
     object-fit: contain;
 }
 
@@ -789,8 +797,8 @@ footer {
 
 #lightboxModal .modal-content {
     display: block;
-    padding: 0.5rem;
-    border-radius: 0.25rem;
+    padding: 0.25rem;
+    border-radius: var(--border-radius);
     background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.75);
     -webkit-backdrop-filter: blur(10px);
@@ -814,8 +822,8 @@ footer {
 
 code {
     border: 1px solid #000;
-    border-radius: 0.25rem;
-    padding: 0.5rem 1.5rem !important;
+    border-radius: var(--border-radius);
+    padding: 0.0rem 1.5rem !important;
     line-height: 1.5rem;
     background: #282b2e;
     color: white;
@@ -828,14 +836,14 @@ code {
     line-height: 0rem;
     box-shadow: 0px 0px 6px 1px rgba(49,51,43,0.5);
     overflow: hidden;
-    border-radius: 0.25rem;
+    border-radius: var(--border-radius);
     color: white;
     margin: 1.5rem 0;
 }
 
 .asciiWeight {
     border: 1px solid #b7b6b6;
-    border-radius: 0.25rem;
+    border-radius: var(--border-radius);
     padding: 0.1rem 0.25rem;
     background: #d5d5d5;
     color: black;
@@ -926,9 +934,9 @@ code {
     flex-direction: column;
 }
 
-.flexList > * {
-    margin-bottom: 0.5rem;
-}
+    .flexList > * {
+        margin-bottom: 0.5rem;
+    }
 
 /* Tablets/Medium screens */
 @media (max-width: 991px) {
