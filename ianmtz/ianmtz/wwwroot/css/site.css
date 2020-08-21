@@ -11,7 +11,7 @@ body {
     color: #fff;
     background-color: rgb(32, 67, 77);
     background: linear-gradient(45deg, rgb(38, 38, 38), rgb(0, 0, 0));
-    background: radial-gradient(ellipse at top, #313534, #383f406e), radial-gradient(ellipse at bottom, #2a2d31, #17181a);
+    background: radial-gradient(ellipse at top, #1d1d1d, #1313136e), radial-gradient(ellipse at bottom, #232323, #1d1d1d);
     padding: 0;
     background-size: cover;
     min-height: 100vh;
@@ -115,7 +115,7 @@ a:hover {
 }
 
 .navbarContainer {
-    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.8);
     border-radius: var(--border-radius);
 }
 
@@ -130,15 +130,29 @@ a:hover {
 
 .windowOuter {
     padding: 0.25rem;
-    background: rgba(255, 255, 255, 0.5);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.6);
+    background: rgba(255, 255, 255, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.8);
     border-radius: var(--border-radius);
 }
 
 .windowOuterBlurred {
-    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    position: relative;
+}
+
+.windowOuterBlurred:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: -1;
+    border-radius: var(--border-radius);
 }
 
 .windowInner {
@@ -213,7 +227,7 @@ main {
 }
 
 footer {
-    text-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.9);
     text-align: center;
     padding-bottom: 2rem !important;
 }
