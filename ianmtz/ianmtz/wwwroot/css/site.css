@@ -11,7 +11,7 @@ body {
     color: #fff;
     background-color: rgb(32, 67, 77);
     background: linear-gradient(45deg, rgb(38, 38, 38), rgb(0, 0, 0));
-    background: radial-gradient(ellipse at top, rgb(63, 63, 63), rgba(0, 0, 0, 0.43)), radial-gradient(ellipse at bottom, rgb(81, 81, 81), rgb(0, 0, 0));
+    background: radial-gradient(ellipse at top, #313534, #383f406e), radial-gradient(ellipse at bottom, #2a2d31, #17181a);
     padding: 0;
     background-size: cover;
     min-height: 100vh;
@@ -107,6 +107,7 @@ a:hover {
 .navbar-toggler {
     padding: 0.45rem 0.55rem;
     margin: -0.25rem;
+    border-radius: var(--border-radius);
 }
 
 .navbar-dark .navbar-toggler {
