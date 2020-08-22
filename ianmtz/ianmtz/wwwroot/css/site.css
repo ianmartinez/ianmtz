@@ -32,8 +32,8 @@
     --btn-primary-active-bg-2: hsl(78, 72%, 26%);
     --btn-primary-active-border: hsl(82, 76%, 21%);
     --btn-primary-active-text-shadow: hsla(0, 0%, 0%, 0.5);
-    --btn-primary-focus-ring: hsla(82, 100%, 70%, 0.5);
-    --btn-primary-focus-outline: hsla(82, 100%, 63%, 0.8);
+    --btn-primary-focus-ring: hsla(82, 64%, 41%, 0.9);
+    --btn-primary-focus-outline: hsla(82, 69%, 40%, 0.8);
 
     /* Secondary button */
     --btn-secondary-text: #262626;
