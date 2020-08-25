@@ -4,13 +4,17 @@
     /* Basic layout */
     --border-radius: 0.5rem;
 
+    /* Blurs */
+    --base-blur: blur(7px);
+    --intense-blur: blur(10px);
+
     /* Basic colors */
     --outline-color: hsla(93, 77%, 76%, 0.7);
     --selection-color: hsla(78, 60%, 59%, 0.568);
     
     /* Accents */
-    --accent-text: hsl(81, 71%, 31%);
-    --accent-text-hover: hsl(89, 76%, 38%);
+    --accent-text: hsl(81, 74%, 33%);
+    --accent-text-hover: hsl(81, 74%, 38%);
 
     /* Disabled button */
     --btn-disabled: #757575;
@@ -53,6 +57,11 @@
     --btn-secondary-bg-2-active: hsl(83, 57%, 86%);
     --btn-secondary-border-active:  hsl(91, 34%, 65%);
     --btn-secondary-active-focus-ring:  hsla(91, 75%, 42%, 0.3);
+
+    /* Navbar */
+    --navbar-border: rgba(80, 80, 80, 0.8);
+    --navbar-bg: rgba(7, 7, 7, 0.6);
+    --navbar-shadow: rgba(0, 0, 0, 0.8);
 
     /* Menus */
     --dropdown-bg: rgba(23, 23, 23, 1);
@@ -153,13 +162,17 @@ p a,
     font-weight: lighter;
 }
 
+.navbar-nav .nav-link:hover {
+    text-shadow: 0 0 13px rgba(255, 255, 255, 0.45);    
+}
+
 .navbar-nav .nav-link:focus,
 .navbar-nav .nav-link:hover {
     outline: none;
 }
 
 .show > .nav-link {
-    text-shadow: 0 0 7px rgba(255, 255, 255, 0.4);
+    text-shadow: 0 0 13px rgba(255, 255, 255, 0.8);
 }
 
 .nav-link {
@@ -183,37 +196,38 @@ p a,
 }
 
 .navbar-dark .navbar-toggler {
-    border: 1px solid rgba(74, 74, 74, 0.9);
+    border: 1px solid var(--navbar-border);
 }
 
 .navbarContainer {
-    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 15px 1px var(--navbar-shadow);
     border-radius: var(--border-radius);
 }
 
 .bg-dark {
-    background-color: rgba(23, 23, 23, 0.85) !important;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    background-color: var(--navbar-bg) !important;
+    -webkit-backdrop-filter: var(--base-blur);
+    backdrop-filter: var(--base-blur);
     box-shadow: none;
-    border: 1px solid rgba(74, 74, 74, 0.9);
+    border: 1px solid var(--navbar-border);
     border-radius: var(--border-radius);
 }
 
 .windowOuter {
     padding: 0.25rem;
-    background: rgba(255, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.45);
     border: 1px solid rgba(255, 255, 255, 0.7);
     box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.7);
     border-radius: var(--border-radius);
 }
 
 .windowOuterBlurred {
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: var(--base-blur);
+    backdrop-filter: var(--base-blur);
     position: relative;
 }
 
+/* Hack to fix Safari blur-behind */
 .windowOuterBlurred:before {
     content: "";
     position: absolute;
@@ -221,8 +235,7 @@ p a,
     left: 0;
     right: 0;
     bottom: 0;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: var(--base-blur);
     z-index: -1;
     border-radius: var(--border-radius);
 }
@@ -242,13 +255,13 @@ p a,
     margin-bottom: 0.25rem;
     font-size: 1.5rem;
     font-weight: 600;
-    border-bottom: 1px solid #b9b9b9;
-    background: linear-gradient(0deg, #d0d0d0, #dedede);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.65);
+    background: linear-gradient(0deg, rgba(150, 150, 150, 0.25), rgba(195, 195, 195, 0.25));
     border-radius: var(--border-radius);
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.15);
-    color: #292929;
+    color: rgba(0, 0, 0, 0.9);
 }
 
 .glassWindow .windowTitle {
@@ -256,12 +269,12 @@ p a,
 }
 
 .glassWindow .windowInner {
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.75);
 }
 
 .glassWindow .btn-secondary {
     background: rgba(255, 255, 255, 0.4);
-    border: 1px solid rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.85);
     box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.1);
 }
 
@@ -476,7 +489,7 @@ footer {
     }
 
     .appTile .appIcon {
-        width: 60px;
+        width: 65px;
         margin-left: 0.5rem;
         margin-right: 0.5rem;
     }
@@ -879,8 +892,8 @@ footer {
     border-radius: var(--border-radius);
     background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.75);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: var(--intense-blur);
+    backdrop-filter: var(--intense-blur);
 }
 
 #lightboxModal .modal-body {
@@ -893,8 +906,8 @@ footer {
 
     .modal-backdrop.show {
         opacity: 1;
-        -webkit-backdrop-filter: blur(10px);
-        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: var(--intense-blur);
+        backdrop-filter: var(--intense-blur);
         background: rgba(0, 0, 0, 0.5);
     }
 
