@@ -163,7 +163,7 @@ p a,
 }
 
 .navbar-nav .nav-link:hover {
-    text-shadow: 0 0 13px rgba(255, 255, 255, 0.45);    
+    /*text-shadow: 0 0 13px rgba(255, 255, 255, 0.45);    */
 }
 
 .navbar-nav .nav-link:focus,
@@ -202,15 +202,28 @@ p a,
 .navbarContainer {
     box-shadow: 0 0 15px 1px var(--navbar-shadow);
     border-radius: var(--border-radius);
+    border: 1px solid var(--navbar-border);
+    position: relative;
+    z-index: 1;
+}
+
+.navbarContainer:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-backdrop-filter: var(--base-blur);
+    z-index: -1;
+    border-radius: var(--border-radius);
 }
 
 .bg-dark {
     background-color: var(--navbar-bg) !important;
-    -webkit-backdrop-filter: var(--base-blur);
-    backdrop-filter: var(--base-blur);
     box-shadow: none;
-    border: 1px solid var(--navbar-border);
     border-radius: var(--border-radius);
+    backdrop-filter: var(--base-blur);
 }
 
 .windowOuter {
