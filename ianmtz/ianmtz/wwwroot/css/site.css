@@ -473,8 +473,8 @@ footer {
     border: 1px solid transparent;
     border-radius: var(--border-radius);
     line-height: 1.25rem;
-    padding: 0.25rem 0.5rem;
-    padding-bottom: 0.15rem;
+    padding: 0.5rem 0.75rem;
+    padding-bottom: 0.4rem;
 }
 
 .dropdown-divider {
@@ -1086,7 +1086,7 @@ code {
     }
 
     .nav-link, .dropdown-item {
-        padding: 0.55rem 1rem;
+        /*padding: 0.55rem 1rem;*/
     }
 
     .appFeatures .col-md-9,
