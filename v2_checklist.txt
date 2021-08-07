@@ -1,4 +1,3 @@
 - update to bootstrap 5
-- themeing system  (w/ dark and light mode)
 - update screenshots
 - ascii studio big sur update
