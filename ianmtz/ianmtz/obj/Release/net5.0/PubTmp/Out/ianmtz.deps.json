@@ -31,7 +31,7 @@
   },
   "targets": {
     ".NETCoreApp,Version=v5.0": {
-      "ianmtz/1.0.0": {
+      "ianmtz/2.0.0": {
         "dependencies": {
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "5.0.2",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
@@ -3276,7 +3276,7 @@
     }
   },
   "libraries": {
-    "ianmtz/1.0.0": {
+    "ianmtz/2.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
