@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="Layer_1"
+   data-name="Layer 1"
+   viewBox="0 0 88.730006 88.68"
+   version="1.1"
+   sodipodi:docname="AccuWeather.svg"
+   width="88.730003"
+   height="88.68"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   inkscape:export-filename="C:\Users\Ian Martinez\Documents\GitHub\ianmtz\original-images\AccuWeather.png"
+   inkscape:export-xdpi="433.01758"
+   inkscape:export-ydpi="433.01758"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview15"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     fit-margin-top="3"
+     fit-margin-left="3"
+     fit-margin-right="3"
+     fit-margin-bottom="3"
+     inkscape:zoom="5.773299"
+     inkscape:cx="-54.907948"
+     inkscape:cy="17.49433"
+     inkscape:window-width="2560"
+     inkscape:window-height="1377"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">.cls-1{fill:#f05514;}</style>
+  </defs>
+  <path
+     class="cls-1"
+     d="M 44.37,73.03 A 28.66,28.66 0 1 1 73.02,44.37 28.69,28.69 0 0 1 44.37,73.03 M 85.73,44.23 76.3,35.69 80.1,23.59 67.67,20.89 64.93,8.48 52.83,12.37 44.25,3 35.71,12.42 23.59,8.59 20.91,21 8.5,23.75 12.37,35.87 3,44.45 l 9.41,8.53 -3.82,12.12 12.42,2.68 2.75,12.41 12.1,-3.88 8.59,9.37 8.53,-9.42 12.12,3.83 2.68,-12.42 12.41,-2.76 -3.82,-12.1 z"
+     id="path8" />
+  <path
+     class="cls-1"
+     d="m 26.28,26.27 a 25.56,25.56 0 1 1 0,36.15 25.59,25.59 0 0 1 0,-36.15"
+     id="path10" />
+</svg>

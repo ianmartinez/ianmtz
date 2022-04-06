@@ -1,0 +1,100 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ianmtz
+build_property.RootNamespace = ianmtz
+build_property.ProjectDir = C:\Users\Ian Martinez\Documents\GitHub\ianmtz\ianmtz\ianmtz\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Ian Martinez\Documents\GitHub\ianmtz\ianmtz\ianmtz
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Ian Martinez/Documents/GitHub/ianmtz/ianmtz/ianmtz/Views/About/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ian Martinez/Documents/GitHub/ianmtz/ianmtz/ianmtz/Views/AsciiStudio/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNjaWlTdHVkaW9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ian Martinez/Documents/GitHub/ianmtz/ianmtz/ianmtz/Views/CardinalQemu/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyZGluYWxRZW11XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ian Martinez/Documents/GitHub/ianmtz/ianmtz/ianmtz/Views/Chameleon/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhbWVsZW9uXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ian Martinez/Documents/GitHub/ianmtz/ianmtz/ianmtz/Views/Error/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXJyb3JcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ian Martinez/Documents/GitHub/ianmtz/ianmtz/ianmtz/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ian Martinez/Documents/GitHub/ianmtz/ianmtz/ianmtz/Views/Icons/Horizon.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWNvbnNcSG9yaXpvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ian Martinez/Documents/GitHub/ianmtz/ianmtz/ianmtz/Views/Icons/Taiga.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWNvbnNcVGFpZ2EuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ian Martinez/Documents/GitHub/ianmtz/ianmtz/ianmtz/Views/Icons/Tlell.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWNvbnNcVGxlbGwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ian Martinez/Documents/GitHub/ianmtz/ianmtz/ianmtz/Views/LaikaWM/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFpa2FXTVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ian Martinez/Documents/GitHub/ianmtz/ianmtz/ianmtz/Views/LangPad/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuZ1BhZFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ian Martinez/Documents/GitHub/ianmtz/ianmtz/ianmtz/Views/Old/ChameleonClassic.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2xkXENoYW1lbGVvbkNsYXNzaWMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ian Martinez/Documents/GitHub/ianmtz/ianmtz/ianmtz/Views/Old/Screensavers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2xkXFNjcmVlbnNhdmVycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ian Martinez/Documents/GitHub/ianmtz/ianmtz/ianmtz/Views/Resources/AeroLib.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzb3VyY2VzXEFlcm9MaWIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ian Martinez/Documents/GitHub/ianmtz/ianmtz/ianmtz/Views/Shared/_AppLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BcHBMYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ian Martinez/Documents/GitHub/ianmtz/ianmtz/ianmtz/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ian Martinez/Documents/GitHub/ianmtz/ianmtz/ianmtz/Views/Shared/_Projects.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Qcm9qZWN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ian Martinez/Documents/GitHub/ianmtz/ianmtz/ianmtz/Views/Shared/_SyntaxHighlighter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TeW50YXhIaWdobGlnaHRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ian Martinez/Documents/GitHub/ianmtz/ianmtz/ianmtz/Views/Tamarack/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFtYXJhY2tcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ian Martinez/Documents/GitHub/ianmtz/ianmtz/ianmtz/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ian Martinez/Documents/GitHub/ianmtz/ianmtz/ianmtz/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
