@@ -65,10 +65,10 @@
     --dropdown-item-active-bg: hsl(82, 62%, 36%);
     --dropdown-item-active-border: hsl(82, 49%, 43%);
     --dropdown-item-focus-text: white;
-    --dropdown-item-focus-text-shadow: rgba(0, 0, 0, 0.25);
-    --dropdown-item-focus-bg-1: hsl(88, 87%, 33%);
-    --dropdown-item-focus-bg-2: hsl(78, 79%, 37%);
-    --dropdown-item-focus-border: hsl(82, 75%, 41%);
+    --dropdown-item-focus-text-shadow: hsla(0, 0%, 0%, 0.8);
+    --dropdown-item-focus-bg-1: hsl(88deg 80% 30%);
+    --dropdown-item-focus-bg-2: hsl(78deg 66% 37%);
+    --dropdown-item-focus-border: hsl(82deg 67% 43%);
     --dropdown-item-focus-shadow: #243503;
     /* App tile */
     --app-tile-hover: hsla(82, 59%, 43%, 0.18);
@@ -350,7 +350,7 @@ p a,
 .portraitContainer img {
     max-width: 100px;
     border-radius: var(--border-radius);
-    box-shadow: 0 0 10px 0px rgb(0 0 0 / 40%), 0 0 0px 1px rgb(98 98 98);
+    box-shadow: 0 0 10px 0px rgb(0 0 0 / 40%), 0 0 0px 1px rgb(139 139 139);
 }
 
 main {
@@ -513,7 +513,7 @@ footer {
     background: linear-gradient(0deg, var(--dropdown-item-focus-bg-1), var(--dropdown-item-focus-bg-2));
     border: 1px solid var(--dropdown-item-focus-border);
     box-shadow: 0 0 2px 1px var(--dropdown-item-focus-shadow);
-    text-shadow: 0 0 5px var(--dropdown-item-focus-text-shadow);
+    text-shadow: 0 0 2px var(--dropdown-item-focus-text-shadow);
 }
 
 /* App List */
