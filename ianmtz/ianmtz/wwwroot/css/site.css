@@ -337,6 +337,10 @@ p a,
     font-weight: 600;
 }
 
+.jumboDescription p {
+    padding: 0.25rem 0;
+}
+
 .homeJumbo {
     background: rgb(255 255 255 / 0.9);
 }

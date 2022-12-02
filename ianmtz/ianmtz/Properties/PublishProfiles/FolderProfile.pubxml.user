@@ -7,6 +7,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <_PublishTargetUrl>C:\SitePublish</_PublishTargetUrl>
-    <History>True|2022-04-06T00:44:35.3199986Z;True|2021-08-10T14:15:51.2937772-06:00;True|2021-08-08T21:14:24.0469945-06:00;True|2021-08-07T14:37:43.3189101-06:00;True|2021-08-07T14:37:27.1406671-06:00;True|2021-07-28T20:28:50.7483302-06:00;False|2021-07-28T20:27:20.8939732-06:00;</History>
+    <History>True|2022-12-01T23:17:17.9408941Z;True|2022-04-24T13:33:43.2329426-06:00;True|2022-04-05T18:44:35.3199986-06:00;True|2021-08-10T14:15:51.2937772-06:00;True|2021-08-08T21:14:24.0469945-06:00;True|2021-08-07T14:37:43.3189101-06:00;True|2021-08-07T14:37:27.1406671-06:00;True|2021-07-28T20:28:50.7483302-06:00;False|2021-07-28T20:27:20.8939732-06:00;</History>
+    <LastFailureDetails />
   </PropertyGroup>
 </Project>
