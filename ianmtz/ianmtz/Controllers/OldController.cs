@@ -1,17 +1,16 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace ianmtz.Controllers
+namespace ianmtz.Controllers;
+
+public class OldController : Controller
 {
-    public class OldController : Controller
-    {
-         public IActionResult ChameleonClassic()
-        {
-            return View();
-        }
-        
-        public IActionResult Screensavers()
-        {
-            return View();
-        }
-    }
+  public IActionResult ChameleonClassic()
+  {
+    return View();
+  }
+
+  public IActionResult Screensavers()
+  {
+    return View();
+  }
 }

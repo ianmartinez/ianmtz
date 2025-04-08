@@ -1,12 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace ianmtz.Controllers
+namespace ianmtz.Controllers;
+
+public class AsciiStudioController : Controller
 {
-    public class AsciiStudioController : Controller
-    {
-        public IActionResult Index()
-        {
-            return View();
-        }
-    }
+  public IActionResult Index()
+  {
+    return View();
+  }
 }

@@ -1,42 +1,43 @@
 ﻿@{
-    ViewData["Title"] = "Home";
+  ViewData["Title"] = "Home";
 }
 
 <style>
-    body {
-        background: url('../img/Background.jpg') no-repeat center center scroll;
-        background-size: cover;
-    }
+  body {
+    background: url('../img/Background.jpg') no-repeat center center scroll;
+    background-size: cover;
+  }
 
-    .internalFrame {
-        background: transparent !important;
-    }
+  .internalFrame {
+    background: transparent !important;
+  }
 </style>
 
 <div class="jumbotron windowOuter windowOuterBlurred homeJumbo">
-    <div class="windowInner">
-        @*<div class="portraitContainer">
-            <img src="~/img/Portrait.jpg" />
+  <div class="windowInner">
+    @*<div class="portraitContainer">
+        <img src="~/img/Portrait.jpg" />
         </div>*@
 
-        <div class="jumboDescription">
-            <p>
-                A software developer and designer with experience in C#, C++, Java, JavaScript, Swift, Pascal, Python and more.
-            </p>
+    <div class="jumboDescription">
+      <p>
+        A software developer and designer with experience in C#, C++, Java, JavaScript, Swift, Pascal, Python
+        and more.
+      </p>
 
-            <div class="appButtons">
-                <a class="btn btn-primary imageButton" href="~/About" role="button">
-                    <ion-icon name="help-circle"></ion-icon>
-                    <span>About</span>
-                </a>
+      <div class="appButtons">
+        <a class="btn btn-primary imageButton" href="~/About" role="button">
+          <ion-icon name="help-circle"></ion-icon>
+          <span>About</span>
+        </a>
 
-                <a class="btn btn-primary imageButton" href="https://github.com/ianmartinez/" role="button">
-                    <ion-icon name="logo-github"></ion-icon>
-                    <span>GitHub</span>
-                </a>
-            </div>
-        </div>
+        <a class="btn btn-primary imageButton" href="https://github.com/ianmartinez/" role="button">
+          <ion-icon name="logo-github"></ion-icon>
+          <span>GitHub</span>
+        </a>
+      </div>
     </div>
+  </div>
 </div>
 
 @await Html.PartialAsync("~/Views/Shared/_Projects.cshtml")

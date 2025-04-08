@@ -1,142 +1,136 @@
-﻿@{
-    var browser = new Browser(Context.Request);
-}
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>@ViewData["Title"] - Ian Martinez</title>
+  <title>@ViewData["Title"] - Ian Martinez</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;600;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="~/css/site.css" />
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;600;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="~/css/site.css" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125816028-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-125816028-1');
-    </script>
-
-    @if (browser.IsIE)
-    {
-        <!-- IE-only stylesheets and scripts -->
-        <link rel="stylesheet" href="~/css/ie.css" />
-    }
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125816028-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-125816028-1');
+  </script>
 </head>
 
 <body>
-    <div class="internalFrame">        
-        @if (browser.IsIE)
-        {
-            <div class="ieNag">
-                <span>
-                    Internet Explorer is obsolete and was last updated in 2013. Please upgrade to a modern browser.
-                </span>
+  <div class="internalFrame">
+    <div class="container">
+      <div class="navbarContainer">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="~/">Ian <span class="bold">Martinez</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03"
+              aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample03">
+              <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="softwareDropDown" data-bs-toggle="dropdown"
+                    aria-expanded="false">Software</a>
+                  <ul class="dropdown-menu" aria-labelledby="softwareDropDown">
+                    <li><a class="dropdown-item" href="~/AsciiStudio">ASCII Studio</a></li>
+                    <li><a class="dropdown-item" href="~/CardinalQemu">Cardinal QEMU</a></li>
+                    <li><a class="dropdown-item" href="~/Chameleon">Chameleon</a></li>
+                    <li><a class="dropdown-item" href="~/LaikaWM">LaikaWM</a></li>
+                    <li><a class="dropdown-item" href="~/LangPad">LangPad</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="jsDropdown" data-bs-toggle="dropdown"
+                    aria-expanded="false">JavaScript</a>
+                  <ul class="dropdown-menu" aria-labelledby="jsDropdown">
+                    <li><a class="dropdown-item" href="~/Tamarack">Tamarack</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" data-bs-toggle="dropdown"
+                    aria-expanded="false">Resources</a>
+                  <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                    <li><a class="dropdown-item" href="~/Resources/AeroLib">AeroLib</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="iconsDropdown" data-bs-toggle="dropdown"
+                    aria-expanded="false">Icons</a>
+                  <ul class="dropdown-menu" aria-labelledby="iconsDropdown">
+                    <li><a class="dropdown-item" href="~/Icons/Horizon">Horizon</a></li>
+                    <li><a class="dropdown-item" href="~/Icons/Taiga">Taiga</a></li>
+                    <li><a class="dropdown-item" href="~/Icons/Tlell">Tlell</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="oldDropdown" data-bs-toggle="dropdown"
+                    aria-expanded="false">Old</a>
+                  <ul class="dropdown-menu" aria-labelledby="oldDropdown">
+                    <li><a class="dropdown-item" href="~/Old/ChameleonClassic">Chameleon Classic</a></li>
+                    <li><a class="dropdown-item" href="~/Old/Screensavers">Screensavers</a></li>
+                  </ul>
+                </li>
+
+                @*<li class="nav-item">
+                <a class="nav-link" href="https://www.patreon.com/ianmartinez">Support</a>
+                </li>*@
+
+                <li class="nav-item">
+                  <a class="nav-link" href="~/About">About</a>
+                </li>
+              </ul>
             </div>
-        }
+          </div>
+        </nav>
+      </div>
 
-        <div class="container">
-            <div class="navbarContainer">
-                <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="~/">Ian <span class="bold">Martinez</span></a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-
-                        <div class="collapse navbar-collapse" id="navbarsExample03">
-                            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="softwareDropDown" data-bs-toggle="dropdown" aria-expanded="false">Software</a>
-                                    <ul class="dropdown-menu" aria-labelledby="softwareDropDown">
-                                        <li><a class="dropdown-item" href="~/AsciiStudio">ASCII Studio</a></li>
-                                        <li><a class="dropdown-item" href="~/CardinalQemu">Cardinal QEMU</a></li>
-                                        <li><a class="dropdown-item" href="~/Chameleon">Chameleon</a></li>
-                                        <li><a class="dropdown-item" href="~/LaikaWM">LaikaWM</a></li>
-                                        <li><a class="dropdown-item" href="~/LangPad">LangPad</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="jsDropdown" data-bs-toggle="dropdown" aria-expanded="false">JavaScript</a>
-                                    <ul class="dropdown-menu" aria-labelledby="jsDropdown">
-                                        <li><a class="dropdown-item" href="~/Tamarack">Tamarack</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
-                                    <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
-                                        <li><a class="dropdown-item" href="~/Resources/AeroLib">AeroLib</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="iconsDropdown" data-bs-toggle="dropdown" aria-expanded="false">Icons</a>
-                                    <ul class="dropdown-menu" aria-labelledby="iconsDropdown">
-                                        <li><a class="dropdown-item" href="~/Icons/Horizon">Horizon</a></li>
-                                        <li><a class="dropdown-item" href="~/Icons/Taiga">Taiga</a></li>
-                                        <li><a class="dropdown-item" href="~/Icons/Tlell">Tlell</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="oldDropdown" data-bs-toggle="dropdown" aria-expanded="false">Old</a>
-                                    <ul class="dropdown-menu" aria-labelledby="oldDropdown">
-                                        <li><a class="dropdown-item" href="~/Old/ChameleonClassic">Chameleon Classic</a></li>
-                                        <li><a class="dropdown-item" href="~/Old/Screensavers">Screensavers</a></li>
-                                    </ul>
-                                </li>
-
-                                @*<li class="nav-item">
-                                    <a class="nav-link" href="https://www.patreon.com/ianmartinez">Support</a>
-                                </li>*@
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="~/About">About</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
+      <div class="modal" id="lightboxModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
             </div>
-
-            <div class="modal" id="lightboxModal" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-body">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <main role="main">
-                @RenderBody()
-            </main>
+          </div>
         </div>
+      </div>
 
-        <footer class="footer">
-            <div class="container">
-                &copy; @DateTime.Now.Year - Ian Martinez
-            </div>
-        </footer>
-
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-        <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
-
-        @RenderSection("Scripts", required: false)
+      <main role="main">
+        @RenderBody()
+      </main>
     </div>
+
+    <footer class="footer">
+      <div class="container">
+        &copy; @DateTime.Now.Year - Ian Martinez
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+  </div>
 </body>
+
 </html>

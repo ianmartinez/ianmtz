@@ -1,40 +1,40 @@
 ﻿@{
-    Layout = "_Layout";
-    var appJumboType = IsSectionDefined("screenshot") ? "" : "noScreenshot";
-    var leftCol = IsSectionDefined("screenshot") ? "col-md-7" : "noScreenshotLeft";
-    var descriptionAlignment = IsSectionDefined("icon") ? "" : "centeredDescription";
+  Layout = "_Layout";
+  var appJumboType = IsSectionDefined("screenshot") ? "" : "noScreenshot";
+  var leftCol = IsSectionDefined("screenshot") ? "col-md-7" : "noScreenshotLeft";
+  var descriptionAlignment = IsSectionDefined("icon") ? "" : "centeredDescription";
 }
 
 <div class="jumbotron windowOuter">
-    <div class="windowInner appJumbo @appJumboType">
-        <div class="@leftCol @descriptionAlignment">
-            @if(IsSectionDefined("icon")) 
-            {
-                <div class="appIcon">
-                    @RenderSection("icon", false)
-                </div>
-            }
-
-            <div class="appDescription">
-                <h1>@ViewData["Title"]</h1>
-
-                @RenderSection("description")
-            </div>
+  <div class="windowInner appJumbo @appJumboType">
+    <div class="@leftCol @descriptionAlignment">
+      @if (IsSectionDefined("icon"))
+      {
+        <div class="appIcon">
+          @RenderSection("icon", false)
         </div>
+      }
 
-        @if(IsSectionDefined("screenshot")) 
-        {
-            <div class="col-md-5">
-                <div class="appScreenshotContainer">
-                    @RenderSection("screenshot", false)
-                </div>
-            </div>
-        }
+      <div class="appDescription">
+        <h1>@ViewData["Title"]</h1>
+
+        @RenderSection("description")
+      </div>
     </div>
+
+    @if (IsSectionDefined("screenshot"))
+    {
+      <div class="col-md-5">
+        <div class="appScreenshotContainer">
+          @RenderSection("screenshot", false)
+        </div>
+      </div>
+    }
+  </div>
 </div>
 
 <div class="windowOuter">
-    <div class="windowInner">
-        @RenderBody()
-    </div>
+  <div class="windowInner">
+    @RenderBody()
+  </div>
 </div>

@@ -1,190 +1,190 @@
 @{
-    Layout = "_AppLayout";
-    ViewData["Title"] = "AeroLib";
+  Layout = "_AppLayout";
+  ViewData["Title"] = "AeroLib";
 }
 
 @section description {
-    <p class="appDescriptionText">
-        An extensive C# library for manipulating the DWM (Desktop Window Manager) on Windows Vista and Windows 7.
-    </p>
+  <p class="appDescriptionText">
+    An extensive C# library for manipulating the DWM (Desktop Window Manager) on Windows Vista and Windows 7.
+  </p>
 
-    <div class="appButtons">
-        <a class="btn btn-primary imageButton" href="https://github.com/ianmartinez/AeroLib" role="button">
-            <ion-icon name="logo-github"></ion-icon><span>GitHub</span>
-        </a>
-    </div>
+  <div class="appButtons">
+    <a class="btn btn-primary imageButton" href="https://github.com/ianmartinez/AeroLib" role="button">
+      <ion-icon name="logo-github"></ion-icon><span>GitHub</span>
+    </a>
+  </div>
 }
 
 @await Html.PartialAsync("~/Views/Shared/_SyntaxHighlighter.cshtml")
 
 <div class="container appFeatures">
-     <div class="row featurette">
-        <div class="col-md-9">
-            <h2 class="featurette-heading">Surround a control with Aero Glass</h2>
+  <div class="row featurette">
+    <div class="col-md-9">
+      <h2 class="featurette-heading">Surround a control with Aero Glass</h2>
 
-            <div class="featuretteDescription">
-                <p class="lead">
-                    Surround a control named <strong><em>SurroundedPanel</em></strong> with Aero Glass.
-                </p>
+      <div class="featuretteDescription">
+        <p class="lead">
+          Surround a control named <strong><em>SurroundedPanel</em></strong> with Aero Glass.
+        </p>
 
-                <p class="extendedDescription">
-                    Note: The background of a region needs to be black for Aero Glass to expand into it.
-                </p>
+        <p class="extendedDescription">
+          Note: The background of a region needs to be black for Aero Glass to expand into it.
+        </p>
 
-                <pre class="codeContainer">
-                    <code class="csharp">
-                        BackColor = Color.Black;
-                        Window.AeroSurroundControl(this, SurroundedPanel);
-                    </code>
-                </pre>
-            </div>
-        </div>
-
-        <div class="col-md-3">
-            <div class="imgContainer">
-                <img class="featurette-image" src="~/img/Resources/AeroLib/AeroSurround.jpg" lightbox />
-            </div>
-        </div>
+        <pre class="codeContainer">
+          <code class="csharp">
+              BackColor = Color.Black;
+              Window.AeroSurroundControl(this, SurroundedPanel);
+          </code>
+        </pre>
+      </div>
     </div>
 
-    <hr class="featurette-divider">
+    <div class="col-md-3">
+      <div class="imgContainer">
+        <img class="featurette-image" src="~/img/Resources/AeroLib/AeroSurround.jpg" lightbox />
+      </div>
+    </div>
+  </div>
 
-    <div class="row featurette orderFlip">
-        <div class="col-md-9">
-            <h2 class="featurette-heading">Fill a form with Aero Glass</h2>
+  <hr class="featurette-divider">
 
-            <div class="featuretteDescription">
-                <p class="lead">
-                    Fill a form's entire client area with Aero Glass.
-                </p>
+  <div class="row featurette orderFlip">
+    <div class="col-md-9">
+      <h2 class="featurette-heading">Fill a form with Aero Glass</h2>
 
-                <p class="extendedDescription">
-                    Note: The background of a region needs to be black for Aero Glass to expand into it.
-                </p>
+      <div class="featuretteDescription">
+        <p class="lead">
+          Fill a form's entire client area with Aero Glass.
+        </p>
 
-                <pre class="codeContainer">
-                    <code class="csharp">
-                        BackColor = Color.Black;
-                        SurroundedPanel.BackColor = Color.Transparent;
-                        Window.AeroFill(this);
-                    </code>
-                </pre>
-            </div>
-        </div>
+        <p class="extendedDescription">
+          Note: The background of a region needs to be black for Aero Glass to expand into it.
+        </p>
 
-        <div class="col-md-3">
-            <div class="imgContainer">
-                <img class="featurette-image" src="~/img/Resources/AeroLib/AeroFill.jpg" lightbox />
-            </div>
-        </div>
-    </div> 
-    
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-        <div class="col-md-9">
-            <h2 class="featurette-heading">Retract Aero Glass</h2>
-
-            <div class="featuretteDescription">
-                <p class="lead">
-                    Remove expanded Aero Glass from a form.
-                </p>
-                
-                <p class="extendedDescription">
-                    Also reset the background color now that the black is no longer needed.
-                </p>
-
-                <pre class="codeContainer">
-                    <code class="csharp">
-                        BackColor = SystemColors.Control;
-                        SurroundedPanel.BackColor = Color.Transparent;
-                        Window.AeroRetract(this);
-                    </code>
-                </pre>
-            </div>
-        </div>
-
-        <div class="col-md-3">
-            <div class="imgContainer">
-                <img class="featurette-image" src="~/img/Resources/AeroLib/AeroRetract.jpg" lightbox />
-            </div>
-        </div>
+        <pre class="codeContainer">
+          <code class="csharp">
+              BackColor = Color.Black;
+              SurroundedPanel.BackColor = Color.Transparent;
+              Window.AeroFill(this);
+          </code>
+        </pre>
+      </div>
     </div>
 
-    <hr class="featurette-divider">
-
-    <div class="row featurette orderFlip">
-        <div class="col-md-9">
-            <h2 class="featurette-heading">Get the Aero Glass color</h2>
-
-            <div class="featuretteDescription">
-                <p class="lead">
-                    Get the primary color of the Aero Glass, if it exists and show it in a 
-                    message box.
-                </p>
-
-                <pre class="codeContainer">
-                    <code class="csharp">
-                        // Get the Aero Glass color
-                        var aeroColor = Desktop.AeroColor;
-
-                        // Check if the color exists, which might not be the case 
-                        // if on an older system or when using the Classic theme
-                        if(aeroColor != null)            
-                            MessageBox.Show("The Aero Glass color is: " + Desktop.AeroColor);
-                        else
-                            MessageBox.Show("Aero is not enabled.");
-                    </code>
-                </pre>
-            </div>
-        </div>
-
-        <div class="col-md-3">
-            <div class="imgContainer">
-                <img class="featurette-image" src="~/img/Resources/AeroLib/AeroGetColor.jpg" lightbox />
-            </div>
-        </div>
-    </div> 
-    
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-        <div class="col-md-9">
-            <h2 class="featurette-heading">Set the Aero Glass color</h2>
-
-            <div class="featuretteDescription">
-                <p class="lead">
-                    Set the primary color of the Aero Glass effect from a <em>System.Windows.Forms.ColorDialog</em>
-                    named <strong><em>ColorDialog</em></strong>.
-                </p>
-
-                <pre class="codeContainer">
-                    <code class="csharp">
-                        // Get the Aero Glass color
-                        var aeroColor = Desktop.AeroColor;
-
-                        // Check if the color exists, which might not be the case 
-                        // if on an older system or when using the Classic theme
-                        if(aeroColor != null)
-                        {
-                            // Set the color dialog to match the 
-                            // current color
-                            ColorDialog.Color = aeroColor.Value;
-
-                            if (ColorDialog.ShowDialog() == DialogResult.OK)
-                                Desktop.AeroColor = ColorDialog.Color;
-                        }
-                    </code>
-                </pre>
-            </div>
-        </div>
-
-        <div class="col-md-3">
-            <div class="imgContainer">
-                <img class="featurette-image" src="~/img/Resources/AeroLib/AeroSetColor.jpg" lightbox />
-                <img class="featurette-image" src="~/img/Resources/AeroLib/AeroSetColorAfter.jpg" lightbox />
-            </div>
-        </div>
+    <div class="col-md-3">
+      <div class="imgContainer">
+        <img class="featurette-image" src="~/img/Resources/AeroLib/AeroFill.jpg" lightbox />
+      </div>
     </div>
+  </div>
+
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-9">
+      <h2 class="featurette-heading">Retract Aero Glass</h2>
+
+      <div class="featuretteDescription">
+        <p class="lead">
+          Remove expanded Aero Glass from a form.
+        </p>
+
+        <p class="extendedDescription">
+          Also reset the background color now that the black is no longer needed.
+        </p>
+
+        <pre class="codeContainer">
+          <code class="csharp">
+            BackColor = SystemColors.Control;
+            SurroundedPanel.BackColor = Color.Transparent;
+            Window.AeroRetract(this);
+          </code>
+        </pre>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="imgContainer">
+        <img class="featurette-image" src="~/img/Resources/AeroLib/AeroRetract.jpg" lightbox />
+      </div>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette orderFlip">
+    <div class="col-md-9">
+      <h2 class="featurette-heading">Get the Aero Glass color</h2>
+
+      <div class="featuretteDescription">
+        <p class="lead">
+          Get the primary color of the Aero Glass, if it exists and show it in a
+          message box.
+        </p>
+
+        <pre class="codeContainer">
+          <code class="csharp">
+            // Get the Aero Glass color
+            var aeroColor = Desktop.AeroColor;
+
+            // Check if the color exists, which might not be the case 
+            // if on an older system or when using the Classic theme
+            if(aeroColor != null)            
+                MessageBox.Show("The Aero Glass color is: " + Desktop.AeroColor);
+            else
+                MessageBox.Show("Aero is not enabled.");
+          </code>
+        </pre>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="imgContainer">
+        <img class="featurette-image" src="~/img/Resources/AeroLib/AeroGetColor.jpg" lightbox />
+      </div>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-9">
+      <h2 class="featurette-heading">Set the Aero Glass color</h2>
+
+      <div class="featuretteDescription">
+        <p class="lead">
+          Set the primary color of the Aero Glass effect from a <em>System.Windows.Forms.ColorDialog</em>
+          named <strong><em>ColorDialog</em></strong>.
+        </p>
+
+        <pre class="codeContainer">
+          <code class="csharp">
+            // Get the Aero Glass color
+            var aeroColor = Desktop.AeroColor;
+
+            // Check if the color exists, which might not be the case 
+            // if on an older system or when using the Classic theme
+            if(aeroColor != null)
+            {
+                // Set the color dialog to match the 
+                // current color
+                ColorDialog.Color = aeroColor.Value;
+
+                if (ColorDialog.ShowDialog() == DialogResult.OK)
+                    Desktop.AeroColor = ColorDialog.Color;
+            }
+          </code>
+        </pre>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="imgContainer">
+        <img class="featurette-image" src="~/img/Resources/AeroLib/AeroSetColor.jpg" lightbox />
+        <img class="featurette-image" src="~/img/Resources/AeroLib/AeroSetColorAfter.jpg" lightbox />
+      </div>
+    </div>
+  </div>
 </div>

@@ -1,12 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace ianmtz.Controllers
+namespace ianmtz.Controllers;
+
+public class AboutController : Controller
 {
-    public class AboutController : Controller
-    {
-        public IActionResult Index()
-        {
-            return View();
-        }
-    }
+  public IActionResult Index()
+  {
+    return View();
+  }
 }

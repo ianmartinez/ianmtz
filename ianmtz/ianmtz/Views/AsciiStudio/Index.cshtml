@@ -1,216 +1,216 @@
 ﻿@{
-    Layout = "_AppLayout";
-    ViewData["Title"] = "ASCII Studio";
+  Layout = "_AppLayout";
+  ViewData["Title"] = "ASCII Studio";
 }
 
 @section icon {
-    <img src="~/img/AsciiStudio/Icon.png" />
+  <img src="~/img/AsciiStudio/Icon.png" />
 }
 
 @section description {
-    <p class="appDescriptionText">
-        Convert both still and animated images into ASCII art, with full color.
-    </p>
+  <p class="appDescriptionText">
+    Convert both still and animated images into ASCII art, with full color.
+  </p>
 
-    <div class="appDescriptionExtended">
-        <p><strong>Requirements:</strong> JDK 14 (bundled with macOS version)</p>
-        <p><strong>Written In:</strong> Java</p>
-    </div>
+  <div class="appDescriptionExtended">
+    <p><strong>Requirements:</strong> JDK 14 (bundled with macOS version)</p>
+    <p><strong>Written In:</strong> Java</p>
+  </div>
 
-    <div class="appButtons">
-        <a class="btn btn-primary imageButton" href="https://github.com/ianmartinez/AsciiStudio" role="button">
-            <ion-icon name="logo-github"></ion-icon><span>GitHub</span>
-        </a>
+  <div class="appButtons">
+    <a class="btn btn-primary imageButton" href="https://github.com/ianmartinez/AsciiStudio" role="button">
+      <ion-icon name="logo-github"></ion-icon><span>GitHub</span>
+    </a>
 
-        <a class="btn btn-primary imageButton" href="https://asciistudio.tumblr.com/" role="button">
-            <ion-icon name="logo-tumblr"></ion-icon><span>Tumblr</span>
-        </a>
+    <a class="btn btn-primary imageButton" href="https://asciistudio.tumblr.com/" role="button">
+      <ion-icon name="logo-tumblr"></ion-icon><span>Tumblr</span>
+    </a>
 
-        <a class="btn btn-primary imageButton" href="https://github.com/ianmartinez/AsciiStudio/releases" role="button">
-            <ion-icon name="download"></ion-icon><span>Download</span>
-        </a>
-    </div>
+    <a class="btn btn-primary imageButton" href="https://github.com/ianmartinez/AsciiStudio/releases" role="button">
+      <ion-icon name="download"></ion-icon><span>Download</span>
+    </a>
+  </div>
 }
 
 @section screenshot {
-    <img class="featurette-image appScreenshot" src="~/img/AsciiStudio/Screenshot.jpg" lightbox />
+  <img class="featurette-image appScreenshot" src="~/img/AsciiStudio/Screenshot.jpg" lightbox />
 }
 
 <div class="container appFeatures">
-    <div class="row featurette imageBelow">
-        <div class="col-md-7">
-            <h2 class="featurette-heading">Create ASCII art in full color</h2>
+  <div class="row featurette imageBelow">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Create ASCII art in full color</h2>
 
-            <div class="featuretteDescription">
-                <p class="lead">
-                    Preserve the color in images when converting into ASCII.
-                </p>
+      <div class="featuretteDescription">
+        <p class="lead">
+          Preserve the color in images when converting into ASCII.
+        </p>
 
-                <p class="extendedDescription">
-                    Besides tracking the lightness of each pixel, ASCII Studio also keeps 
-                    track of color.
-                </p>
-            </div>
-        </div>
-
-        <div class="col-md-5">
-            <div class="imgContainer imgContainerSplit">
-                <img class="featurette-image" src="~/img/AsciiStudio/Parrots.jpg" lightbox />
-                <img class="featurette-image" src="~/img/AsciiStudio/ParrotsAscii.png" lightbox />
-            </div>
-        </div>
+        <p class="extendedDescription">
+          Besides tracking the lightness of each pixel, ASCII Studio also keeps
+          track of color.
+        </p>
+      </div>
     </div>
 
-    <hr class="featurette-divider">
+    <div class="col-md-5">
+      <div class="imgContainer imgContainerSplit">
+        <img class="featurette-image" src="~/img/AsciiStudio/Parrots.jpg" lightbox />
+        <img class="featurette-image" src="~/img/AsciiStudio/ParrotsAscii.png" lightbox />
+      </div>
+    </div>
+  </div>
 
-    <div class="row featurette imageBelow">
-        <div class="col-md-7">
-            <h2 class="featurette-heading">Animated GIFs</h2>
+  <hr class="featurette-divider">
 
-            <div class="featuretteDescription">
-                <p class="lead">
-                    ASCII Studio can convert GIFs into animated ASCII art.
-                </p>
-            </div>
-        </div>
+  <div class="row featurette imageBelow">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Animated GIFs</h2>
 
-        <div class="col-md-5">
-            <div class="imgContainer imgContainerSplit">
-                <img class="featurette-image" src="~/img/AsciiStudio/Stars.gif" lightbox />
-                <img class="featurette-image" src="~/img/AsciiStudio/StarsAscii.gif" lightbox />
-            </div>
-        </div>
+      <div class="featuretteDescription">
+        <p class="lead">
+          ASCII Studio can convert GIFs into animated ASCII art.
+        </p>
+      </div>
     </div>
 
-    <hr class="featurette-divider">
+    <div class="col-md-5">
+      <div class="imgContainer imgContainerSplit">
+        <img class="featurette-image" src="~/img/AsciiStudio/Stars.gif" lightbox />
+        <img class="featurette-image" src="~/img/AsciiStudio/StarsAscii.gif" lightbox />
+      </div>
+    </div>
+  </div>
 
-    <div class="row featurette imageBelow">
-        <div class="col-md-7">
-            <h2 class="featurette-heading">Custom Weights</h2>
+  <hr class="featurette-divider">
 
-            <div class="featuretteDescription">
-                <p class="lead">
-                    Weights can be customized to get the best look for a given image.
-                </p>
+  <div class="row featurette imageBelow">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Custom Weights</h2>
 
-                <p class="extendedDescription">
-                    Weights are how ASCII Studio knows how to convert a pixel's lightness 
-                    into a corresponding character. The weights are provided as a string
-                    from darkest to lightest characters. For example, the first GIF is rendered
-                    with the weights <span class="asciiWeight">^%&##@@@@</span> and the second is rendered with the 
-                    weights <span class="asciiWeight">▒▓█</span>.
-                </p>
-            </div>
-        </div>
+      <div class="featuretteDescription">
+        <p class="lead">
+          Weights can be customized to get the best look for a given image.
+        </p>
 
-        <div class="col-md-5">
-            <div class="imgContainer imgContainerSplit">
-                <img class="featurette-image" src="~/img/AsciiStudio/Coffee.gif" lightbox />
-                <img class="featurette-image" src="~/img/AsciiStudio/CoffeeAscii1.gif" lightbox />
-                <img class="featurette-image" src="~/img/AsciiStudio/Coffee.gif" lightbox />
-                <img class="featurette-image" src="~/img/AsciiStudio/CoffeeAscii2.gif" lightbox />
-            </div>
-        </div>
+        <p class="extendedDescription">
+          Weights are how ASCII Studio knows how to convert a pixel's lightness
+          into a corresponding character. The weights are provided as a string
+          from darkest to lightest characters. For example, the first GIF is rendered
+          with the weights <span class="asciiWeight">^%&##@@@@</span> and the second is rendered with the
+          weights <span class="asciiWeight">▒▓█</span>.
+        </p>
+      </div>
     </div>
 
-    <hr class="featurette-divider">
+    <div class="col-md-5">
+      <div class="imgContainer imgContainerSplit">
+        <img class="featurette-image" src="~/img/AsciiStudio/Coffee.gif" lightbox />
+        <img class="featurette-image" src="~/img/AsciiStudio/CoffeeAscii1.gif" lightbox />
+        <img class="featurette-image" src="~/img/AsciiStudio/Coffee.gif" lightbox />
+        <img class="featurette-image" src="~/img/AsciiStudio/CoffeeAscii2.gif" lightbox />
+      </div>
+    </div>
+  </div>
 
-    <div class="row featurette imageBelow">
-        <div class="col-md-7">
-            <h2 class="featurette-heading">Override image colors</h2>
+  <hr class="featurette-divider">
 
-            <div class="featuretteDescription">
-                <p class="lead">
-                    A custom color can be used in place of an imported image's colors.
-                </p>
+  <div class="row featurette imageBelow">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Override image colors</h2>
 
-                <p class="extendedDescription">
-                    Just check the <strong>Override image</strong> checkbox and pick your own 
-                    font color to use instead.
-                </p>
-            </div>
-        </div>
+      <div class="featuretteDescription">
+        <p class="lead">
+          A custom color can be used in place of an imported image's colors.
+        </p>
 
-        <div class="col-md-5">
-            <div class="imgContainer imgContainerSplit">
-                <img class="featurette-image" src="~/img/AsciiStudio/Owl.jpg" lightbox />
-                <img class="featurette-image" src="~/img/AsciiStudio/OwlAscii.png" lightbox />
-            </div>
-        </div>
+        <p class="extendedDescription">
+          Just check the <strong>Override image</strong> checkbox and pick your own
+          font color to use instead.
+        </p>
+      </div>
     </div>
 
-    <hr class="featurette-divider">
+    <div class="col-md-5">
+      <div class="imgContainer imgContainerSplit">
+        <img class="featurette-image" src="~/img/AsciiStudio/Owl.jpg" lightbox />
+        <img class="featurette-image" src="~/img/AsciiStudio/OwlAscii.png" lightbox />
+      </div>
+    </div>
+  </div>
 
-    <div class="row featurette imageBelow">
-        <div class="col-md-7">
-            <h2 class="featurette-heading">Work with any brightness</h2>
+  <hr class="featurette-divider">
 
-            <div class="featuretteDescription">
-                <p class="lead">
-                    Switch between dark and light images easily.
-                </p>
+  <div class="row featurette imageBelow">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Work with any brightness</h2>
 
-                <p class="extendedDescription">
-                    To flip the weights and colors to support an image
-                    with a different brightness, select <strong>Palette > Invert Palette</strong>.
-                </p>
-            </div>
-        </div>
+      <div class="featuretteDescription">
+        <p class="lead">
+          Switch between dark and light images easily.
+        </p>
 
-        <div class="col-md-5">
-            <div class="imgContainer imgContainerSplit">
-                <img class="featurette-image" src="~/img/AsciiStudio/Tree.jpg" lightbox />
-                <img class="featurette-image" src="~/img/AsciiStudio/TreeAscii.png" lightbox />
-                <img class="featurette-image" src="~/img/AsciiStudio/NeonSign.jpg" lightbox />
-                <img class="featurette-image" src="~/img/AsciiStudio/NeonSignAscii.png" lightbox />
-            </div>
-        </div>
+        <p class="extendedDescription">
+          To flip the weights and colors to support an image
+          with a different brightness, select <strong>Palette > Invert Palette</strong>.
+        </p>
+      </div>
     </div>
 
-    <hr class="featurette-divider">
+    <div class="col-md-5">
+      <div class="imgContainer imgContainerSplit">
+        <img class="featurette-image" src="~/img/AsciiStudio/Tree.jpg" lightbox />
+        <img class="featurette-image" src="~/img/AsciiStudio/TreeAscii.png" lightbox />
+        <img class="featurette-image" src="~/img/AsciiStudio/NeonSign.jpg" lightbox />
+        <img class="featurette-image" src="~/img/AsciiStudio/NeonSignAscii.png" lightbox />
+      </div>
+    </div>
+  </div>
 
-    <div class="row featurette imageBelow">
-        <div class="col-md-7">
-            <h2 class="featurette-heading">Overlay phrases</h2>
+  <hr class="featurette-divider">
 
-            <div class="featuretteDescription">
-                <p class="lead">
-                    Rather than creating ASCII art with weights, you can create a phrase overlay instead.
-                </p>
+  <div class="row featurette imageBelow">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Overlay phrases</h2>
 
-                <p class="extendedDescription">
-                    To create a phrase overlay, click the <strong>Phrase</strong>
-                    checkbox under the <strong>Weights/Phrase tab</strong>.
-                </p>
-            </div>
-        </div>
+      <div class="featuretteDescription">
+        <p class="lead">
+          Rather than creating ASCII art with weights, you can create a phrase overlay instead.
+        </p>
 
-        <div class="col-md-5">
-            <div class="imgContainer imgContainerSplit">
-                <img class="featurette-image" src="~/img/AsciiStudio/Plasma.gif" lightbox />
-                <img class="featurette-image" src="~/img/AsciiStudio/PlasmaAscii.gif" lightbox />
-            </div>
-        </div>
+        <p class="extendedDescription">
+          To create a phrase overlay, click the <strong>Phrase</strong>
+          checkbox under the <strong>Weights/Phrase tab</strong>.
+        </p>
+      </div>
     </div>
 
-    <hr class="featurette-divider">
-
-    <div class="row featurette imageBelow">
-        <div class="col-md-7">
-            <h2 class="featurette-heading">Cross-platform</h2>
-
-            <div class="featuretteDescription">
-                <p class="lead">
-                    Runs on both macOS and Windows.
-                </p>
-            </div>
-        </div>
-
-        <div class="col-md-5">
-            <div class="imgContainer imgContainerSplit">
-                <img class="featurette-image" src="~/img/AsciiStudio/Screenshot.jpg" lightbox />
-                <img class="featurette-image" src="~/img/AsciiStudio/WinScreenshot.jpg" lightbox />
-            </div>
-        </div>
+    <div class="col-md-5">
+      <div class="imgContainer imgContainerSplit">
+        <img class="featurette-image" src="~/img/AsciiStudio/Plasma.gif" lightbox />
+        <img class="featurette-image" src="~/img/AsciiStudio/PlasmaAscii.gif" lightbox />
+      </div>
     </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette imageBelow">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Cross-platform</h2>
+
+      <div class="featuretteDescription">
+        <p class="lead">
+          Runs on both macOS and Windows.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-md-5">
+      <div class="imgContainer imgContainerSplit">
+        <img class="featurette-image" src="~/img/AsciiStudio/Screenshot.jpg" lightbox />
+        <img class="featurette-image" src="~/img/AsciiStudio/WinScreenshot.jpg" lightbox />
+      </div>
+    </div>
+  </div>
 </div>

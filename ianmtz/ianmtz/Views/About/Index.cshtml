@@ -1,448 +1,455 @@
 @{
-    ViewData["Title"] = "About";
+  ViewData["Title"] = "About";
 
-    // Dynamically update years from the current year
-    int YearsFrom(int year)
-    {
-        var start = new DateTime(year, 1, 1);
-        var end = DateTime.Now;
+  // Dynamically update years from the current year
+  int YearsFrom(int year)
+  {
+    var start = new DateTime(year, 1, 1);
+    var end = DateTime.Now;
 
-        return (end.Year - start.Year - 1) +
-            (((end.Month > start.Month) ||
-            ((end.Month == start.Month) && (end.Day >= start.Day))) ? 1 : 0);
-    }
+    return (end.Year - start.Year - 1) +
+    (((end.Month > start.Month) ||
+    ((end.Month == start.Month) && (end.Day >= start.Day))) ? 1 : 0);
+  }
 
-    string YearsFromFormatted(int year) 
-    {
-        var yearsFrom = YearsFrom(year);
-        return yearsFrom + ((yearsFrom > 1) ?  " years" : " year"); 
-    }
+  string YearsFromFormatted(int year)
+  {
+    var yearsFrom = YearsFrom(year);
+    return yearsFrom + ((yearsFrom > 1) ? " years" : " year");
+  }
 }
 
 <div class="jumbotron windowOuter">
-    <div class="windowInner">
-        @*<div class="portraitContainer">
-            <img src="~/img/Portrait.jpg" />
+  <div class="windowInner">
+    @*<div class="portraitContainer">
+        <img src="~/img/Portrait.jpg" />
         </div>*@
 
-        <div class="jumboDescription">
-            <h1>Ian Martinez</h1>
-                
-            <p class="contactInfo">
-                <strong>Contact:</strong> <a href="mailto:contact@ianmtz.com">contact@ianmtz.com</a>
-            </p>
+    <div class="jumboDescription">
+      <h1>Ian Martinez</h1>
 
-            <p>
-                A software developer and designer with experience in C#, C++, Java, JavaScript, Swift, Pascal, Python and more.
-            </p>
+      <p class="contactInfo">
+        <strong>Contact:</strong> <a href="mailto:contact@ianmtz.com">contact@ianmtz.com</a>
+      </p>
 
-            <div class="appButtons">
-                <a class="btn btn-primary imageButton" href="https://github.com/ianmartinez/" role="button">
-                    <ion-icon name="logo-github"></ion-icon>
-                    <span>GitHub</span>
-                </a>   
+      <p>
+        A software developer and designer with experience in C#, C++, Java, JavaScript, Swift, Pascal, Python
+        and more.
+      </p>
 
-                <a class="btn btn-primary imageButton" href="https://www.linkedin.com/in/ianmtz/" role="button">
-                    <ion-icon name="logo-linkedin"></ion-icon>
-                    <span>LinkedIn</span>
-                </a>  
-                
-                @*<a class="btn btn-primary imageButton" href="https://www.patreon.com/ianmartinez" role="button">
-                    <ion-icon name="gift"></ion-icon>
-                    <span>Support on Patreon</span>
-                </a>*@                
-            </div>
-        </div>
+      <div class="appButtons">
+        <a class="btn btn-primary imageButton" href="https://github.com/ianmartinez/" role="button">
+          <ion-icon name="logo-github"></ion-icon>
+          <span>GitHub</span>
+        </a>
+
+        <a class="btn btn-primary imageButton" href="https://www.linkedin.com/in/ianmtz/" role="button">
+          <ion-icon name="logo-linkedin"></ion-icon>
+          <span>LinkedIn</span>
+        </a>
+
+        @*<a class="btn btn-primary imageButton" href="https://www.patreon.com/ianmartinez" role="button">
+                <ion-icon name="gift"></ion-icon>
+                <span>Support on Patreon</span>
+                </a>*@
+      </div>
     </div>
+  </div>
 </div>
+
 <div class="windowOuter">
-    <div class="windowInner">
-        <div class="container appFeatures aboutSection">
-            <h1>Education</h1>
-            <div class="row featurette">
-                <div class="col-md-3">
-                    <div class="imgContainer">
-                        <img class="featurette-image" src="~/img/About/University.png" lightbox />
-                    </div>
-                </div>
-
-                <div class="col-md-9">
-                    <h2 class="featurette-heading">Texas A&amp;M University - San Antonio</h2>
-
-
-                    <div class="featuretteDescription">
-                        <p class="lead">
-                            Bachelor of Science in Computer Science
-                        </p>
-
-                        <p class="dateRange">2017 - 2021</p>
-                    </div>
-                </div>
-            </div>
-
-            <h1>Employment</h1>
-            <div class="row featurette">
-                <div class="col-md-3">
-                    <div class="imgContainer">
-                        <img class="featurette-image" src="~/img/About/AccuWeather.png" lightbox />
-                    </div>
-                </div>
-
-                <div class="col-md-9">
-                    <h2 class="featurette-heading">AccuWeather</h2>
-
-                    <div class="featuretteDescription">
-                        <p class="lead">
-                            Software Developer I
-                        </p>
-
-                        <p class="dateRange">September 2021 - May 2022</p>
-
-                        <p class="extendedDescription">
-                            Worked on maintaining and developing new features in AccuWeather’s SmartWarn, a large Qt/C++ desktop application 
-                            built around MapBox and custom OpenGL code that provides meteorologists with a workstation tool for viewing weather data 
-                            from hundreds of sources, issuing forecasts and alerts, and keeping track of clients.
-                        </p>
-
-                        <p class="extendedDescription">
-                            Handled deployments to Linux workstations used by meteorologists using Ansible Playbooks.
-                        </p>
-
-                        <p class="extendedDescription">
-                            Worked on the backend service used by the C++ frontend, which is written in Go.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <hr class="featurette-divider" />
-
-            <div class="row featurette">
-                <div class="col-md-3">
-                    <div class="imgContainer">
-                        <img class="featurette-image" src="~/img/About/TTEC.png" lightbox />
-                    </div>
-                </div>
-
-                <div class="col-md-9">
-                    <h2 class="featurette-heading">TTEC</h2>
-
-                    <div class="featuretteDescription">
-                        <p class="lead">
-                            Developer, Desktop System Software
-                        </p>
-
-                        <p class="dateRange">September 2020 - March 2021</p>
-
-                        <p class="extendedDescription">
-                            Worked with a team of developers to replace a deprecated desktop application based on Cisco CTIOS, 
-                            which was used by call center agents and their supervisors, with a new web-based application using Cisco Finesse.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <hr class="featurette-divider" />
-
-            <div class="row featurette">
-                <div class="col-md-3">
-                    <div class="imgContainer">
-                        <img class="featurette-image" src="~/img/About/IBC.png" lightbox />
-                    </div>
-                </div>
-
-                <div class="col-md-9">
-                    <h2 class="featurette-heading">IBC Bank</h2>
-
-                    <div class="featuretteDescription">
-                        <p class="lead">
-                            Developer I
-                        </p>
-
-                        <p class="dateRange">June 2017 - April 2020</p>
-
-                        <p class="extendedDescription">
-                            Worked to re-write multiple websites using modern web design in order to migrate
-                            them away from SharePoint and ASP.NET Web Forms to ASP.NET MVC and ASP.NET Core.
-                        </p>
-
-                        <p class="extendedDescription">
-                            Maintained, tested, and deployed bug fixes to critical banking software.
-                        </p>
-
-                        <p class="extendedDescription">
-                            In addition to intranet applications for use inside the company, 
-                            there are multiple public facing websites I designed and developed while working at IBC:
-                        </p>
-                        <ul>
-                            <li><a href="https://ibcfirstequity.com/">IBC First Equity</a></li>
-                            <li><a href="https://www.clcsanantonio.com/">Community Loan Center of San Antonio</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <hr class="featurette-divider" />
-
-            <div class="row featurette">
-                <div class="col-md-3">
-                    <div class="imgContainer">
-                        <img class="featurette-image" src="~/img/About/CBE.png" lightbox />
-                    </div>
-                </div>
-
-                <div class="col-md-9">
-                    <h2 class="featurette-heading">CBE Companies</h2>
-
-                    <div class="featuretteDescription">
-                        <p class="lead">
-                            IT Intern
-                        </p>
-
-                        <p class="dateRange">May 2017 - June 2017</p>
-
-                        <p class="extendedDescription">
-                            Assisted in setting up new hardware and fixing malfunctioning hardware.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <h1>Language Experience</h1>
-            <div class="row featurette">
-                <div class="col-md-3">
-                    <div class="imgContainer">
-                        <img class="featurette-image smallImage" src="~/img/About/CSharp.png" lightbox />
-                    </div>
-                </div>
-
-                <div class="col-md-9">
-                    <h2 class="featurette-heading">C#</h2>
-
-                    <div class="featuretteDescription">
-                        <p class="dateRange">@YearsFromFormatted(2014)</p>
-
-                        <p class="lead">
-                            Development with C# on Windows, macOS, and Linux. Desktop applications built
-                            with WinForms and <a href="https://github.com/picoe/Eto">Eto.Forms</a> and
-                            websites using ASP.NET Web Forms, ASP.NET MVC, and ASP.NET Core.
-                        </p>
-
-                        <h3>Projects</h3>
-                        <div class="projectList">
-                            <ul>
-                                <li><a href="~/Resources/AeroLib">AeroLib</a></li>
-                                <li><a href="~/CardinalQemu">Cardinal QEMU</a></li>
-                                <li><a href="~/LangPad">LangPad (LangPadUI and LangPadData libraries)</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <hr class="featurette-divider" />
-
-            <div class="row featurette">
-                <div class="col-md-3">
-                    <div class="imgContainer">
-                        <img class="featurette-image smallImage" src="~/img/About/JavaScript.png" lightbox />
-                    </div>
-                </div>
-
-                <div class="col-md-9">
-                    <h2 class="featurette-heading">JavaScript</h2>
-
-                    <div class="featuretteDescription">
-                        <p class="dateRange">@YearsFromFormatted(2014)</p>
-
-                        <p class="lead">
-                            JavaScript development for standalone libraries as well as
-                            for the front-end of larger websites.
-                        </p>
-
-                        <h3>Projects</h3>
-                        <div class="projectList">
-                            <ul>
-                                <li><a href="~/Tamarack">Tamarack</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <hr class="featurette-divider" />
-
-            <div class="row featurette">
-                <div class="col-md-3">
-                    <div class="imgContainer">
-                        <img class="featurette-image smallImage" src="~/img/About/Java.png" lightbox />
-                    </div>
-                </div>
-
-                <div class="col-md-9">
-                    <h2 class="featurette-heading">Java</h2>
-
-                    <div class="featuretteDescription">
-                        <p class="dateRange">@YearsFromFormatted(2015)</p>
-
-                        <p class="lead">
-                            Desktop Java development using both Swing and JavaFX.
-                        </p>
-
-                        <h3>Projects</h3>
-                        <div class="projectList">
-                            <ul>
-                                <li><a href="~/AsciiStudio">ASCII Studio</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <hr class="featurette-divider" />
-
-            <div class="row featurette">
-                <div class="col-md-3">
-                    <div class="imgContainer">
-                        <img class="featurette-image smallImage" src="~/img/About/CPlusPlus.png" lightbox />
-                    </div>
-                </div>
-
-                <div class="col-md-9">
-                    <h2 class="featurette-heading">C++/C</h2>
-
-                    <div class="featuretteDescription">
-                        <p class="dateRange">@YearsFromFormatted(2019)</p>
-
-                        <p class="lead">
-                            Development on AccuWeather's SmartWarn C++/QT appication and in my open-source project LaikaWM.
-                        </p>
-
-                        <h3>Projects</h3>
-                        <div class="projectList">
-                            <ul>
-                                <li><a href="~/LaikaWM">LaikaWM</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <hr class="featurette-divider" />
-
-            <div class="row featurette">
-                <div class="col-md-3">
-                    <div class="imgContainer">
-                        <img class="featurette-image smallImage" src="~/img/About/FreePascal.png" lightbox />
-                    </div>
-                </div>
-
-                <div class="col-md-9">
-                    <h2 class="featurette-heading">Pascal</h2>
-
-                    <div class="featuretteDescription">
-                        <p class="dateRange">@YearsFromFormatted(2018)</p>
-
-                        <p class="lead">
-                            Desktop development in <a href="https://www.freepascal.org/">Free Pascal</a> with the
-                            <a href="https://www.lazarus-ide.org/">Lazarus IDE</a>.
-                        </p>
-
-                        <h3>Projects</h3>
-                        <div class="projectList">
-                            <ul>
-                                <li><a href="~/Chameleon">Chameleon</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <hr class="featurette-divider" />
-
-            <div class="row featurette">
-                <div class="col-md-3">
-                    <div class="imgContainer">
-                        <img class="featurette-image smallImage" src="~/img/About/VB.png" lightbox />
-                    </div>
-                </div>
-
-                <div class="col-md-9">
-                    <h2 class="featurette-heading">VB.NET</h2>
-
-                    <div class="featuretteDescription">
-                        <p class="dateRange">@YearsFromFormatted(2008)</p>
-
-                        <p class="lead">
-                            My first programming language that I have built multiple projects with over the years.
-                        </p>
-
-                        <h3>Projects</h3>
-                        <div class="projectList">
-                            <ul>
-                                <li><a href="~/Old/ChameleonClassic">Chameleon Classic</a></li>
-                                <li><a href="~/Old/Screensavers">Colors Screensaver</a></li>
-                                <li><a href="~/Old/Screensavers">Graystyle Screensaver</a></li>
-                                <li><a href="~/LangPad">LangPad (WinForms UI portion)</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <h1>Software Experience</h1>
-            <div class="row featurette">
-                <div class="col-md-3">
-                    <div class="imgContainer">
-                        <img class="featurette-image smallImage" src="~/img/About/Inkscape.png" lightbox />
-                    </div>
-                </div>
-
-                <div class="col-md-9">
-                    <h2 class="featurette-heading">Inkscape</h2>
-
-                    <div class="featuretteDescription">
-                        <p class="lead">
-                            Used for the designing all my app icons, as well as most of my icon packs.
-                        </p>
-
-                        <h3>Icons</h3>
-                        <div class="projectList">
-                            <ul>
-                                <li><a href="~/Icons/Taiga">Taiga Icons</a></li>
-                                <li><a href="~/Icons/Tlell">Tlell Icons</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <hr class="featurette-divider" />
-
-            <div class="row featurette">
-                <div class="col-md-3">
-                    <div class="imgContainer">
-                        <img class="featurette-image smallImage" src="~/img/About/Photoshop.png" lightbox />
-                    </div>
-                </div>
-
-                <div class="col-md-9">
-                    <h2 class="featurette-heading">Photoshop</h2>
-
-                    <div class="featuretteDescription">
-                        <p class="lead">
-                            Used for designing some elements used in apps, as well as one icon pack.
-                        </p>
-
-                        <h3>Icons</h3>
-                        <div class="projectList">
-                            <ul>
-                                <li><a href="~/Icons/Horizon">Horizon Icons</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <div class="windowInner">
+    <div class="container appFeatures aboutSection">
+      <h1>Education</h1>
+      <div class="row featurette">
+        <div class="col-md-3">
+          <div class="imgContainer">
+            <img class="featurette-image" src="~/img/About/University.png" lightbox />
+          </div>
         </div>
+
+        <div class="col-md-9">
+          <h2 class="featurette-heading">Texas A&amp;M University - San Antonio</h2>
+
+
+          <div class="featuretteDescription">
+            <p class="lead">
+              Bachelor of Science in Computer Science
+            </p>
+
+            <p class="dateRange">2017 - 2021</p>
+          </div>
+        </div>
+      </div>
+
+      <h1>Employment</h1>
+      <div class="row featurette">
+        <div class="col-md-3">
+          <div class="imgContainer">
+            <img class="featurette-image" src="~/img/About/AccuWeather.png" lightbox />
+          </div>
+        </div>
+
+        <div class="col-md-9">
+          <h2 class="featurette-heading">AccuWeather</h2>
+
+          <div class="featuretteDescription">
+            <p class="lead">
+              Software Developer I
+            </p>
+
+            <p class="dateRange">September 2021 - May 2022</p>
+
+            <p class="extendedDescription">
+              Worked on maintaining and developing new features in AccuWeather's SmartWarn, a large Qt/C++
+              desktop application
+              built around MapBox and custom OpenGL code that provides meteorologists with a workstation
+              tool for viewing weather data
+              from hundreds of sources, issuing forecasts and alerts, and keeping track of clients.
+            </p>
+
+            <p class="extendedDescription">
+              Handled deployments to Linux workstations used by meteorologists using Ansible Playbooks.
+            </p>
+
+            <p class="extendedDescription">
+              Worked on the backend service used by the C++ frontend, which is written in Go.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider" />
+
+      <div class="row featurette">
+        <div class="col-md-3">
+          <div class="imgContainer">
+            <img class="featurette-image" src="~/img/About/TTEC.png" lightbox />
+          </div>
+        </div>
+
+        <div class="col-md-9">
+          <h2 class="featurette-heading">TTEC</h2>
+
+          <div class="featuretteDescription">
+            <p class="lead">
+              Developer, Desktop System Software
+            </p>
+
+            <p class="dateRange">September 2020 - March 2021</p>
+
+            <p class="extendedDescription">
+              Worked with a team of developers to replace a deprecated desktop application based on Cisco
+              CTIOS,
+              which was used by call center agents and their supervisors, with a new web-based application
+              using Cisco Finesse.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider" />
+
+      <div class="row featurette">
+        <div class="col-md-3">
+          <div class="imgContainer">
+            <img class="featurette-image" src="~/img/About/IBC.png" lightbox />
+          </div>
+        </div>
+
+        <div class="col-md-9">
+          <h2 class="featurette-heading">IBC Bank</h2>
+
+          <div class="featuretteDescription">
+            <p class="lead">
+              Developer I
+            </p>
+
+            <p class="dateRange">June 2017 - April 2020</p>
+
+            <p class="extendedDescription">
+              Worked to re-write multiple websites using modern web design in order to migrate
+              them away from SharePoint and ASP.NET Web Forms to ASP.NET MVC and ASP.NET Core.
+            </p>
+
+            <p class="extendedDescription">
+              Maintained, tested, and deployed bug fixes to critical banking software.
+            </p>
+
+            <p class="extendedDescription">
+              In addition to intranet applications for use inside the company,
+              there are multiple public facing websites I designed and developed while working at IBC:
+            </p>
+            <ul>
+              <li><a href="https://ibcfirstequity.com/">IBC First Equity</a></li>
+              <li><a href="https://www.clcsanantonio.com/">Community Loan Center of San Antonio</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider" />
+
+      <div class="row featurette">
+        <div class="col-md-3">
+          <div class="imgContainer">
+            <img class="featurette-image" src="~/img/About/CBE.png" lightbox />
+          </div>
+        </div>
+
+        <div class="col-md-9">
+          <h2 class="featurette-heading">CBE Companies</h2>
+
+          <div class="featuretteDescription">
+            <p class="lead">
+              IT Intern
+            </p>
+
+            <p class="dateRange">May 2017 - June 2017</p>
+
+            <p class="extendedDescription">
+              Assisted in setting up new hardware and fixing malfunctioning hardware.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <h1>Language Experience</h1>
+      <div class="row featurette">
+        <div class="col-md-3">
+          <div class="imgContainer">
+            <img class="featurette-image smallImage" src="~/img/About/CSharp.png" lightbox />
+          </div>
+        </div>
+
+        <div class="col-md-9">
+          <h2 class="featurette-heading">C#</h2>
+
+          <div class="featuretteDescription">
+            <p class="dateRange">@YearsFromFormatted(2014)</p>
+
+            <p class="lead">
+              Development with C# on Windows, macOS, and Linux. Desktop applications built
+              with WinForms and <a href="https://github.com/picoe/Eto">Eto.Forms</a> and
+              websites using ASP.NET Web Forms, ASP.NET MVC, and ASP.NET Core.
+            </p>
+
+            <h3>Projects</h3>
+            <div class="projectList">
+              <ul>
+                <li><a href="~/Resources/AeroLib">AeroLib</a></li>
+                <li><a href="~/CardinalQemu">Cardinal QEMU</a></li>
+                <li><a href="~/LangPad">LangPad (LangPadUI and LangPadData libraries)</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider" />
+
+      <div class="row featurette">
+        <div class="col-md-3">
+          <div class="imgContainer">
+            <img class="featurette-image smallImage" src="~/img/About/JavaScript.png" lightbox />
+          </div>
+        </div>
+
+        <div class="col-md-9">
+          <h2 class="featurette-heading">JavaScript</h2>
+
+          <div class="featuretteDescription">
+            <p class="dateRange">@YearsFromFormatted(2014)</p>
+
+            <p class="lead">
+              JavaScript development for standalone libraries as well as
+              for the front-end of larger websites.
+            </p>
+
+            <h3>Projects</h3>
+            <div class="projectList">
+              <ul>
+                <li><a href="~/Tamarack">Tamarack</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider" />
+
+      <div class="row featurette">
+        <div class="col-md-3">
+          <div class="imgContainer">
+            <img class="featurette-image smallImage" src="~/img/About/Java.png" lightbox />
+          </div>
+        </div>
+
+        <div class="col-md-9">
+          <h2 class="featurette-heading">Java</h2>
+
+          <div class="featuretteDescription">
+            <p class="dateRange">@YearsFromFormatted(2015)</p>
+
+            <p class="lead">
+              Desktop Java development using both Swing and JavaFX.
+            </p>
+
+            <h3>Projects</h3>
+            <div class="projectList">
+              <ul>
+                <li><a href="~/AsciiStudio">ASCII Studio</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider" />
+
+      <div class="row featurette">
+        <div class="col-md-3">
+          <div class="imgContainer">
+            <img class="featurette-image smallImage" src="~/img/About/CPlusPlus.png" lightbox />
+          </div>
+        </div>
+
+        <div class="col-md-9">
+          <h2 class="featurette-heading">C++/C</h2>
+
+          <div class="featuretteDescription">
+            <p class="dateRange">@YearsFromFormatted(2019)</p>
+
+            <p class="lead">
+              Development on AccuWeather's SmartWarn C++/QT appication and in my open-source project
+              LaikaWM.
+            </p>
+
+            <h3>Projects</h3>
+            <div class="projectList">
+              <ul>
+                <li><a href="~/LaikaWM">LaikaWM</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider" />
+
+      <div class="row featurette">
+        <div class="col-md-3">
+          <div class="imgContainer">
+            <img class="featurette-image smallImage" src="~/img/About/FreePascal.png" lightbox />
+          </div>
+        </div>
+
+        <div class="col-md-9">
+          <h2 class="featurette-heading">Pascal</h2>
+
+          <div class="featuretteDescription">
+            <p class="dateRange">@YearsFromFormatted(2018)</p>
+
+            <p class="lead">
+              Desktop development in <a href="https://www.freepascal.org/">Free Pascal</a> with the
+              <a href="https://www.lazarus-ide.org/">Lazarus IDE</a>.
+            </p>
+
+            <h3>Projects</h3>
+            <div class="projectList">
+              <ul>
+                <li><a href="~/Chameleon">Chameleon</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider" />
+
+      <div class="row featurette">
+        <div class="col-md-3">
+          <div class="imgContainer">
+            <img class="featurette-image smallImage" src="~/img/About/VB.png" lightbox />
+          </div>
+        </div>
+
+        <div class="col-md-9">
+          <h2 class="featurette-heading">VB.NET</h2>
+
+          <div class="featuretteDescription">
+            <p class="dateRange">@YearsFromFormatted(2008)</p>
+
+            <p class="lead">
+              My first programming language that I have built multiple projects with over the years.
+            </p>
+
+            <h3>Projects</h3>
+            <div class="projectList">
+              <ul>
+                <li><a href="~/Old/ChameleonClassic">Chameleon Classic</a></li>
+                <li><a href="~/Old/Screensavers">Colors Screensaver</a></li>
+                <li><a href="~/Old/Screensavers">Graystyle Screensaver</a></li>
+                <li><a href="~/LangPad">LangPad (WinForms UI portion)</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h1>Software Experience</h1>
+      <div class="row featurette">
+        <div class="col-md-3">
+          <div class="imgContainer">
+            <img class="featurette-image smallImage" src="~/img/About/Inkscape.png" lightbox />
+          </div>
+        </div>
+
+        <div class="col-md-9">
+          <h2 class="featurette-heading">Inkscape</h2>
+
+          <div class="featuretteDescription">
+            <p class="lead">
+              Used for the designing all my app icons, as well as most of my icon packs.
+            </p>
+
+            <h3>Icons</h3>
+            <div class="projectList">
+              <ul>
+                <li><a href="~/Icons/Taiga">Taiga Icons</a></li>
+                <li><a href="~/Icons/Tlell">Tlell Icons</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider" />
+
+      <div class="row featurette">
+        <div class="col-md-3">
+          <div class="imgContainer">
+            <img class="featurette-image smallImage" src="~/img/About/Photoshop.png" lightbox />
+          </div>
+        </div>
+
+        <div class="col-md-9">
+          <h2 class="featurette-heading">Photoshop</h2>
+
+          <div class="featuretteDescription">
+            <p class="lead">
+              Used for designing some elements used in apps, as well as one icon pack.
+            </p>
+
+            <h3>Icons</h3>
+            <div class="projectList">
+              <ul>
+                <li><a href="~/Icons/Horizon">Horizon Icons</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </div>

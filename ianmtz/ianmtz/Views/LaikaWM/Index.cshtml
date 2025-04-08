@@ -1,195 +1,195 @@
 ﻿@{
-    Layout = "_AppLayout";
-    ViewData["Title"] = "LaikaWM";
+  Layout = "_AppLayout";
+  ViewData["Title"] = "LaikaWM";
 }
 
 @section icon {
-    <img src="~/img/LaikaWM/Icon.png" />
+  <img src="~/img/LaikaWM/Icon.png" />
 }
 
 @section description {
-    <div class="appWarning">
-        <ion-icon name="alert-circle"></ion-icon>
-        <span>
-            This is <em>very</em> early in development and is still incomplete.
-            All screenshots on this page are mockups.
-        </span>
-    </div>
+  <div class="appWarning">
+    <ion-icon name="alert-circle"></ion-icon>
+    <span>
+      This is <em>very</em> early in development and is still incomplete.
+      All screenshots on this page are mockups.
+    </span>
+  </div>
 
-    <p class="appDescriptionText">
-        A modern, lightweight <a href="https://en.wikipedia.org/wiki/Wayland_%28display_server_protocol%29">Wayland</a> 
-        compositor, inspired by earlier X11 window managers, such as 
-        <a href="https://en.wikipedia.org/wiki/IceWM">IceWM</a> and
-        <a href="https://en.wikipedia.org/wiki/Fluxbox">Fluxbox</a>.
-    </p>
+  <p class="appDescriptionText">
+    A modern, lightweight <a href="https://en.wikipedia.org/wiki/Wayland_%28display_server_protocol%29">Wayland</a>
+    compositor, inspired by earlier X11 window managers, such as
+    <a href="https://en.wikipedia.org/wiki/IceWM">IceWM</a> and
+    <a href="https://en.wikipedia.org/wiki/Fluxbox">Fluxbox</a>.
+  </p>
 
-    <div class="appDescriptionExtended">
-        <p><strong>Written In:</strong> C++</p>
-    </div>
+  <div class="appDescriptionExtended">
+    <p><strong>Written In:</strong> C++</p>
+  </div>
 
-    <div class="appButtons">
-        <a class="btn btn-primary imageButton" href="https://github.com/ianmartinez/laikawm" role="button">
-            <ion-icon name="logo-github"></ion-icon><span>GitHub</span>
-        </a>
-    </div>
+  <div class="appButtons">
+    <a class="btn btn-primary imageButton" href="https://github.com/ianmartinez/laikawm" role="button">
+      <ion-icon name="logo-github"></ion-icon><span>GitHub</span>
+    </a>
+  </div>
 }
 
 @section screenshot {
-    <img class="featurette-image appScreenshot" src="~/img/LaikaWm/Mockup.jpg" lightbox />
+  <img class="featurette-image appScreenshot" src="~/img/LaikaWm/Mockup.jpg" lightbox />
 }
 
 <div class="container appFeatures">
-    <div class="row featurette iconFeaturette">
-        <div class="col-md-10">
-            <h2 class="featurette-heading">Lightweight</h2>
+  <div class="row featurette iconFeaturette">
+    <div class="col-md-10">
+      <h2 class="featurette-heading">Lightweight</h2>
 
-            <div class="featuretteDescription">
-                <p class="lead">
-                    LaikaWM has a small footprint and is able to run on devices with limited resources, like
-                    the Raspberry Pi, all the way up to full-fledged desktops.
-                </p>
-            </div>
-        </div>
-
-        <div class="col-md-2">
-            <div class="imgContainer">
-                <img class="featurette-image featureIcon" src="~/img/SiteIcons/Cpu.png" />
-            </div>
-        </div>
+      <div class="featuretteDescription">
+        <p class="lead">
+          LaikaWM has a small footprint and is able to run on devices with limited resources, like
+          the Raspberry Pi, all the way up to full-fledged desktops.
+        </p>
+      </div>
     </div>
 
-    <hr class="featurette-divider">
+    <div class="col-md-2">
+      <div class="imgContainer">
+        <img class="featurette-image featureIcon" src="~/img/SiteIcons/Cpu.png" />
+      </div>
+    </div>
+  </div>
 
-    <div class="row featurette iconFeaturette orderFlip">
-        <div class="col-md-10">
-            <h2 class="featurette-heading">Themeable</h2>
+  <hr class="featurette-divider">
 
-            <div class="featuretteDescription">
-                <p class="lead">
-                    It is highly customizable with different themes, which are sets of
-                    configuration files and SVG images that represent elements in the UI.
-                </p>
+  <div class="row featurette iconFeaturette orderFlip">
+    <div class="col-md-10">
+      <h2 class="featurette-heading">Themeable</h2>
 
-                <p class="extendedDescription">
-                    A single theme can have multiple variants deriving from the <strong>default</strong>
-                    variant, such as a light and a dark variant of the same theme.
-                </p>
-            </div>
-        </div>
+      <div class="featuretteDescription">
+        <p class="lead">
+          It is highly customizable with different themes, which are sets of
+          configuration files and SVG images that represent elements in the UI.
+        </p>
 
-        <div class="col-md-2">
-            <div class="imgContainer">
-                <img class="featurette-image featureIcon" src="~/img/SiteIcons/Graphics.png" />
-            </div>
-        </div>
+        <p class="extendedDescription">
+          A single theme can have multiple variants deriving from the <strong>default</strong>
+          variant, such as a light and a dark variant of the same theme.
+        </p>
+      </div>
     </div>
 
-    <hr class="featurette-divider">
+    <div class="col-md-2">
+      <div class="imgContainer">
+        <img class="featurette-image featureIcon" src="~/img/SiteIcons/Graphics.png" />
+      </div>
+    </div>
+  </div>
 
-    <div class="row featurette iconFeaturette">
-        <div class="col-md-10">
-            <h2 class="featurette-heading">Scalable</h2>
+  <hr class="featurette-divider">
 
-            <div class="featuretteDescription">
-                <p class="lead">
-                    All UI elements are vectors, so they appear sharp on any display.
-                </p>
+  <div class="row featurette iconFeaturette">
+    <div class="col-md-10">
+      <h2 class="featurette-heading">Scalable</h2>
 
-                <p class="extendedDescription">
-                    Theme elements are stored as SVGs that are rasterized to
-                    PNG images to match the current screen's scaling.
-                </p>
-            </div>
-        </div>
+      <div class="featuretteDescription">
+        <p class="lead">
+          All UI elements are vectors, so they appear sharp on any display.
+        </p>
 
-        <div class="col-md-2">
-            <div class="imgContainer">
-                <img class="featurette-image featureIcon" src="~/img/SiteIcons/Display.png" />
-            </div>
-        </div>
+        <p class="extendedDescription">
+          Theme elements are stored as SVGs that are rasterized to
+          PNG images to match the current screen's scaling.
+        </p>
+      </div>
     </div>
 
-    <hr class="featurette-divider">
+    <div class="col-md-2">
+      <div class="imgContainer">
+        <img class="featurette-image featureIcon" src="~/img/SiteIcons/Display.png" />
+      </div>
+    </div>
+  </div>
 
-    <div class="row featurette iconFeaturette orderFlip">
-        <div class="col-md-10">
-            <h2 class="featurette-heading">Easy to use</h2>
+  <hr class="featurette-divider">
 
-            <div class="featuretteDescription">
-                <p class="lead">
-                    Though it can be configured entirely through text files,
-                    LaikaWM also provides a built-in <strong>LaikaConfig</strong>
-                    program that allows you to change settings using only a GUI.
-                </p>
-            </div>
-        </div>
+  <div class="row featurette iconFeaturette orderFlip">
+    <div class="col-md-10">
+      <h2 class="featurette-heading">Easy to use</h2>
 
-        <div class="col-md-2">
-            <div class="imgContainer">
-                <img class="featurette-image featureIcon" src="~/img/SiteIcons/Config.png" />
-            </div>
-        </div>
+      <div class="featuretteDescription">
+        <p class="lead">
+          Though it can be configured entirely through text files,
+          LaikaWM also provides a built-in <strong>LaikaConfig</strong>
+          program that allows you to change settings using only a GUI.
+        </p>
+      </div>
     </div>
 
-    <hr class="featurette-divider">
+    <div class="col-md-2">
+      <div class="imgContainer">
+        <img class="featurette-image featureIcon" src="~/img/SiteIcons/Config.png" />
+      </div>
+    </div>
+  </div>
 
-    <div class="row featurette iconFeaturette">
-        <div class="col-md-10">
-            <h2 class="featurette-heading">Features you expect</h2>
+  <hr class="featurette-divider">
 
-            <div class="featuretteDescription">
-                <p class="lead">
-                    LaikaWM includes support for multiple desktops and window snapping to either
-                    side of the screen or any of the 4 corners.
-                </p>
-            </div>
-        </div>
+  <div class="row featurette iconFeaturette">
+    <div class="col-md-10">
+      <h2 class="featurette-heading">Features you expect</h2>
 
-        <div class="col-md-2">
-            <div class="imgContainer">
-                <img class="featurette-image featureIcon" src="~/img/SiteIcons/Workspaces.png" />
-            </div>
-        </div>
+      <div class="featuretteDescription">
+        <p class="lead">
+          LaikaWM includes support for multiple desktops and window snapping to either
+          side of the screen or any of the 4 corners.
+        </p>
+      </div>
     </div>
 
-    <hr class="featurette-divider">
+    <div class="col-md-2">
+      <div class="imgContainer">
+        <img class="featurette-image featureIcon" src="~/img/SiteIcons/Workspaces.png" />
+      </div>
+    </div>
+  </div>
 
-    <div class="row featurette iconFeaturette orderFlip">
-        <div class="col-md-10">
-            <h2 class="featurette-heading">Modern design</h2>
+  <hr class="featurette-divider">
 
-            <div class="featuretteDescription">
-                <p class="lead">
-                    LaikaWM uses the latest C++ standard.
-                </p>
-            </div>
-        </div>
+  <div class="row featurette iconFeaturette orderFlip">
+    <div class="col-md-10">
+      <h2 class="featurette-heading">Modern design</h2>
 
-        <div class="col-md-2">
-            <div class="imgContainer">
-                <img class="featurette-image featureIcon" src="~/img/SiteIcons/Code.png" />
-            </div>
-        </div>
+      <div class="featuretteDescription">
+        <p class="lead">
+          LaikaWM uses the latest C++ standard.
+        </p>
+      </div>
     </div>
 
-    <hr class="featurette-divider">
-
-    <div class="row featurette iconFeaturette">
-        <div class="col-md-10">
-            <h2 class="featurette-heading">Extendable</h2>
-
-            <div class="featuretteDescription">
-                <p class="lead">
-                    LaikaWM has built-in support for <strong>Meters</strong>, which are plugins that display dynamic
-                    content.
-                </p>
-            </div>
-        </div>
-
-        <div class="col-md-2">
-            <div class="imgContainer">
-                <img class="featurette-image featureIcon" src="~/img/SiteIcons/Extension.png" />
-            </div>
-        </div>
+    <div class="col-md-2">
+      <div class="imgContainer">
+        <img class="featurette-image featureIcon" src="~/img/SiteIcons/Code.png" />
+      </div>
     </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette iconFeaturette">
+    <div class="col-md-10">
+      <h2 class="featurette-heading">Extendable</h2>
+
+      <div class="featuretteDescription">
+        <p class="lead">
+          LaikaWM has built-in support for <strong>Meters</strong>, which are plugins that display dynamic
+          content.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-md-2">
+      <div class="imgContainer">
+        <img class="featurette-image featureIcon" src="~/img/SiteIcons/Extension.png" />
+      </div>
+    </div>
+  </div>
 </div>
